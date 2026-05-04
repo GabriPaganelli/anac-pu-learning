@@ -1,0 +1,5 @@
+outs:
+- md5: 7262b645db67b75f33bbe05ad6deeb26
+  size: 51915468
+  hash: md5
+  path: M3_ready.parquet

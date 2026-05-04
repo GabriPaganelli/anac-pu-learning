@@ -1,0 +1,36 @@
+========================================================================
+  STIMA DELLA PRIOR DI CLASSE — PU Learning su Appalti Pubblici
+  Data: 2026-04-12 20:57  |  Modello: M1 (ex-ante)  |  TEST_MODE: False
+========================================================================
+  Positivi certi :        781
+  Negativi certi :      1,817
+  Unlabeled      :  9,466,197
+  Totale         :  9,468,795
+  Runtime        :  27m 9s
+  Config         :  EN/Blanchard max_unl=200,000 boot=200
+                    KM2 max_unl=1,500 runs=10
+                    PULSNAR max_unl=50,000 runs=10
+------------------------------------------------------------------------
+  Metodo                     α_hat   CI 2.5%  CI 97.5%
+------------------------------------------------------------------------
+  Elkan-Noto (LightGBM)     0.1166    0.1017    0.1346
+  Blanchard Quantili        0.0633    0.0609    0.0658
+  KM2 (DEDPUL)              0.0873    0.0640    0.0640  [!] CI degenere
+  PULSNAR                   0.0222    0.0103    0.0168  [!] α_hat > CI upper
+------------------------------------------------------------------------
+  Media metodi disponibili : 0.0726
+  Dev. standard            : 0.0361
+  VALORE OPERATIVO         : α = 0.1166  (max tra validi — conservativo)
+========================================================================
+  Note affidabilita:
+  [Elkan-Noto]  Stima c = P(S=1|Y=1). Violazione SAR (triple filter:
+                condanna+CIG+ANAC) → sovrastima sistematica di c.
+  [Blanchard]   Lower bound teorico per c. Stabile (CI stretto).
+  [KM2]         CI degenere: 9/10 run = 0.0640, punto stima seed=42 = 0.0873.
+                Insensibile al subsample → colpisce sempre la stessa
+                soluzione al confine del binary search. NON affidabile
+                come stima assoluta a 1,500 unlabeled / 9.4M reali.
+  [PULSNAR]     α_hat (seed=42) = 0.0222 fuori dall'intervallo CI
+                [0.0103, 0.0168] — seed=42 non incluso nel campionamento CI.
+                Instabile: 781 pos, 50K unl su 26 feature.
+========================================================================

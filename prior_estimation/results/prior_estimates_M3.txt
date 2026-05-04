@@ -1,0 +1,29 @@
+========================================================================
+  STIMA DELLA PRIOR DI CLASSE - PU Learning su Appalti Pubblici
+  Data: 2026-05-02 20:45  |  Modello: M3  |  TEST_MODE: False
+========================================================================
+  Positivi certi :        210
+  Negativi certi :        280
+  Unlabeled      :  1,128,743
+  Totale         :  1,129,233
+  Runtime        :  54m 14s
+  Config EN/Blanchard : max_unl=200,000  bootstrap=200
+  Config KM2          : max_unl=1,500  runs=10
+  Config PULSNAR      : max_unl=50,000  runs=30
+------------------------------------------------------------------------
+  Metodo                           alpha   CI 2.5%  CI 97.5%
+------------------------------------------------------------------------
+  Elkan-Noto (LightGBM)           0.0568    0.0303    0.0862
+  Blanchard Quantili              0.1084    0.0945    0.1235
+  KM2 (DEDPUL)                    0.3756    0.3528    0.4108
+  PULSNAR                         0.0056    0.0024    0.1259
+------------------------------------------------------------------------
+  Media  : 0.1366   Dev.std : 0.1427
+  VALORE OPERATIVO: alpha = 0.3756  (max tra validi - conservativo)
+------------------------------------------------------------------------
+  Cosa stima ogni metodo:
+    Elkan-Noto (LightGBM)           stima c  - bias SAR -> tende a sovrastimare
+    Blanchard Quantili              stima c  - lower bound teorico (piu' robusto a SAR)
+    KM2 (DEDPUL)                    stima pi - verifica CI: se degenere, non affidabile
+    PULSNAR                         stima pi - instabile con <500 positivi
+========================================================================

@@ -1,0 +1,13 @@
+[
+  "importo_complessivo_gara",
+  "importo_lotto",
+  "n_lotti_componenti",
+  "cod_modalita_realizzazione",
+  "flag_urgenza",
+  "finestra_offerta_giorni",
+  "lag_perfezionamento_giorni",
+  "flag_accordo_quadro",
+  "flag_ripetizioni",
+  "settore_speciale",
+  "flag_appalto_riservato"
+]

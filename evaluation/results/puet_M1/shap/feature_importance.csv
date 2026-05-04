@@ -1,0 +1,12 @@
+feature,mean_abs_shap
+importo_lotto,0.33654124766475113
+flag_urgenza,0.08890656053381266
+finestra_offerta_giorni,0.0710399918199752
+flag_ripetizioni,0.040461458375233475
+cod_modalita_realizzazione,0.036688525148540665
+importo_complessivo_gara,0.0327765075115452
+lag_perfezionamento_giorni,0.03169190732097381
+flag_accordo_quadro,0.027925619119529465
+n_lotti_componenti,0.02588564811145314
+settore_speciale,0.020989149245726695
+flag_appalto_riservato,0.0002789985957558879

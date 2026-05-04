@@ -1,0 +1,39 @@
+========================================================================
+  STIMA DELLA PRIOR DI CLASSE — PU Learning su Appalti Pubblici
+  Data: 2026-04-12 20:58  |  Modello: M2 (durante)  |  TEST_MODE: False
+========================================================================
+  Positivi certi :        781
+  Negativi certi :      1,817
+  Unlabeled      :  3,467,282
+  Totale         :  3,469,880
+  Runtime        :  52m 47s
+  Config         :  EN/Blanchard max_unl=200,000 boot=200
+                    KM2 max_unl=1,500 runs=10
+                    PULSNAR max_unl=50,000 runs=10
+------------------------------------------------------------------------
+  Metodo                     α_hat   CI 2.5%  CI 97.5%
+------------------------------------------------------------------------
+  Elkan-Noto (LightGBM)     0.0701    0.0531    0.0874
+  Blanchard Quantili        0.0863    0.0803    0.0928  [!] Blanchard > EN
+  KM2 (DEDPUL)              0.0873    0.0873    0.1096  [~] CI quasi-degenere
+  PULSNAR                   0.0164    0.0098    0.0260
+------------------------------------------------------------------------
+  Media metodi disponibili : 0.0650
+  Dev. standard            : 0.0289
+  VALORE OPERATIVO         : α = 0.0873  (max tra validi — conservativo)
+========================================================================
+  Note affidabilita:
+  [Elkan-Noto]  Blanchard > EN è anomalo: sotto SCAR Blanchard ≤ π ≤ EN.
+                EN in M2 è probabilmente compressa dalla violazione SAR:
+                il classificatore LightGBM con feature durante-contratto
+                tende a dare score più bassi ai positivi (contratti
+                già eseguiti) rispetto a M1. Stima di c depressa.
+  [Blanchard]   Quantile minimo del rapporto CDF_unl/CDF_pos. Il sorpasso
+                di EN riflette: (a) SAR deprime EN, (b) con più feature
+                la coda degli unlabeled è più pesante → ratio minimo più alto.
+                CI stretto indica stabilità interna ma non correttezza.
+  [KM2]         8/10 run = 0.0873, 2/10 = 0.1096 → limitata variabilità.
+                Insensibile al subsample. Affidabilità bassa.
+  [PULSNAR]     CI [0.0098, 0.0260] ragionevole. α_hat = 0.0164 entro il CI.
+                Con 781 positivi si comporta meglio che in M3.
+========================================================================

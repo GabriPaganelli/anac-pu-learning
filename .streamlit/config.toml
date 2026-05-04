@@ -1,0 +1,10 @@
+[client]
+# "developer" = toolbar completo (Rerun, Clear cache, Record screen, Deploy, ecc.)
+# "viewer"    = toolbar ridotto (nasconde Rerun, Clear cache — mantiene Record screen e Deploy)
+# "minimal"   = nessun toolbar
+toolbarMode = "viewer"   # nasconde Rerun, Auto-rerun, Clear cache; mantiene Record, Print, Deploy
+
+showErrorDetails = false
+
+[browser]
+gatherUsageStats = false

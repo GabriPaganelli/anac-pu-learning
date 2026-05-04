@@ -1,0 +1,16 @@
+feature,mean_abs_shap
+importo_lotto,0.21172674420575105
+finestra_offerta_giorni,0.07178415322297839
+flag_urgenza,0.06528626410207271
+flag_subappalto,0.046420901942173534
+importo_complessivo_gara,0.040830441526681145
+cod_modalita_realizzazione,0.036241586147710336
+lag_perfezionamento_giorni,0.032444308980840185
+flag_accordo_quadro,0.03228507797094066
+flag_ripetizioni,0.030692220027913095
+n_lotti_componenti,0.020265454825512515
+settore_speciale,0.01913983107789492
+asta_elettronica,0.007630263382382942
+flag_proc_accelerata,0.005469400143089116
+flag_scomputo,0.0010348101719409209
+flag_appalto_riservato,0.00046173842323106516

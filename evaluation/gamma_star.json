@@ -1,0 +1,16 @@
+{
+  "_note": "γ* canonici per run_all.py. Chiavi dataset: 1=M1, 2=M2, 3=M3.",
+  "_reproducibility": {
+    "re_lgbm_M3_comparison": "Entrambe le varianti γ=0.33 e γ=1.0 sono salvate in results/re_lgbm_M3_g033/ e results/re_lgbm_M3_g100/. Per rigenerare: python run_all_gamma_comparison.py --gammas 0.33 1.0 --force-retrain"
+  },
+  "_rationale": {
+    "lgb_supervised": "Nessun trend stabile, alta SD → γ=1 (PNPU full, massima info)",
+    "bagging_lgbm":   "Bell curve con picco γ=0.66 dominante su tutti e 3 i dataset",
+    "re_lgbm":        "M1/M2 monotone crescenti → γ=1. M3: γ=1 scelto per semplicità narrativa (PNPU uniforme); γ=0.33 è il picco di lift (+0.95×, SD inferiore); sensitivity analysis in re_lgbm_M3_g033/",
+    "puet":           "γ=0 migliore lift@1% ovunque (gap ~2.4σ su M1); coerenza cross-dataset"
+  },
+  "lgb_supervised": {"1": 1.0,  "2": 1.0,  "3": 1.0},
+  "bagging_lgbm":   {"1": 0.66, "2": 0.66, "3": 0.66},
+  "re_lgbm":        {"1": 1.0,  "2": 1.0,  "3": 1.0},
+  "puet":           {"1": 0.0,  "2": 0.0,  "3": 0.0}
+}

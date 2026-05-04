@@ -1,0 +1,15 @@
+cod_tipo_lavorazione,descrizione,macro_gruppo,note
+1,ACQUISTO,ACQUISIZIONE,Modalita' di acquisizione bene - anomalo per dataset LAVORI
+2,LEASING,ACQUISIZIONE,Modalita' di acquisizione bene - anomalo per dataset LAVORI
+3,NOLEGGIO,ACQUISIZIONE,Modalita' di acquisizione bene - anomalo per dataset LAVORI
+4,ACQUISTO A RISCATTO,ACQUISIZIONE,Modalita' di acquisizione bene - anomalo per dataset LAVORI
+5,MISTO,ACQUISIZIONE,Modalita' mista - anomalo per dataset LAVORI
+6,COSTRUZIONE,COSTRUZIONE,Opera nuova
+7,DEMOLIZIONE,COSTRUZIONE,Demolizione di strutture esistenti
+8,RECUPERO,RISANAMENTO,Recupero/riqualificazione struttura esistente
+9,RISTRUTTURAZIONE,RISANAMENTO,Ristrutturazione struttura esistente
+10,RESTAURO,RISANAMENTO,Restauro conservativo (spesso beni culturali)
+11,MANUTENZIONE,MANUTENZIONE,Codice generico DEPRECATO dal 2014-05-12 (contratti storici)
+12,MANUTENZIONE ORDINARIA,MANUTENZIONE,Manutenzione di routine
+13,MANUTENZIONE STRAORDINARIA,MANUTENZIONE,Manutenzione non programmata o straordinaria
+14,MANUTENZIONE ORDINARIA E STRAORDINARIA,MANUTENZIONE,Codice combinato DEPRECATO dal 2014-08-05
