@@ -1,0 +1,39 @@
+# ── Dati grezzi (gestiti da DVC) ──────────────────────────────
+# data/raw/  →  tracked by DVC, gitignore managed by DVC itself
+
+# ── Log pipeline sentenze ─────────────────────────────────────
+01_sentenze/logs/
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# ── Ambienti virtuali ─────────────────────────────────────────
+.venv/
+venv/
+env/
+.env
+
+# ── OS ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor / IDE ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Jupyter ───────────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Claude Code (sessioni locali) ─────────────────────────────
+.claude/

@@ -1,0 +1,55 @@
+{
+  "cpv_macro_categoria": [
+    "FORNITURE",
+    "ING_PROF",
+    "IT",
+    "LAVORI",
+    "SANITA",
+    "SERVIZI"
+  ],
+  "tipo_scelta_4cls": [
+    "AFFIDAMENTO_DIRETTO",
+    "APERTA",
+    "NEGOZIATA",
+    "RISTRETTA"
+  ],
+  "oggetto_principale_contratto": [
+    "FORNITURE",
+    "LAVORI",
+    "SERVIZI"
+  ],
+  "natura_giuridica_SA": [
+    "ALTRO",
+    "CONSORZIO",
+    "EPE",
+    "NON_PROFIT",
+    "PA_ENTE",
+    "PA_ISTITUZIONALE",
+    "SANITARIO",
+    "SOCIETA"
+  ],
+  "sezione_regionale": [
+    "CENTRALE",
+    "REGIONALE"
+  ],
+  "modalita_realizzazione_macro": [
+    "ACCORDO_QUADRO",
+    "ALTRO",
+    "APPALTO",
+    "CONCESSIONE",
+    "ECONOMIA",
+    "PPP"
+  ],
+  "tipo_soggetto_agg": [
+    "ALTRO",
+    "ATI",
+    "CONSORZIO",
+    "GEIE",
+    "SA",
+    "SINGOLA"
+  ],
+  "esito_collaudo": [
+    "NEGATIVO",
+    "POSITIVO"
+  ]
+}

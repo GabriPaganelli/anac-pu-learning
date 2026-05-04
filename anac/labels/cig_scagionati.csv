@@ -1,0 +1,1845 @@
+CIG,confidence,cds_confirmed,esiti_found,sources
+50726123D8,HIGH,True,dichiara estinto,sentenze
+6339868095,MEDIUM,False,dichiara estinto,sentenze
+6478528A6C,MEDIUM,False,dichiara estinto,sentenze
+6478532DB8,MEDIUM,False,dichiara inammissibile,sentenze
+65306173A2,HIGH,True,respinge,sentenze
+666660614F,MEDIUM,False,dichiara inammissibile,sentenze
+679639850D,MEDIUM,False,respinge,sentenze
+6820564B75,MEDIUM,False,respinge,sentenze
+7044856F11,MEDIUM,False,respinge,sentenze
+7115231A5C,MEDIUM,False,dichiara inammissibile,sentenze
+7115272C31,MEDIUM,False,dichiara inammissibile,sentenze
+72163429CC,MEDIUM,False,respinge,sentenze
+7320754D4D,HIGH,True,respinge,sentenze
+7336515BB1,HIGH,True,respinge,ordinanze
+7381083660,HIGH,True,respinge,ordinanze
+7516688729,MEDIUM,False,respinge,sentenze
+7539115283,HIGH,True,respinge,"ordinanze, sentenze"
+778793359E,MEDIUM,False,respinge,sentenze
+7810624AD1,MEDIUM,False,respinge,sentenze
+78192866EE,HIGH,True,"dichiara inammissibile, respinge",sentenze
+7901951041,MEDIUM,False,respinge,sentenze
+7901990070,HIGH,True,respinge,sentenze
+7904089495,HIGH,True,respinge,sentenze
+7904119D54,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+7904120E27,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+7904143126,MEDIUM,False,dichiara irricevibile,sentenze
+791855022E,MEDIUM,False,"dichiara improcedibile, respinge",sentenze
+7993597CE9,MEDIUM,False,respinge,sentenze
+8084802DA8,MEDIUM,False,dichiara improcedibile,sentenze
+81279135FD,MEDIUM,False,respinge,sentenze
+8128666363,HIGH,True,respinge,sentenze
+8128672855,HIGH,True,respinge,sentenze
+8128676BA1,HIGH,True,respinge,sentenze
+812868316B,HIGH,True,respinge,sentenze
+8128685311,HIGH,True,respinge,sentenze
+81286928D6,HIGH,True,respinge,sentenze
+8128706465,HIGH,True,respinge,sentenze
+8128716CA3,HIGH,True,respinge,sentenze
+8128731905,HIGH,True,respinge,sentenze
+8128734B7E,HIGH,True,respinge,sentenze
+8128741148,HIGH,True,respinge,sentenze
+8128745494,HIGH,True,respinge,sentenze
+81287497E0,HIGH,True,respinge,sentenze
+816462098F,HIGH,True,"dichiara irricevibile, respinge",sentenze
+816463993D,HIGH,True,respinge,sentenze
+8164655672,HIGH,True,respinge,sentenze
+8164660A91,HIGH,True,respinge,sentenze
+8164686009,HIGH,True,respinge,sentenze
+81647157F5,HIGH,True,"dichiara inammissibile, respinge",sentenze
+8164723E8D,HIGH,True,"dichiara inammissibile, respinge",sentenze
+816472610B,HIGH,True,"dichiara inammissibile, respinge",sentenze
+8164760D16,HIGH,True,"dichiara inammissibile, respinge",sentenze
+8164769486,HIGH,True,"dichiara inammissibile, respinge",sentenze
+81647748A5,HIGH,True,"dichiara improcedibile, dichiara inammissibile, respinge",sentenze
+8164787361,HIGH,True,respinge,sentenze
+81647916AD,HIGH,True,respinge,sentenze
+842931284F,HIGH,True,respinge,sentenze
+8438707151,MEDIUM,False,respinge,sentenze
+8488899D0D,MEDIUM,False,respinge,sentenze
+8543533A75,MEDIUM,False,respinge,sentenze
+85484525C0,HIGH,True,dichiara improcedibile,sentenze
+856336150C,MEDIUM,False,dichiara inammissibile,sentenze
+857255040D,MEDIUM,False,respinge,sentenze
+8572559B78,MEDIUM,False,respinge,sentenze
+8624663110,HIGH,True,respinge,"ordinanze, sentenze"
+8629392F8A,HIGH,True,respinge,sentenze
+8632814779,HIGH,True,respinge,sentenze
+8635614E19,HIGH,True,"dichiara inammissibile, respinge",sentenze
+8649968368,HIGH,True,dichiara inammissibile,sentenze
+8666033CA7,HIGH,True,"dichiara inammissibile, respinge",sentenze
+8678887C1C,HIGH,True,respinge,sentenze
+868440126B,HIGH,True,"respinge, respinge sui motivi aggiunti","ordinanze, sentenze"
+8716777FEC,MEDIUM,False,dichiara improcedibile,sentenze
+8733157D21,HIGH,True,respinge,sentenze
+8753590AFA,HIGH,True,respinge,sentenze
+875360033D,HIGH,True,respinge,sentenze
+87536024E3,HIGH,True,respinge,sentenze
+876432669C,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+8781483504,HIGH,True,respinge,sentenze
+8796441CBD,HIGH,True,dichiara improcedibile,sentenze
+8796468308,HIGH,True,respinge sui motivi aggiunti,sentenze
+8804025F40,MEDIUM,False,respinge,sentenze
+8813243632,HIGH,True,respinge,sentenze
+8816608F12,HIGH,True,"dichiara irricevibile, respinge",sentenze
+8841278569,MEDIUM,False,respinge,sentenze
+885099474E,MEDIUM,False,dichiara improcedibile,sentenze
+8878048CF7,HIGH,True,respinge,sentenze
+89134603E2,HIGH,True,respinge,sentenze
+8930949443,MEDIUM,False,respinge,sentenze
+8931738F5A,MEDIUM,False,dichiara improcedibile,sentenze
+8934235BF2,HIGH,True,"dichiara irricevibile, respinge","ordinanze, sentenze"
+8939939F08,MEDIUM,False,respinge,sentenze
+8950428ED4,HIGH,True,respinge,sentenze
+89553024FE,MEDIUM,False,respinge,sentenze
+8955312D3C,MEDIUM,False,respinge,sentenze
+895531608D,MEDIUM,False,respinge,sentenze
+89559267EE,MEDIUM,False,respinge,sentenze
+8969602DB7,MEDIUM,False,respinge,sentenze
+89696082AE,MEDIUM,False,respinge,sentenze
+8969616946,MEDIUM,False,respinge,sentenze
+8983758F9D,MEDIUM,False,dichiara irricevibile,sentenze
+8984572F59,HIGH,True,respinge,sentenze
+8985791D4D,HIGH,True,dichiara estinto,sentenze
+8989184D4B,MEDIUM,False,respinge,sentenze
+8998538478,MEDIUM,False,respinge,sentenze
+90032672F7,MEDIUM,False,respinge,sentenze
+9004459AA0,HIGH,True,respinge,sentenze
+9017977E07,MEDIUM,False,"dichiara inammissibile, respinge",sentenze
+9025007760,HIGH,True,respinge,sentenze
+9025037024,HIGH,True,respinge,sentenze
+9028020DC6,HIGH,True,respinge,"ordinanze, sentenze"
+9028021E99,MEDIUM,False,respinge,"ordinanze, sentenze"
+9030490418,MEDIUM,False,respinge,"ordinanze, sentenze"
+90388463AF,MEDIUM,False,respinge,sentenze
+90425189E8,MEDIUM,False,dichiara inammissibile,sentenze
+9042550452,MEDIUM,False,dichiara inammissibile,sentenze
+9042563F09,MEDIUM,False,respinge,sentenze
+9042940628,MEDIUM,False,dichiara inammissibile,sentenze
+9049345BB9,HIGH,True,respinge,sentenze
+904938196F,HIGH,True,respinge,sentenze
+90494019F0,HIGH,True,respinge,sentenze
+90512049D2,HIGH,True,"dichiara inammissibile, respinge",sentenze
+9068500AEE,HIGH,True,respinge,sentenze
+9070953338,MEDIUM,False,respinge,sentenze
+9072613D15,HIGH,True,dichiara inammissibile,sentenze
+9073482A35,HIGH,True,respinge,sentenze
+90734965C4,HIGH,True,respinge,sentenze
+90737539D8,HIGH,True,respinge,sentenze
+9073826617,HIGH,True,respinge,sentenze
+9073888940,HIGH,True,respinge,sentenze
+90739371B2,HIGH,True,respinge,sentenze
+9073958306,HIGH,True,respinge,sentenze
+907397403B,HIGH,True,respinge,sentenze
+907398594C,HIGH,True,respinge,sentenze
+907401306A,HIGH,True,respinge,sentenze
+9074031F40,HIGH,True,respinge,sentenze
+9074066C23,HIGH,True,respinge,sentenze
+9074084AFE,HIGH,True,respinge,sentenze
+90740975BA,HIGH,True,respinge,sentenze
+90741143C2,HIGH,True,respinge,sentenze
+9074141A08,HIGH,True,respinge,sentenze
+9074163C2F,HIGH,True,respinge,sentenze
+9074183CB0,HIGH,True,respinge,sentenze
+9094699F06,MEDIUM,False,respinge,ordinanze
+90947411B3,MEDIUM,False,respinge,sentenze
+9095896AD3,MEDIUM,False,respinge,ordinanze
+9103345DEE,MEDIUM,False,respinge,ordinanze
+9103350212,MEDIUM,False,respinge,ordinanze
+91033691C0,MEDIUM,False,respinge,ordinanze
+910337350C,MEDIUM,False,respinge,ordinanze
+911232507A,MEDIUM,False,"dichiara improcedibile, respinge",sentenze
+9114082A63,MEDIUM,False,respinge,sentenze
+9114907335,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+91271878FA,MEDIUM,False,dichiara irricevibile,sentenze
+9137911AB3,MEDIUM,False,respinge,sentenze
+9145997B7A,MEDIUM,False,respinge,sentenze
+914773668D,MEDIUM,False,respinge,sentenze
+91528101C1,MEDIUM,False,respinge,ordinanze
+91539259DF,HIGH,True,respinge,sentenze
+9164147D54,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+9169149D1C,MEDIUM,False,respinge,sentenze
+9169363DB5,MEDIUM,False,dichiara improcedibile,sentenze
+9176982D1B,HIGH,True,"dichiara improcedibile, respinge, respinge sui motivi aggiunti",sentenze
+9178575FB0,HIGH,True,"dichiara improcedibile, respinge, respinge sui motivi aggiunti",sentenze
+9182616670,MEDIUM,False,respinge,sentenze
+91925804FE,MEDIUM,False,respinge,sentenze
+9232822DBB,MEDIUM,False,respinge,sentenze
+9247637F74,MEDIUM,False,respinge,ordinanze
+924793448F,MEDIUM,False,dichiara improcedibile,sentenze
+92497921D5,MEDIUM,False,respinge,sentenze
+9250003FF0,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+925001168D,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+926144957D,HIGH,True,respinge,ordinanze
+92638166CC,HIGH,True,respinge,sentenze
+9267606E65,HIGH,True,respinge,sentenze
+9275610B82,HIGH,True,respinge,sentenze
+9284057633,HIGH,True,respinge,sentenze
+9284063B25,HIGH,True,respinge,sentenze
+9286426928,HIGH,True,respinge,sentenze
+9296536034,MEDIUM,False,dichiara inammissibile,sentenze
+930009592C,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9300102EF1,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+93001083E8,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9300639A18,MEDIUM,False,dichiara estinto,sentenze
+9304974375,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9311187A94,MEDIUM,False,respinge,sentenze
+9311191DE0,MEDIUM,False,respinge,sentenze
+9311193F86,MEDIUM,False,respinge,sentenze
+9311196204,MEDIUM,False,respinge,sentenze
+93181837DD,HIGH,True,respinge,sentenze
+93239395DE,HIGH,True,"dichiara improcedibile, respinge",sentenze
+9323970F70,HIGH,True,"dichiara improcedibile, respinge",sentenze
+93244435C8,MEDIUM,False,dichiara improcedibile,sentenze
+93267559B3,MEDIUM,False,dichiara inammissibile,sentenze
+9328638B99,HIGH,True,respinge,sentenze
+9330290EDE,MEDIUM,False,respinge,sentenze
+9330340823,HIGH,True,respinge,sentenze
+9331816A2B,MEDIUM,False,respinge,sentenze
+9344665581,HIGH,True,respinge,sentenze
+9347484BCF,HIGH,True,respinge,sentenze
+93551577C6,HIGH,True,respinge,sentenze
+93560275B9,HIGH,True,respinge,sentenze
+936044860C,HIGH,True,dichiara inammissibile,sentenze
+93632541A3,MEDIUM,False,dichiara inammissibile,sentenze
+9366241296,HIGH,True,respinge,sentenze
+9382471401,HIGH,True,respinge,sentenze
+9390235B0D,HIGH,True,respinge,sentenze
+9390325554,HIGH,True,respinge,sentenze
+939034342F,HIGH,True,respinge,sentenze
+9395004A8E,HIGH,True,respinge,sentenze
+939821003E,HIGH,True,"dichiara inammissibile, respinge",sentenze
+9399130771,HIGH,True,respinge,sentenze
+93996894BF,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+9399690592,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+9399692738,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+94204598B0,HIGH,True,respinge,sentenze
+94204988DF,MEDIUM,False,dichiara improcedibile,sentenze
+94205091F5,MEDIUM,False,respinge,sentenze
+9420525F25,MEDIUM,False,respinge,"ordinanze, sentenze"
+9420562DAE,MEDIUM,False,respinge,sentenze
+942060947A,MEDIUM,False,respinge,sentenze
+942501693E,HIGH,True,"dichiara improcedibile, respinge",sentenze
+9425310BDB,MEDIUM,False,respinge,sentenze
+94289908B1,HIGH,True,respinge,sentenze
+94325545CD,HIGH,True,respinge,sentenze
+9435413D1D,MEDIUM,False,dichiara inammissibile,sentenze
+9436629898,HIGH,True,respinge,sentenze
+943849192A,HIGH,True,respinge,sentenze
+9444142087,MEDIUM,False,respinge,sentenze
+9448831DFF,HIGH,True,respinge,sentenze
+94495818EC,HIGH,True,respinge,sentenze
+94562475E2,MEDIUM,False,respinge,sentenze
+9458158EE1,HIGH,True,dichiara improcedibile,sentenze
+9459539288,HIGH,True,respinge,ordinanze
+946293442C,HIGH,True,respinge,sentenze
+9470235D23,HIGH,True,respinge,sentenze
+947598348C,HIGH,True,respinge sui motivi aggiunti,sentenze
+948069984F,HIGH,True,"dichiara irricevibile, respinge","ordinanze, sentenze"
+94810677FE,MEDIUM,False,dichiara improcedibile,sentenze
+9481169C29,HIGH,True,respinge,sentenze
+94824014D9,MEDIUM,False,dichiara improcedibile,sentenze
+94845588DB,HIGH,True,respinge,sentenze
+9489815B11,HIGH,True,respinge,sentenze
+949386593C,HIGH,True,"respinge, respinge sui motivi aggiunti","ordinanze, sentenze"
+94942116C4,HIGH,True,"respinge, respinge sui motivi aggiunti","ordinanze, sentenze"
+949570687A,HIGH,True,respinge,sentenze
+9498135CF2,MEDIUM,False,respinge,sentenze
+9498529219,MEDIUM,False,respinge,sentenze
+9499166FC0,MEDIUM,False,respinge,sentenze
+9502809E0D,MEDIUM,False,dichiara inammissibile,sentenze
+95055568F4,HIGH,True,respinge,sentenze
+95088696EE,HIGH,True,dichiara irricevibile,sentenze
+9509378AF7,MEDIUM,False,"dichiara inammissibile, respinge",sentenze
+9509419CCC,MEDIUM,False,respinge,sentenze
+9518224EE9,MEDIUM,False,respinge,sentenze
+9519269D46,MEDIUM,False,respinge,sentenze
+95251366E2,HIGH,True,dichiara inammissibile,sentenze
+95268426B8,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9526853FC9,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+95269965CE,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9526999847,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+95272431A4,MEDIUM,False,dichiara inammissibile,sentenze
+9528342C8D,HIGH,True,respinge,sentenze
+9528944D56,MEDIUM,False,respinge,sentenze
+9528964DD7,MEDIUM,False,respinge,sentenze
+95289935C8,HIGH,True,respinge,sentenze
+9529369C0F,MEDIUM,False,dichiara improcedibile,sentenze
+95293761D9,MEDIUM,False,dichiara improcedibile,sentenze
+9529427BEC,MEDIUM,False,dichiara improcedibile,sentenze
+9532185FE4,HIGH,True,respinge,sentenze
+9534876C94,MEDIUM,False,respinge,sentenze
+9535359B2A,MEDIUM,False,respinge,sentenze
+9535866D8D,MEDIUM,False,respinge,sentenze
+9536505CDF,MEDIUM,False,respinge,sentenze
+9536527F06,MEDIUM,False,"respinge, respinge sui motivi aggiunti",sentenze
+9536541A95,MEDIUM,False,respinge,sentenze
+95365523AB,MEDIUM,False,respinge,sentenze
+9539393C20,HIGH,True,respinge,sentenze
+95408026E0,HIGH,True,respinge,"ordinanze, sentenze"
+95408606BD,HIGH,True,respinge,"ordinanze, sentenze"
+9541084F94,MEDIUM,False,respinge,ordinanze
+9542188EA1,MEDIUM,False,dichiara inammissibile,sentenze
+9542789E97,MEDIUM,False,dichiara inammissibile,sentenze
+9542848F47,MEDIUM,False,dichiara inammissibile,sentenze
+95431020E7,MEDIUM,False,respinge,sentenze
+95436927C7,MEDIUM,False,"dichiara improcedibile, dichiara inammissibile",sentenze
+954403854F,HIGH,True,respinge,sentenze
+95462327DA,MEDIUM,False,dichiara inammissibile,sentenze
+95462430F0,HIGH,True,respinge,sentenze
+9546943298,HIGH,True,"respinge, respinge sui motivi aggiunti","ordinanze, sentenze"
+95477382A6,MEDIUM,False,respinge,sentenze
+9549107C5F,MEDIUM,False,dichiara improcedibile,sentenze
+9555352DE8,HIGH,True,respinge,ordinanze
+9555394095,HIGH,True,respinge,ordinanze
+9555806492,HIGH,True,respinge,ordinanze
+9557447EC1,MEDIUM,False,dichiara irricevibile,sentenze
+95599586E8,MEDIUM,False,respinge,sentenze
+9560163016,MEDIUM,False,"dichiara improcedibile, respinge",sentenze
+9560259F4A,MEDIUM,False,respinge,sentenze
+9560739B67,MEDIUM,False,respinge,sentenze
+95610067BE,MEDIUM,False,respinge,sentenze
+9561132FB6,HIGH,True,respinge,sentenze
+9561645710,MEDIUM,False,respinge,sentenze
+95619567B5,HIGH,True,respinge,sentenze
+95619892F2,MEDIUM,False,dichiara inammissibile,sentenze
+9562682ED0,HIGH,True,respinge,ordinanze
+9569619B69,MEDIUM,False,dichiara estinto,sentenze
+9569632625,MEDIUM,False,dichiara estinto,sentenze
+95696569F2,MEDIUM,False,dichiara estinto,sentenze
+9569721F94,MEDIUM,False,respinge,sentenze
+9569882474,HIGH,True,"dichiara improcedibile, respinge",sentenze
+95708524EC,MEDIUM,False,respinge,sentenze
+95717054D7,MEDIUM,False,respinge,sentenze
+9571811C4E,HIGH,True,"dichiara estinto, dichiara inammissibile, respinge",sentenze
+957281158A,HIGH,True,respinge,sentenze
+9573512805,MEDIUM,False,dichiara estinto,sentenze
+9573557D26,HIGH,True,respinge,sentenze
+95747315F9,MEDIUM,False,respinge,sentenze
+9576435429,HIGH,True,"dichiara inammissibile, respinge",sentenze
+9579879E3A,MEDIUM,False,dichiara improcedibile,sentenze
+95798820B8,MEDIUM,False,dichiara improcedibile,sentenze
+958029230F,HIGH,True,respinge,"ordinanze, sentenze"
+958033568A,MEDIUM,False,respinge,sentenze
+958038931B,HIGH,True,respinge,sentenze
+958039580D,MEDIUM,False,respinge,sentenze
+9580405050,MEDIUM,False,respinge,sentenze
+95861060ED,HIGH,True,respinge,ordinanze
+9586473FC4,HIGH,True,"dichiara improcedibile, respinge",sentenze
+9587912348,HIGH,True,respinge,sentenze
+9588798E6B,MEDIUM,False,dichiara improcedibile,sentenze
+9591787109,MEDIUM,False,dichiara inammissibile,sentenze
+9594417B5E,MEDIUM,False,respinge,sentenze
+9596067CFD,MEDIUM,False,dichiara irricevibile,sentenze
+959610083A,MEDIUM,False,respinge,sentenze
+9597718F6F,MEDIUM,False,dichiara inammissibile,sentenze
+9606531829,MEDIUM,False,respinge,sentenze
+9608630C4E,MEDIUM,False,dichiara inammissibile,sentenze
+9610405517,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9611885A6B,HIGH,True,respinge,sentenze
+961201340E,HIGH,True,respinge,sentenze
+9613417AAA,MEDIUM,False,respinge,sentenze
+9613829EA7,MEDIUM,False,respinge,ordinanze
+9615530A5E,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9618939791,HIGH,True,respinge,sentenze
+96205297AD,HIGH,True,respinge,ordinanze
+9628147640,HIGH,True,respinge,ordinanze
+96285670DA,HIGH,True,"dichiara improcedibile, respinge",sentenze
+963361783C,MEDIUM,False,respinge,ordinanze
+9633844391,HIGH,True,respinge,sentenze
+96343694CF,HIGH,True,"respinge, respinge sui motivi aggiunti","ordinanze, sentenze"
+9634955863,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9634974811,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+96349861FA,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9634998BDE,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+96350094F4,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9635021ED8,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9635343893,HIGH,True,respinge,sentenze
+9637714D2E,HIGH,True,respinge,sentenze
+9638259EED,MEDIUM,False,respinge,sentenze
+9640449E2C,MEDIUM,False,respinge,sentenze
+9642000E19,MEDIUM,False,respinge,sentenze
+9644000091,HIGH,True,respinge,sentenze
+9644637E38,MEDIUM,False,respinge,sentenze
+9644865A60,MEDIUM,False,respinge,sentenze
+96474553B8,MEDIUM,False,dichiara irricevibile,sentenze
+96479181CD,MEDIUM,False,respinge,sentenze
+96531027C4,MEDIUM,False,dichiara estinto,sentenze
+96540516E8,HIGH,True,respinge,sentenze
+9654443A64,MEDIUM,False,dichiara inammissibile,sentenze
+96545334AB,MEDIUM,False,respinge,ordinanze
+9657403511,MEDIUM,False,dichiara improcedibile,sentenze
+965786959F,MEDIUM,False,respinge,sentenze
+9659818DFA,HIGH,True,respinge,"ordinanze, sentenze"
+9660689CC0,MEDIUM,False,dichiara improcedibile,sentenze
+9662881DA5,MEDIUM,False,dichiara improcedibile,sentenze
+96634860EC,MEDIUM,False,dichiara improcedibile,sentenze
+966490109E,HIGH,True,respinge,sentenze
+966735273D,MEDIUM,False,respinge,sentenze
+9668464CE2,MEDIUM,False,dichiara improcedibile,sentenze
+9669588C70,MEDIUM,False,respinge,sentenze
+9669607C1E,HIGH,True,"dichiara inammissibile, respinge",sentenze
+96699810C4,HIGH,True,respinge,sentenze
+9670443E01,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+96718295C7,MEDIUM,False,respinge,sentenze
+967192442D,MEDIUM,False,respinge,ordinanze
+9671925500,MEDIUM,False,respinge,sentenze
+96719265D3,MEDIUM,False,respinge,sentenze
+96719276A6,MEDIUM,False,respinge,ordinanze
+9671928779,HIGH,True,"dichiara improcedibile, respinge",sentenze
+967192984C,MEDIUM,False,respinge,sentenze
+96743749F9,MEDIUM,False,respinge,sentenze
+967456793E,HIGH,True,respinge,sentenze
+9677461D71,MEDIUM,False,respinge,sentenze
+96780156A0,MEDIUM,False,respinge,sentenze
+96801887D7,MEDIUM,False,respinge,sentenze
+9681931636,MEDIUM,False,dichiara improcedibile,sentenze
+9686726B2A,HIGH,True,respinge,sentenze
+9686748D51,HIGH,True,respinge,ordinanze
+968687996D,HIGH,True,respinge,sentenze
+96880965BB,HIGH,True,respinge,sentenze
+969030764E,MEDIUM,False,respinge,sentenze
+96908083BF,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9693032F09,MEDIUM,False,dichiara estinto,sentenze
+9694003059,MEDIUM,False,dichiara improcedibile,sentenze
+9694050720,MEDIUM,False,dichiara improcedibile,sentenze
+96975764E0,MEDIUM,False,respinge,sentenze
+97027480F3,HIGH,True,respinge,"ordinanze, sentenze"
+9702925303,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+970350734B,HIGH,True,respinge,sentenze
+9705995873,HIGH,True,respinge,sentenze
+9707069EBC,MEDIUM,False,respinge,sentenze
+97070921BB,MEDIUM,False,respinge,sentenze
+9707299C8A,MEDIUM,False,respinge,sentenze
+971010474E,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9710113EB9,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9714185F0B,HIGH,True,"dichiara improcedibile, respinge",sentenze
+9716711394,MEDIUM,False,respinge,sentenze
+971880539A,MEDIUM,False,respinge,ordinanze
+9718813A32,MEDIUM,False,respinge,ordinanze
+97190784E3,HIGH,True,respinge,ordinanze
+9719471932,MEDIUM,False,respinge,sentenze
+9722462D71,HIGH,True,respinge,sentenze
+972377267F,MEDIUM,False,respinge,sentenze
+9724286EA7,HIGH,True,respinge,sentenze
+9725657A0B,MEDIUM,False,"dichiara inammissibile, respinge",sentenze
+9728214826,HIGH,True,respinge,sentenze
+9728311832,MEDIUM,False,respinge,sentenze
+97283811F8,MEDIUM,False,respinge,sentenze
+97288737F9,MEDIUM,False,respinge,sentenze
+97299890EF,MEDIUM,False,"dichiara estinto, dichiara improcedibile",sentenze
+97312322B0,HIGH,True,respinge,"ordinanze, sentenze"
+97326515AE,MEDIUM,False,dichiara improcedibile,sentenze
+9733808079,MEDIUM,False,dichiara inammissibile,sentenze
+9735594253,HIGH,True,respinge,sentenze
+9738861A54,HIGH,True,respinge,"ordinanze, sentenze"
+9739858117,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+97406617BD,MEDIUM,False,respinge,sentenze
+9741426F07,MEDIUM,False,dichiara improcedibile,sentenze
+9741517A21,HIGH,True,respinge,"ordinanze, sentenze"
+9741576AD1,HIGH,True,respinge,sentenze
+9741821501,MEDIUM,False,dichiara inammissibile,sentenze
+97418848FD,HIGH,True,respinge,sentenze
+9742448A6A,HIGH,True,respinge,sentenze
+9742484820,HIGH,True,respinge,sentenze
+9742494063,HIGH,True,respinge,sentenze
+9742954BFA,HIGH,True,respinge,sentenze
+97429909B0,MEDIUM,False,respinge,sentenze
+97435339C9,MEDIUM,False,dichiara inammissibile,sentenze
+9746123321,MEDIUM,False,respinge,sentenze
+9746738EA1,HIGH,True,respinge,sentenze
+97478758EB,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+9749120C52,MEDIUM,False,dichiara estinto,sentenze
+97508922A2,MEDIUM,False,respinge,sentenze
+9751094952,MEDIUM,False,respinge,ordinanze
+9752043876,MEDIUM,False,respinge,sentenze
+97534544DC,HIGH,True,"respinge, respinge sui motivi aggiunti","ordinanze, sentenze"
+975350709A,MEDIUM,False,respinge,sentenze
+9756203169,HIGH,True,respinge,sentenze
+9756214A7A,HIGH,True,respinge,sentenze
+9756587E48,HIGH,True,respinge,sentenze
+97571574AC,HIGH,True,respinge,sentenze
+9759104B61,HIGH,True,respinge,sentenze
+975954574F,MEDIUM,False,respinge,sentenze
+9761085E26,MEDIUM,False,respinge,sentenze
+9762927E37,MEDIUM,False,respinge,sentenze
+9763762F47,MEDIUM,False,respinge,sentenze
+97662536ED,HIGH,True,respinge,sentenze
+9766806F44,HIGH,True,respinge,sentenze
+976875794A,MEDIUM,False,respinge,sentenze
+9770116AC5,MEDIUM,False,respinge,ordinanze
+97705798DA,HIGH,True,respinge,sentenze
+977170493B,MEDIUM,False,"dichiara improcedibile, respinge",sentenze
+9777137CAE,MEDIUM,False,respinge,sentenze
+9777818EA8,HIGH,True,respinge,sentenze
+9779674A48,HIGH,True,respinge,sentenze
+978117729B,MEDIUM,False,respinge,sentenze
+978255863D,MEDIUM,False,respinge,ordinanze
+97829211CD,MEDIUM,False,respinge,sentenze
+97833113A3,MEDIUM,False,respinge,sentenze
+978682142E,MEDIUM,False,dichiara irricevibile,sentenze
+97868858FD,HIGH,True,respinge,sentenze
+9788759378,MEDIUM,False,respinge,sentenze
+97897705C5,MEDIUM,False,dichiara irricevibile,sentenze
+9790267FE5,MEDIUM,False,respinge,sentenze
+979400194C,HIGH,True,respinge,sentenze
+9794099A2B,MEDIUM,False,dichiara improcedibile,sentenze
+97945194C5,MEDIUM,False,dichiara inammissibile,sentenze
+9797032E8D,HIGH,True,respinge,sentenze
+9798872CF8,HIGH,True,respinge sui motivi aggiunti,sentenze
+9800374478,MEDIUM,False,respinge,sentenze
+980169783D,MEDIUM,False,"dichiara improcedibile, respinge",sentenze
+9802965E9E,HIGH,True,"dichiara improcedibile, respinge",sentenze
+98048870B8,MEDIUM,False,respinge,sentenze
+9806291754,HIGH,True,respinge,sentenze
+9807809C04,MEDIUM,False,respinge,sentenze
+9808614455,MEDIUM,False,respinge,ordinanze
+9809051CF2,HIGH,True,respinge,sentenze
+9813863FEE,MEDIUM,False,respinge,sentenze
+9814600024,MEDIUM,False,respinge,sentenze
+9816655FF6,HIGH,True,"respinge, respinge sui motivi aggiunti",sentenze
+981751667E,HIGH,True,respinge,"ordinanze, sentenze"
+9817928A7B,HIGH,True,"respinge, respinge sui motivi aggiunti",sentenze
+9817932DC7,HIGH,True,respinge,sentenze
+9820242011,HIGH,True,respinge,ordinanze
+9822124124,MEDIUM,False,"dichiara irricevibile, respinge",sentenze
+9823923DB5,MEDIUM,False,respinge,sentenze
+9824018C1B,MEDIUM,False,respinge,sentenze
+9824063141,MEDIUM,False,respinge,sentenze
+9824583E5B,HIGH,True,respinge,sentenze
+9826927CB0,HIGH,True,respinge,sentenze
+9829062E8B,MEDIUM,False,respinge,sentenze
+9829064036,MEDIUM,False,respinge,sentenze
+9829246665,HIGH,True,respinge,sentenze
+9830212391,MEDIUM,False,dichiara irricevibile,sentenze
+98306393F0,MEDIUM,False,dichiara improcedibile,sentenze
+9831021F29,MEDIUM,False,"dichiara improcedibile, respinge",sentenze
+983145989E,MEDIUM,False,respinge,sentenze
+9831570439,HIGH,True,respinge,sentenze
+9834146202,MEDIUM,False,respinge,sentenze
+983498458B,HIGH,True,respinge,ordinanze
+9835013D77,MEDIUM,False,respinge,ordinanze
+983542624C,HIGH,True,respinge,ordinanze
+9836195CE2,HIGH,True,respinge,sentenze
+9837032F98,HIGH,True,respinge,sentenze
+983730728C,HIGH,True,respinge,"ordinanze, sentenze"
+9837572D38,HIGH,True,respinge,sentenze
+983889944E,MEDIUM,False,respinge,ordinanze
+9840123661,MEDIUM,False,"dichiara inammissibile, respinge",sentenze
+9842190021,HIGH,True,respinge,sentenze
+9845596AD6,HIGH,True,respinge,sentenze
+984564641B,MEDIUM,False,respinge,sentenze
+9845649694,MEDIUM,False,respinge,sentenze
+9845650767,MEDIUM,False,respinge,sentenze
+984565290D,HIGH,True,respinge,sentenze
+9845657D2C,HIGH,True,respinge,sentenze
+9845658DFF,MEDIUM,False,respinge,sentenze
+984566107D,MEDIUM,False,respinge,sentenze
+984568651D,MEDIUM,False,respinge,sentenze
+9845718F82,MEDIUM,False,dichiara improcedibile,sentenze
+9845724479,MEDIUM,False,respinge,sentenze
+9846635441,MEDIUM,False,respinge,sentenze
+9847568630,MEDIUM,False,respinge,sentenze
+984938841A,HIGH,True,respinge,sentenze
+98501221D2,MEDIUM,False,dichiara estinto,sentenze
+98501232A5,MEDIUM,False,"dichiara estinto, respinge","ordinanze, sentenze"
+985012544B,HIGH,True,"dichiara estinto, dichiara improcedibile, respinge","ordinanze, sentenze"
+985012651E,HIGH,True,"dichiara estinto, respinge","ordinanze, sentenze"
+98501286C4,HIGH,True,respinge,sentenze
+9851200B67,MEDIUM,False,respinge,sentenze
+9852210CE1,MEDIUM,False,dichiara irricevibile,sentenze
+985483531C,MEDIUM,False,respinge,sentenze
+9855120E49,MEDIUM,False,respinge,sentenze
+985687890A,MEDIUM,False,"dichiara inammissibile, respinge",sentenze
+9857351F5D,MEDIUM,False,dichiara improcedibile,sentenze
+9857397556,HIGH,True,respinge,ordinanze
+9857884738,MEDIUM,False,dichiara irricevibile,sentenze
+9858634225,MEDIUM,False,respinge,sentenze
+9859598DA6,MEDIUM,False,respinge,sentenze
+986094446A,HIGH,True,respinge,ordinanze
+9861007866,MEDIUM,False,respinge,sentenze
+9861094034,MEDIUM,False,respinge,sentenze
+9862642DA3,MEDIUM,False,respinge,sentenze
+9863165D3B,MEDIUM,False,respinge,sentenze
+98639683E6,MEDIUM,False,respinge,sentenze
+98645471B5,HIGH,True,respinge,sentenze
+986501109D,HIGH,True,respinge,sentenze
+98670188D5,HIGH,True,respinge,sentenze
+9868655FB8,MEDIUM,False,respinge,sentenze
+986902403F,MEDIUM,False,respinge,sentenze
+9869498765,MEDIUM,False,respinge,sentenze
+9869662EB9,MEDIUM,False,respinge,sentenze
+9870878A34,HIGH,True,respinge,sentenze
+987186263B,HIGH,True,"dichiara inammissibile, respinge",sentenze
+9872012205,MEDIUM,False,respinge,sentenze
+98724267A8,HIGH,True,respinge,ordinanze
+9872708061,MEDIUM,False,respinge,sentenze
+9872851661,MEDIUM,False,respinge,sentenze
+9874007059,MEDIUM,False,respinge,ordinanze
+9874255CFD,MEDIUM,False,respinge,sentenze
+987523668B,MEDIUM,False,respinge,sentenze
+9875794306,HIGH,True,respinge,sentenze
+9876098DE1,MEDIUM,False,respinge,sentenze
+987625711B,MEDIUM,False,respinge,sentenze
+9877141A98,HIGH,True,respinge,sentenze
+9877320E4E,MEDIUM,False,respinge,sentenze
+9877616296,MEDIUM,False,dichiara estinto,sentenze
+9878151C12,MEDIUM,False,respinge,sentenze
+9878981903,HIGH,True,respinge,sentenze
+9879048050,HIGH,True,respinge,sentenze
+98790501F6,HIGH,True,respinge,sentenze
+9880109BDD,MEDIUM,False,respinge,sentenze
+9880308019,MEDIUM,False,respinge,sentenze
+9880650A50,MEDIUM,False,respinge,sentenze
+988074156A,HIGH,True,respinge,sentenze
+9882069D4E,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+98825645CD,HIGH,True,respinge,sentenze
+9882766C7D,MEDIUM,False,respinge,sentenze
+9883699E6C,MEDIUM,False,respinge,sentenze
+9885422C4A,HIGH,True,respinge,ordinanze
+988547258F,MEDIUM,False,respinge,sentenze
+9885473662,MEDIUM,False,respinge,sentenze
+9885817244,HIGH,True,respinge,sentenze
+988588498C,HIGH,True,respinge,sentenze
+9887048A1C,MEDIUM,False,respinge,sentenze
+988705825F,MEDIUM,False,respinge,sentenze
+9887317819,MEDIUM,False,respinge,ordinanze
+9887609910,MEDIUM,False,dichiara improcedibile,sentenze
+9888013675,MEDIUM,False,respinge,sentenze
+98886357BF,MEDIUM,False,respinge,sentenze
+98887316F8,MEDIUM,False,respinge,sentenze
+988888453B,MEDIUM,False,respinge,sentenze
+98892692F2,MEDIUM,False,respinge,ordinanze
+9889845E43,HIGH,True,respinge,sentenze
+98899282C5,MEDIUM,False,respinge,sentenze
+9890303839,MEDIUM,False,respinge,sentenze
+9891065D0A,HIGH,True,respinge,sentenze
+989184618E,MEDIUM,False,respinge,sentenze
+9892075E84,MEDIUM,False,respinge,sentenze
+989217945A,HIGH,True,"dichiara improcedibile, respinge",sentenze
+9892202754,HIGH,True,"dichiara improcedibile, respinge",sentenze
+9892228CC7,HIGH,True,respinge,sentenze
+989284491F,HIGH,True,respinge,sentenze
+98931727CC,HIGH,True,respinge,sentenze
+9893201FB8,HIGH,True,"dichiara improcedibile, respinge",sentenze
+98932518FD,HIGH,True,respinge,sentenze
+989328443A,HIGH,True,respinge,sentenze
+9893438350,HIGH,True,respinge,sentenze
+98939390C1,MEDIUM,False,respinge,sentenze
+9894093FD2,MEDIUM,False,respinge,sentenze
+9894246E15,MEDIUM,False,respinge,sentenze
+9895232BC2,HIGH,True,respinge,ordinanze
+9895600B71,MEDIUM,False,respinge,sentenze
+9896322F40,HIGH,True,respinge,sentenze
+9896588AC4,MEDIUM,False,respinge,sentenze
+98969250E1,HIGH,True,respinge,"ordinanze, sentenze"
+989766538B,MEDIUM,False,respinge,sentenze
+9898154713,MEDIUM,False,respinge,sentenze
+9898188323,MEDIUM,False,respinge,sentenze
+9898202EAD,MEDIUM,False,respinge,sentenze
+98998449B4,MEDIUM,False,dichiara improcedibile,sentenze
+9900061CC6,MEDIUM,False,respinge,sentenze
+99003982E3,MEDIUM,False,respinge,sentenze
+9900669286,MEDIUM,False,respinge,sentenze
+9900719BC6,MEDIUM,False,respinge,sentenze
+9901174343,MEDIUM,False,respinge,sentenze
+9901515CA7,HIGH,True,respinge,"ordinanze, sentenze"
+9901616004,MEDIUM,False,dichiara irricevibile,sentenze
+9901732FB9,HIGH,True,respinge,"ordinanze, sentenze"
+9901918939,MEDIUM,False,dichiara improcedibile,sentenze
+99021611C3,MEDIUM,False,dichiara estinto,sentenze
+9902284742,MEDIUM,False,respinge,sentenze
+9902429EE8,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9903031FB1,HIGH,True,"dichiara estinto, respinge","ordinanze, sentenze"
+990389370C,HIGH,True,respinge,sentenze
+990422268C,HIGH,True,"dichiara inammissibile, respinge",sentenze
+99055259D0,HIGH,True,respinge,sentenze
+9906187C1C,MEDIUM,False,respinge,sentenze
+99075744B5,MEDIUM,False,respinge,sentenze
+9907588044,HIGH,True,respinge,ordinanze
+9907907781,MEDIUM,False,respinge,sentenze
+990982022B,HIGH,True,respinge,sentenze
+991143139B,MEDIUM,False,respinge,sentenze
+9913085886,HIGH,True,"dichiara irricevibile, respinge",sentenze
+9913595D62,HIGH,True,"dichiara inammissibile, respinge",sentenze
+9914105243,MEDIUM,False,respinge,"ordinanze, sentenze"
+9914235D87,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9914407B78,MEDIUM,False,dichiara inammissibile,sentenze
+9914455317,HIGH,True,respinge,sentenze
+991513001F,HIGH,True,respinge,sentenze
+9916473465,MEDIUM,False,respinge,sentenze
+9916539ADA,MEDIUM,False,respinge,sentenze
+991706903C,MEDIUM,False,respinge,sentenze
+991804232D,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+991891104D,MEDIUM,False,respinge,sentenze
+9918934347,MEDIUM,False,respinge,sentenze
+99192052EA,HIGH,True,respinge,"ordinanze, sentenze"
+99207806A4,MEDIUM,False,respinge,sentenze
+99209735E9,MEDIUM,False,dichiara improcedibile,sentenze
+9921759E87,HIGH,True,respinge,sentenze
+9922137679,MEDIUM,False,dichiara inammissibile,sentenze
+9922235758,HIGH,True,respinge,sentenze
+99222660EF,HIGH,True,respinge,sentenze
+9922282E1F,HIGH,True,respinge,sentenze
+992231595C,HIGH,True,respinge,sentenze
+992234307A,HIGH,True,respinge,sentenze
+99235260B8,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+9923618CA0,MEDIUM,False,respinge,sentenze
+992363282F,HIGH,True,respinge,"ordinanze, sentenze"
+9923637C4E,MEDIUM,False,respinge,sentenze
+9923667512,MEDIUM,False,respinge,sentenze
+9924428910,MEDIUM,False,respinge,sentenze
+992502019B,MEDIUM,False,respinge,sentenze
+9929135568,MEDIUM,False,respinge,sentenze
+9929395BF5,MEDIUM,False,respinge,sentenze
+9929629D0F,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+9929650E63,MEDIUM,False,respinge,sentenze
+993049146A,HIGH,True,"dichiara estinto, respinge","ordinanze, sentenze"
+99360553F9,HIGH,True,respinge,sentenze
+99378648CD,MEDIUM,False,respinge,sentenze
+99380691FB,MEDIUM,False,respinge,sentenze
+9938881011,MEDIUM,False,respinge,sentenze
+99475100F1,MEDIUM,False,dichiara improcedibile,sentenze
+99537942A9,MEDIUM,False,respinge,sentenze
+9956371145,MEDIUM,False,"dichiara inammissibile, respinge","ordinanze, sentenze"
+995798445B,MEDIUM,False,respinge,sentenze
+995806358C,HIGH,True,respinge,sentenze
+9965486334,MEDIUM,False,respinge,sentenze
+99665121E3,HIGH,True,respinge,sentenze
+9970383C53,HIGH,True,respinge,sentenze
+99712729F4,MEDIUM,False,respinge,sentenze
+9976475F99,HIGH,True,"dichiara inammissibile, respinge",sentenze
+99782887BE,MEDIUM,False,respinge,sentenze
+99796446C0,MEDIUM,False,dichiara improcedibile,sentenze
+9979846D70,MEDIUM,False,dichiara improcedibile,sentenze
+998697587B,MEDIUM,False,dichiara improcedibile,sentenze
+9995227241,HIGH,True,"dichiara irricevibile, respinge",sentenze
+9996874167,HIGH,True,respinge,ordinanze
+99987372CC,MEDIUM,False,respinge,sentenze
+A0005E9164,MEDIUM,False,dichiara estinto,sentenze
+A002BD6D7F,MEDIUM,False,respinge,sentenze
+A002EC6A12,HIGH,True,respinge,sentenze
+A00321DBA3,MEDIUM,False,dichiara estinto,sentenze
+A00375D0C1,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+A003E69176,MEDIUM,False,respinge,sentenze
+A004263988,MEDIUM,False,respinge,sentenze
+A005CD5C4F,HIGH,True,respinge,sentenze
+A0061C5F64,HIGH,True,respinge,sentenze
+A006C5FF0E,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+A006C6DA9D,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+A006D4E44C,MEDIUM,False,respinge,sentenze
+A0071F0703,MEDIUM,False,respinge,sentenze
+A0072E1DE2,MEDIUM,False,respinge,sentenze
+A00770BD93,MEDIUM,False,dichiara improcedibile,sentenze
+A0080C6539,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+A008C9323C,MEDIUM,False,respinge,sentenze
+A008D2AED4,MEDIUM,False,respinge,sentenze
+A008DB40BA,MEDIUM,False,respinge,sentenze
+A00907AAA0,MEDIUM,False,dichiara inammissibile,sentenze
+A00925D936,MEDIUM,False,respinge,sentenze
+A0094E1CA7,MEDIUM,False,respinge,sentenze
+A00956E106,HIGH,True,respinge,sentenze
+A009BC7E00,MEDIUM,False,respinge,sentenze
+A00A2F391F,MEDIUM,False,respinge,sentenze
+A00A3111E3,HIGH,True,respinge,sentenze
+A00AED6849,HIGH,True,respinge,sentenze
+A00C198307,HIGH,True,"dichiara irricevibile, respinge",sentenze
+A00C34A92B,MEDIUM,False,"dichiara improcedibile, respinge",sentenze
+A00C399A5C,MEDIUM,False,dichiara estinto,sentenze
+A00C646FA2,HIGH,True,respinge,"ordinanze, sentenze"
+A00C6B6C10,HIGH,True,respinge,"ordinanze, sentenze"
+A00D0F0C81,MEDIUM,False,dichiara estinto,sentenze
+A00DA40BD8,MEDIUM,False,dichiara inammissibile,sentenze
+A00DA68CDA,MEDIUM,False,dichiara inammissibile,sentenze
+A00DDB020E,MEDIUM,False,dichiara improcedibile,sentenze
+A00E60B735,MEDIUM,False,dichiara improcedibile,sentenze
+A00E94E845,MEDIUM,False,respinge,sentenze
+A00E998557,MEDIUM,False,respinge,sentenze
+A00E99C8A3,MEDIUM,False,dichiara improcedibile,sentenze
+A00E99D976,HIGH,True,respinge,sentenze
+A00E99EA49,MEDIUM,False,respinge,sentenze
+A00E9A1CC2,MEDIUM,False,"dichiara improcedibile, respinge",sentenze
+A00E9A2D95,MEDIUM,False,respinge,sentenze
+A00E9A3E68,MEDIUM,False,respinge,sentenze
+A00E9A5013,MEDIUM,False,respinge,sentenze
+A00E9AB505,MEDIUM,False,respinge,sentenze
+A00EB532EB,MEDIUM,False,respinge,sentenze
+A00EB78174,MEDIUM,False,respinge,sentenze
+A00EB91614,MEDIUM,False,respinge,sentenze
+A00EBF7A3F,MEDIUM,False,respinge,sentenze
+A00EBFE009,MEDIUM,False,respinge,sentenze
+A00EC23E8D,MEDIUM,False,respinge,sentenze
+A00EC37F0E,MEDIUM,False,respinge,sentenze
+A00EFB941F,MEDIUM,False,respinge,sentenze
+A0103F7870,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+A010865041,HIGH,True,respinge,sentenze
+A01148B6B3,MEDIUM,False,respinge,sentenze
+A0114A3A80,MEDIUM,False,respinge,sentenze
+A011680424,MEDIUM,False,respinge,sentenze
+A011A6393C,HIGH,True,respinge,sentenze
+A012CF3AB5,MEDIUM,False,dichiara improcedibile,sentenze
+A012F4226D,MEDIUM,False,respinge,sentenze
+A012F54148,MEDIUM,False,respinge,ordinanze
+A013117574,MEDIUM,False,dichiara inammissibile,sentenze
+A0133F74D2,MEDIUM,False,respinge,sentenze
+A013446603,MEDIUM,False,respinge,sentenze
+A0135555A6,MEDIUM,False,dichiara inammissibile,sentenze
+A013620D29,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+A01440FCBE,HIGH,True,respinge,sentenze
+A014645FD1,MEDIUM,False,respinge,sentenze
+A0149F4A03,MEDIUM,False,dichiara inammissibile,sentenze
+A014BEC9ED,MEDIUM,False,respinge,sentenze
+A0157F36CD,HIGH,True,respinge,sentenze
+A016693872,MEDIUM,False,dichiara irricevibile,sentenze
+A016B9AE81,MEDIUM,False,dichiara improcedibile,sentenze
+A016E08FCB,MEDIUM,False,respinge,sentenze
+A016E365C4,MEDIUM,False,respinge,sentenze
+A0179E6AD6,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+A017C2CB1E,HIGH,True,respinge,sentenze
+A017C9A5E6,MEDIUM,False,dichiara estinto,sentenze
+A017C9FA05,MEDIUM,False,"dichiara estinto, respinge",sentenze
+A017F2819A,MEDIUM,False,dichiara irricevibile,sentenze
+A0181D02C1,MEDIUM,False,dichiara improcedibile,sentenze
+A018432A22,MEDIUM,False,respinge,sentenze
+A0189A7AF9,MEDIUM,False,respinge,sentenze
+A018BEDB41,HIGH,True,respinge,sentenze
+A0190D1472,MEDIUM,False,dichiara inammissibile,sentenze
+A0193EB3AD,MEDIUM,False,respinge,sentenze
+A019C00F0E,HIGH,True,respinge,"ordinanze, sentenze"
+A019F49515,MEDIUM,False,"dichiara estinto, dichiara inammissibile, respinge",sentenze
+A019FDBD8E,MEDIUM,False,respinge,sentenze
+A01A4BA2A0,MEDIUM,False,respinge,sentenze
+A01A831E96,MEDIUM,False,dichiara improcedibile,sentenze
+A01AAA8750,HIGH,True,respinge sui motivi aggiunti,sentenze
+A01B7E0FDE,MEDIUM,False,dichiara improcedibile,sentenze
+A01C0D64F3,MEDIUM,False,dichiara improcedibile,sentenze
+A01C1277CA,HIGH,True,"dichiara inammissibile, respinge",sentenze
+A01CA32E2E,MEDIUM,False,respinge,sentenze
+A01CFBD131,MEDIUM,False,respinge,sentenze
+A01D4AF5EC,MEDIUM,False,respinge,sentenze
+A01D712E20,MEDIUM,False,respinge,sentenze
+A01D788F80,HIGH,True,respinge,sentenze
+A01DBFFEBC,MEDIUM,False,respinge,"ordinanze, sentenze"
+A01DE9B5FF,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+A01E9B3DA1,MEDIUM,False,respinge,sentenze
+A01EBAF0DC,MEDIUM,False,respinge,sentenze
+A01F0F8D60,MEDIUM,False,dichiara irricevibile,sentenze
+A01F69A35D,MEDIUM,False,dichiara improcedibile,sentenze
+A01FC19C72,MEDIUM,False,respinge,sentenze
+A01FF0668C,HIGH,True,respinge,sentenze
+A01FFE1B44,MEDIUM,False,respinge,sentenze
+A02006EF9E,MEDIUM,False,respinge,sentenze
+A0202D28AA,MEDIUM,False,respinge,sentenze
+A02040BAF5,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+A0206FB788,HIGH,True,"respinge, respinge sui motivi aggiunti",sentenze
+A0207C7FDE,MEDIUM,False,respinge,sentenze
+A020F91D5F,MEDIUM,False,dichiara inammissibile,sentenze
+A02127500E,MEDIUM,False,respinge,sentenze
+A02178A1AC,HIGH,True,respinge,"ordinanze, sentenze"
+A0217BBA19,MEDIUM,False,respinge,sentenze
+A0217D92DD,MEDIUM,False,"dichiara improcedibile, respinge",sentenze
+A021896ED1,MEDIUM,False,respinge,sentenze
+A0219E85C1,MEDIUM,False,respinge,sentenze
+A021D7972F,MEDIUM,False,respinge,sentenze
+A0222DD9FE,MEDIUM,False,respinge,sentenze
+A022598AD3,MEDIUM,False,dichiara improcedibile,sentenze
+A02289D8BA,MEDIUM,False,dichiara inammissibile,sentenze
+A022A87D15,MEDIUM,False,dichiara inammissibile,sentenze
+A022BB23D6,MEDIUM,False,respinge,sentenze
+A023231031,MEDIUM,False,respinge,sentenze
+A02323DA15,MEDIUM,False,dichiara improcedibile,sentenze
+A023462F20,MEDIUM,False,respinge,sentenze
+A023470AAF,MEDIUM,False,respinge,sentenze
+A02347C498,MEDIUM,False,respinge,sentenze
+A023485C03,MEDIUM,False,respinge,sentenze
+A02348F446,MEDIUM,False,respinge,sentenze
+A023496A0B,MEDIUM,False,respinge,sentenze
+A02384CA02,MEDIUM,False,respinge,sentenze
+A023C5D513,MEDIUM,False,respinge,sentenze
+A023D6923D,MEDIUM,False,dichiara improcedibile,sentenze
+A023D84883,MEDIUM,False,respinge,sentenze
+A0243E7DC0,MEDIUM,False,dichiara inammissibile,sentenze
+A0243FAD6E,HIGH,True,respinge,sentenze
+A024B910DC,MEDIUM,False,respinge,sentenze
+A024C85A34,MEDIUM,False,respinge,sentenze
+A024E132A7,MEDIUM,False,respinge,sentenze
+A024E75386,MEDIUM,False,respinge,sentenze
+A0254CBE07,MEDIUM,False,respinge,sentenze
+A0256C1C4B,MEDIUM,False,dichiara improcedibile,sentenze
+A025CCB819,HIGH,True,respinge,"ordinanze, sentenze"
+A0266C7561,HIGH,True,respinge,"ordinanze, sentenze"
+A026AD3C4E,MEDIUM,False,respinge,sentenze
+A026CD2202,MEDIUM,False,respinge,sentenze
+A0276EA663,MEDIUM,False,respinge,sentenze
+A027A67750,MEDIUM,False,respinge,sentenze
+A027A8C5D9,MEDIUM,False,respinge,sentenze
+A027F893AA,MEDIUM,False,dichiara inammissibile,sentenze
+A027F8E7C9,MEDIUM,False,dichiara inammissibile,sentenze
+A0284B8ABB,MEDIUM,False,dichiara estinto,sentenze
+A0286B0AA5,MEDIUM,False,respinge,sentenze
+A028AB4AFA,MEDIUM,False,dichiara irricevibile,sentenze
+A028E6BBC4,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+A02917C394,MEDIUM,False,respinge,sentenze
+A029239F88,MEDIUM,False,respinge,sentenze
+A0292A048B,MEDIUM,False,respinge,sentenze
+A0293D96D6,MEDIUM,False,respinge,sentenze
+A029617086,MEDIUM,False,respinge,sentenze
+A029B19276,MEDIUM,False,respinge,sentenze
+A02A6A7B78,HIGH,True,"respinge, respinge sui motivi aggiunti","ordinanze, sentenze"
+A02A7112F4,MEDIUM,False,respinge,sentenze
+A02AA7C506,HIGH,True,respinge,sentenze
+A02AD09FE2,MEDIUM,False,respinge,sentenze
+A02AE97855,MEDIUM,False,dichiara improcedibile,sentenze
+A02B045B2D,MEDIUM,False,"dichiara inammissibile, respinge sui motivi aggiunti",sentenze
+A02B2629A0,MEDIUM,False,respinge,sentenze
+A02B27DFE6,MEDIUM,False,dichiara inammissibile,sentenze
+A02B2CAF71,MEDIUM,False,respinge,sentenze
+A02B315D56,HIGH,True,respinge,sentenze
+A02B609D35,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+A02B7BF6AA,HIGH,True,respinge,sentenze
+A02C5940CC,MEDIUM,False,respinge,sentenze
+A02D2918AA,MEDIUM,False,respinge,sentenze
+A02D395F37,MEDIUM,False,respinge,sentenze
+A02D3A1920,HIGH,True,respinge,sentenze
+A02D3DB8FD,MEDIUM,False,respinge,sentenze
+A02D879868,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+A02D8C357A,MEDIUM,False,dichiara improcedibile,sentenze
+A02D97CE22,MEDIUM,False,"dichiara estinto, dichiara improcedibile",sentenze
+A02D991F76,MEDIUM,False,"dichiara estinto, dichiara improcedibile",sentenze
+A02D99D95F,MEDIUM,False,dichiara improcedibile,sentenze
+A02D9A0BD8,MEDIUM,False,dichiara improcedibile,sentenze
+A02DA99954,MEDIUM,False,respinge,sentenze
+A02DABE7DD,MEDIUM,False,respinge,sentenze
+A02E24C3DB,MEDIUM,False,respinge,sentenze
+A02E60022C,MEDIUM,False,"dichiara inammissibile, respinge",sentenze
+A02EFD81BE,HIGH,True,respinge,ordinanze
+A02F271683,MEDIUM,False,respinge,sentenze
+A02F2E456A,HIGH,True,respinge,sentenze
+A02F7BC4B2,MEDIUM,False,respinge,sentenze
+A0300E7580,HIGH,True,respinge,"ordinanze, sentenze"
+A030630209,HIGH,True,respinge,sentenze
+A030695561,MEDIUM,False,dichiara improcedibile,sentenze
+A03154B92D,MEDIUM,False,respinge,sentenze
+A0316B109E,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+A0317F4B27,MEDIUM,False,dichiara irricevibile,sentenze
+A031D253E3,MEDIUM,False,respinge,sentenze
+A0321A173E,MEDIUM,False,dichiara inammissibile,sentenze
+A0323AA530,MEDIUM,False,respinge,sentenze
+A0325B54C8,HIGH,True,respinge,sentenze
+A0329F2427,MEDIUM,False,respinge,sentenze
+A032C5083C,MEDIUM,False,respinge,sentenze
+A032C6ADAF,MEDIUM,False,respinge,sentenze
+A032CDCBC3,MEDIUM,False,respinge,ordinanze
+A032F9BFE4,MEDIUM,False,respinge,sentenze
+A032FADEBF,MEDIUM,False,respinge,sentenze
+A033E0EC68,MEDIUM,False,respinge,sentenze
+A033E5897A,MEDIUM,False,respinge,sentenze
+A033E7A58A,HIGH,True,respinge,sentenze
+A0342467A8,MEDIUM,False,respinge,sentenze
+A0348271A1,MEDIUM,False,respinge,sentenze
+A034B5E8C8,MEDIUM,False,respinge,sentenze
+A03576BA9A,MEDIUM,False,respinge,sentenze
+A035F73B44,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+A0366537AB,MEDIUM,False,respinge,sentenze
+A036B5599B,MEDIUM,False,dichiara estinto,sentenze
+A037059D31,MEDIUM,False,respinge,sentenze
+A03710B019,MEDIUM,False,respinge,sentenze
+A0371A1BDE,MEDIUM,False,respinge,sentenze
+A0371B4B8C,MEDIUM,False,dichiara estinto,sentenze
+A038332AE9,MEDIUM,False,respinge,sentenze
+A0389E522F,HIGH,True,respinge,sentenze
+A038B70824,MEDIUM,False,respinge,sentenze
+A038CEA016,HIGH,True,respinge,"ordinanze, sentenze"
+A038D525E7,HIGH,True,respinge,sentenze
+A038E048CA,MEDIUM,False,respinge,sentenze
+A038E3E8A7,MEDIUM,False,respinge,sentenze
+A038E4E5DC,MEDIUM,False,respinge,sentenze
+A0392E2D04,HIGH,True,respinge,sentenze
+A03983D868,MEDIUM,False,respinge,sentenze
+A039906E45,MEDIUM,False,respinge,sentenze
+A039AFBBB6,HIGH,True,"dichiara irricevibile, respinge",sentenze
+A039DF615F,MEDIUM,False,respinge,sentenze
+A03A3344D2,MEDIUM,False,respinge,sentenze
+A03A348553,MEDIUM,False,respinge,sentenze
+A03A68E8DC,MEDIUM,False,respinge,sentenze
+A03B10F3E6,HIGH,True,respinge,sentenze
+A03B33ADE3,MEDIUM,False,respinge,sentenze
+A03B3ED19E,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+A03B4427C1,MEDIUM,False,respinge,sentenze
+A03B53611E,MEDIUM,False,respinge,sentenze
+A03BA07A9C,MEDIUM,False,dichiara inammissibile,sentenze
+A03BBEA932,MEDIUM,False,respinge,ordinanze
+A03BEFC1D5,HIGH,True,respinge,sentenze
+A03C4F606E,HIGH,True,respinge,sentenze
+A03C508F44,HIGH,True,respinge,sentenze
+A03C546272,HIGH,True,"dichiara improcedibile, respinge",sentenze
+A03C87C8C6,MEDIUM,False,dichiara inammissibile,sentenze
+A03C884F5E,MEDIUM,False,dichiara inammissibile,sentenze
+A03C88F874,MEDIUM,False,dichiara inammissibile,sentenze
+A03C89A18A,MEDIUM,False,dichiara inammissibile,sentenze
+A03C8A8D14,MEDIUM,False,dichiara inammissibile,sentenze
+A03C9615C1,MEDIUM,False,dichiara improcedibile,sentenze
+A03CB6D62C,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+A03CC4DF03,HIGH,True,respinge,sentenze
+A03CFD9C52,MEDIUM,False,respinge,sentenze
+A03D0379E5,HIGH,True,respinge,sentenze
+A03D0487ED,HIGH,True,respinge,sentenze
+A03D6A8AB1,MEDIUM,False,respinge,ordinanze
+A03DADE44B,HIGH,True,respinge,"ordinanze, sentenze"
+A03DE8CDA5,HIGH,True,respinge,sentenze
+A03DF1D550,MEDIUM,False,respinge,sentenze
+A03E176546,MEDIUM,False,respinge,sentenze
+A03EA10E69,MEDIUM,False,dichiara improcedibile,sentenze
+A03EA643BE,MEDIUM,False,respinge,ordinanze
+A03EB155CE,HIGH,True,respinge,"ordinanze, sentenze"
+A03EB382B1,MEDIUM,False,respinge,sentenze
+A03EEE9E84,MEDIUM,False,respinge,sentenze
+A03EEED1D5,MEDIUM,False,respinge,sentenze
+A03F5E73AF,MEDIUM,False,respinge,sentenze
+A03F64E8AD,HIGH,True,respinge,ordinanze
+A03F71A108,MEDIUM,False,dichiara improcedibile,sentenze
+A03FB3652A,MEDIUM,False,respinge,sentenze
+A03FDC842A,MEDIUM,False,"dichiara estinto, dichiara improcedibile, respinge","ordinanze, sentenze"
+A03FE0DD18,MEDIUM,False,respinge,sentenze
+A0407458A2,MEDIUM,False,respinge,sentenze
+A04094C4EE,MEDIUM,False,respinge,ordinanze
+A040967B34,MEDIUM,False,respinge,ordinanze
+A040C5347B,MEDIUM,False,respinge,sentenze
+A041117342,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+A041441FAD,MEDIUM,False,dichiara improcedibile,sentenze
+A041ED8CDE,MEDIUM,False,respinge,sentenze
+A041FB20C8,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+A041FBC906,HIGH,True,respinge,ordinanze
+A042248314,MEDIUM,False,respinge,sentenze
+A04227F078,MEDIUM,False,respinge,sentenze
+A04256224F,MEDIUM,False,respinge,sentenze
+A042571EAC,HIGH,True,respinge,sentenze
+A0434EC50E,MEDIUM,False,respinge,sentenze
+A04355F3F5,MEDIUM,False,respinge,sentenze
+A043693221,MEDIUM,False,respinge,sentenze
+A043DA9B14,HIGH,True,dichiara inammissibile,sentenze
+A0443C8836,MEDIUM,False,dichiara improcedibile,sentenze
+A044B0D7F5,MEDIUM,False,respinge,sentenze
+A0454A0E94,MEDIUM,False,respinge,sentenze
+A0454BF82B,MEDIUM,False,respinge,sentenze
+A0455661FD,MEDIUM,False,respinge,sentenze
+A045852B3F,HIGH,True,respinge,sentenze
+A04B25EA5C,MEDIUM,False,respinge,ordinanze
+A0563EE1D9,MEDIUM,False,respinge,sentenze
+A05B6D7D42,HIGH,True,"respinge, respinge sui motivi aggiunti",sentenze
+B00A2762CD,MEDIUM,False,respinge,sentenze
+B00B42F2DA,MEDIUM,False,dichiara estinto,sentenze
+B00B6439DD,HIGH,True,dichiara estinto,sentenze
+B0127774EC,MEDIUM,False,respinge,ordinanze
+B0172C59A0,MEDIUM,False,dichiara estinto,sentenze
+B026F317BD,MEDIUM,False,respinge,sentenze
+B030F9A7A6,MEDIUM,False,dichiara inammissibile,sentenze
+B033C0C513,MEDIUM,False,dichiara improcedibile,sentenze
+B033C0D5E6,MEDIUM,False,dichiara improcedibile,sentenze
+B033C0E6B9,MEDIUM,False,dichiara improcedibile,sentenze
+B033C0F78C,MEDIUM,False,dichiara improcedibile,sentenze
+B033C1085F,MEDIUM,False,dichiara improcedibile,sentenze
+B033C11932,MEDIUM,False,dichiara improcedibile,sentenze
+B033C12A05,MEDIUM,False,dichiara improcedibile,sentenze
+B033C13AD8,MEDIUM,False,dichiara improcedibile,sentenze
+B033C14BAB,MEDIUM,False,dichiara improcedibile,sentenze
+B033C15C7E,MEDIUM,False,dichiara improcedibile,sentenze
+B033C16D51,MEDIUM,False,dichiara improcedibile,sentenze
+B033C17E24,MEDIUM,False,dichiara improcedibile,sentenze
+B033C18EF7,MEDIUM,False,dichiara improcedibile,sentenze
+B033C39A34,MEDIUM,False,respinge,sentenze
+B036426CD6,MEDIUM,False,respinge,sentenze
+B03F028699,HIGH,True,respinge,sentenze
+B0403602B7,MEDIUM,False,respinge,sentenze
+B042263A2D,MEDIUM,False,respinge,sentenze
+B0431A0D61,MEDIUM,False,respinge,sentenze
+B049C07BB7,MEDIUM,False,respinge,sentenze
+B04EFD976C,MEDIUM,False,dichiara improcedibile,sentenze
+B0509E12BC,MEDIUM,False,respinge,sentenze
+B052E48D01,MEDIUM,False,respinge,sentenze
+B0537792C6,MEDIUM,False,respinge,sentenze
+B05A4B0345,HIGH,True,dichiara improcedibile,sentenze
+B05E237966,MEDIUM,False,"dichiara inammissibile, respinge",sentenze
+B05E3587E4,MEDIUM,False,dichiara improcedibile,sentenze
+B05E3598B7,MEDIUM,False,dichiara improcedibile,sentenze
+B05EEE8291,MEDIUM,False,dichiara inammissibile,sentenze
+B05F155308,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B0695A0736,MEDIUM,False,dichiara estinto,sentenze
+B06B4DAC10,MEDIUM,False,respinge,sentenze
+B06E7478E9,MEDIUM,False,dichiara inammissibile,sentenze
+B078238582,HIGH,True,"dichiara irricevibile, respinge",sentenze
+B078239655,HIGH,True,"dichiara irricevibile, respinge",sentenze
+B07C7B1A26,MEDIUM,False,"dichiara estinto, dichiara inammissibile",sentenze
+B07C7B2AF9,MEDIUM,False,"dichiara estinto, dichiara inammissibile",sentenze
+B07C7B3BCC,MEDIUM,False,"dichiara estinto, dichiara inammissibile",sentenze
+B07C7B4C9F,MEDIUM,False,"dichiara estinto, dichiara inammissibile",sentenze
+B07C7B5D72,MEDIUM,False,"dichiara estinto, dichiara inammissibile",sentenze
+B082BDC36E,MEDIUM,False,"dichiara irricevibile, respinge",sentenze
+B0838AE7D1,MEDIUM,False,dichiara inammissibile,sentenze
+B083F7D630,MEDIUM,False,"dichiara estinto, dichiara improcedibile",sentenze
+B083F7E703,MEDIUM,False,"dichiara estinto, dichiara improcedibile",sentenze
+B083F7F7D6,MEDIUM,False,"dichiara estinto, dichiara improcedibile",sentenze
+B083F808A9,MEDIUM,False,"dichiara estinto, dichiara improcedibile",sentenze
+B083F8197C,MEDIUM,False,"dichiara estinto, dichiara improcedibile",sentenze
+B083F82A4F,MEDIUM,False,"dichiara estinto, dichiara improcedibile",sentenze
+B083F83B22,MEDIUM,False,"dichiara estinto, dichiara improcedibile",sentenze
+B087B75310,MEDIUM,False,respinge,sentenze
+B087C4A2D6,MEDIUM,False,respinge,sentenze
+B08835745E,MEDIUM,False,respinge,sentenze
+B08899D1AF,MEDIUM,False,respinge,sentenze
+B08DD74183,MEDIUM,False,respinge,sentenze
+B091A1CF9B,HIGH,True,respinge,sentenze
+B0930EE497,MEDIUM,False,respinge,sentenze
+B0930EF56A,MEDIUM,False,dichiara improcedibile,sentenze
+B0930F063D,MEDIUM,False,respinge,sentenze
+B0930F1710,MEDIUM,False,dichiara improcedibile,sentenze
+B0930F27E3,MEDIUM,False,respinge,sentenze
+B0930F38B6,MEDIUM,False,respinge,sentenze
+B094F9D6BD,MEDIUM,False,dichiara estinto,sentenze
+B0967F90DB,MEDIUM,False,respinge,sentenze
+B099C9BFEF,MEDIUM,False,respinge,sentenze
+B09C47B7DA,MEDIUM,False,respinge,sentenze
+B09DE0D1CA,HIGH,True,"dichiara inammissibile, respinge",sentenze
+B09E2527C1,MEDIUM,False,"dichiara improcedibile, respinge",sentenze
+B0AA2B06D7,MEDIUM,False,respinge,sentenze
+B0ABA10100,HIGH,True,respinge,sentenze
+B0ADEE77B3,MEDIUM,False,respinge,sentenze
+B0AEBCCBC4,MEDIUM,False,dichiara improcedibile,sentenze
+B0B18BAF83,MEDIUM,False,dichiara inammissibile,sentenze
+B0B52A17D9,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B0B63E4686,MEDIUM,False,respinge,ordinanze
+B0B9BBBB20,HIGH,True,respinge,sentenze
+B0B9EEBC82,MEDIUM,False,dichiara inammissibile,sentenze
+B0C16FB0AC,MEDIUM,False,respinge,sentenze
+B0C33F7BD6,MEDIUM,False,respinge,sentenze
+B0C33F8CA9,MEDIUM,False,respinge,sentenze
+B0C33F9D7C,MEDIUM,False,respinge,sentenze
+B0C398A571,MEDIUM,False,respinge,sentenze
+B0C5868E5E,HIGH,True,respinge,sentenze
+B0C62D69BA,MEDIUM,False,dichiara inammissibile,sentenze
+B0C62D7A8D,MEDIUM,False,dichiara inammissibile,sentenze
+B0C62D8B60,MEDIUM,False,dichiara inammissibile,sentenze
+B0C6CEAACF,MEDIUM,False,respinge,sentenze
+B0C853CCAA,HIGH,True,respinge,ordinanze
+B0C96A283A,MEDIUM,False,respinge,sentenze
+B0CAFF5E29,HIGH,True,respinge,sentenze
+B0CDC87600,MEDIUM,False,respinge,sentenze
+B0D3248A2F,MEDIUM,False,respinge,sentenze
+B0D734B06F,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B0D79B39CB,MEDIUM,False,respinge,sentenze
+B0D79DFE19,MEDIUM,False,respinge,sentenze
+B0D9D0C545,MEDIUM,False,respinge,sentenze
+B0D9D8DFB6,MEDIUM,False,respinge,sentenze
+B0E026EF2D,MEDIUM,False,respinge,sentenze
+B0E13ECE8A,MEDIUM,False,dichiara inammissibile,sentenze
+B0EC57F880,HIGH,True,respinge,ordinanze
+B0EE302317,MEDIUM,False,respinge,sentenze
+B0EE653FB1,MEDIUM,False,dichiara improcedibile,sentenze
+B0EEA148BE,HIGH,True,respinge,"ordinanze, sentenze"
+B0F1BFE97B,MEDIUM,False,respinge,sentenze
+B0F6DA17E2,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B0F73A2C40,HIGH,True,respinge,"ordinanze, sentenze"
+B0F759580B,MEDIUM,False,dichiara inammissibile,sentenze
+B0F7FE8D1C,MEDIUM,False,respinge,sentenze
+B0F88DD15E,MEDIUM,False,respinge,sentenze
+B0F88DE231,MEDIUM,False,respinge,sentenze
+B0FA46598D,HIGH,True,"dichiara inammissibile, respinge","ordinanze, sentenze"
+B0FA5F96F2,MEDIUM,False,respinge,sentenze
+B103C480D4,MEDIUM,False,respinge,sentenze
+B1080E0BC9,MEDIUM,False,respinge,sentenze
+B10DB1196F,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B113AF06F6,MEDIUM,False,respinge,sentenze
+B115DF6DEE,MEDIUM,False,respinge,sentenze
+B11756CA3E,MEDIUM,False,respinge,sentenze
+B11BA1FB7E,MEDIUM,False,dichiara inammissibile,sentenze
+B11D88623D,MEDIUM,False,dichiara estinto,sentenze
+B11EEEEFB8,MEDIUM,False,dichiara improcedibile,sentenze
+B12883E435,MEDIUM,False,dichiara improcedibile,sentenze
+B12BE8A2DA,HIGH,True,respinge,sentenze
+B12D67E722,MEDIUM,False,respinge,sentenze
+B12EA021F8,MEDIUM,False,dichiara improcedibile,sentenze
+B12FFE0D92,MEDIUM,False,dichiara improcedibile,sentenze
+B130B2BF4C,MEDIUM,False,respinge,ordinanze
+B1322C26D9,HIGH,True,respinge,"ordinanze, sentenze"
+B1355EE151,HIGH,True,respinge,"ordinanze, sentenze"
+B136BC67F9,MEDIUM,False,respinge,ordinanze
+B13981BD75,HIGH,True,"dichiara inammissibile, respinge",sentenze
+B13A4A6744,MEDIUM,False,respinge,sentenze
+B13B6AE882,MEDIUM,False,dichiara inammissibile,sentenze
+B14503063F,MEDIUM,False,dichiara inammissibile,sentenze
+B149465F82,HIGH,True,respinge,sentenze
+B14B819616,MEDIUM,False,dichiara irricevibile,sentenze
+B14C26ECCD,MEDIUM,False,respinge,sentenze
+B14C2919B0,MEDIUM,False,respinge,sentenze
+B14C292A83,MEDIUM,False,respinge,sentenze
+B14C29A120,MEDIUM,False,respinge,sentenze
+B14C29B1F3,MEDIUM,False,respinge,sentenze
+B14C2A5A31,MEDIUM,False,respinge,sentenze
+B14C2CB98D,MEDIUM,False,respinge,sentenze
+B14C2D1E7F,MEDIUM,False,respinge,sentenze
+B14CAF88C0,HIGH,True,"dichiara inammissibile, respinge",sentenze
+B14CEEFE59,MEDIUM,False,respinge,sentenze
+B14DE73C26,MEDIUM,False,dichiara estinto,sentenze
+B14F302353,HIGH,True,respinge,ordinanze
+B1526617DE,HIGH,True,respinge,sentenze
+B15581E37A,MEDIUM,False,respinge,sentenze
+B15656586A,HIGH,True,"dichiara inammissibile, respinge","ordinanze, sentenze"
+B15C661123,MEDIUM,False,respinge,sentenze
+B163BA131F,MEDIUM,False,respinge,sentenze
+B164881311,MEDIUM,False,dichiara inammissibile,sentenze
+B164C75631,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B164E190CB,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B16528FF2F,MEDIUM,False,respinge,sentenze
+B1652B7036,MEDIUM,False,respinge,sentenze
+B165F370EF,MEDIUM,False,dichiara estinto,sentenze
+B166714E19,MEDIUM,False,respinge,ordinanze
+B166715EEC,MEDIUM,False,respinge,ordinanze
+B16671923D,MEDIUM,False,respinge,ordinanze
+B16671B3E3,MEDIUM,False,respinge,ordinanze
+B16BA86A95,MEDIUM,False,respinge,sentenze
+B16E82C62E,MEDIUM,False,respinge,sentenze
+B16E82D701,MEDIUM,False,respinge,sentenze
+B16E82E7D4,MEDIUM,False,respinge,sentenze
+B16EF3EBD5,MEDIUM,False,respinge,sentenze
+B1717B1D0C,MEDIUM,False,respinge,sentenze
+B171CC1A8B,HIGH,True,respinge,sentenze
+B171CC2B5E,HIGH,True,respinge,sentenze
+B171CC3C31,HIGH,True,respinge,sentenze
+B171CC4D04,HIGH,True,respinge,sentenze
+B172DF6DA9,MEDIUM,False,dichiara inammissibile,sentenze
+B1743B822F,MEDIUM,False,dichiara inammissibile,sentenze
+B177306BA9,MEDIUM,False,respinge,sentenze
+B178984B50,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B188B017BF,MEDIUM,False,respinge,sentenze
+B18CCCB236,MEDIUM,False,respinge,sentenze
+B191BCE60E,MEDIUM,False,dichiara irricevibile,sentenze
+B1925A1181,MEDIUM,False,respinge,sentenze
+B1987E2669,MEDIUM,False,respinge,sentenze
+B19CB05D90,MEDIUM,False,respinge,sentenze
+B1A02D3ABF,MEDIUM,False,respinge,sentenze
+B1A0325E69,HIGH,True,respinge,sentenze
+B1A1305823,MEDIUM,False,respinge,sentenze
+B1A36A7FD7,MEDIUM,False,respinge,sentenze
+B1A3B67B52,HIGH,True,respinge,sentenze
+B1A9304852,MEDIUM,False,respinge,sentenze
+B1A96EF407,MEDIUM,False,respinge,sentenze
+B1A96F15AD,MEDIUM,False,respinge,sentenze
+B1A96F3753,MEDIUM,False,respinge,sentenze
+B1AA0D4E50,HIGH,True,respinge,"ordinanze, sentenze"
+B1AA99687A,HIGH,True,respinge,sentenze
+B1AB772861,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B1B28EEED7,MEDIUM,False,respinge,sentenze
+B1B3080E21,MEDIUM,False,respinge,sentenze
+B1B429E18B,MEDIUM,False,respinge,sentenze
+B1B72BA506,MEDIUM,False,"dichiara inammissibile, respinge","ordinanze, sentenze"
+B1B72EF0C4,MEDIUM,False,respinge,sentenze
+B1B7917551,MEDIUM,False,respinge,sentenze
+B1B9AE2858,MEDIUM,False,respinge,sentenze
+B1BD6F075F,HIGH,True,respinge,sentenze
+B1BD863987,MEDIUM,False,respinge,sentenze
+B1C20B361E,MEDIUM,False,respinge,ordinanze
+B1C5E4BA47,MEDIUM,False,dichiara irricevibile,sentenze
+B1C61470C3,MEDIUM,False,respinge,sentenze
+B1CA237750,HIGH,True,respinge,"ordinanze, sentenze"
+B1CCA8E16E,MEDIUM,False,dichiara improcedibile,sentenze
+B1CFB25A68,MEDIUM,False,respinge,sentenze
+B1CFEDA98C,MEDIUM,False,respinge,sentenze
+B1D0C8A525,MEDIUM,False,respinge,sentenze
+B1D14E6B1F,MEDIUM,False,respinge,sentenze
+B1D14E7BF2,MEDIUM,False,respinge,sentenze
+B1D39E3133,MEDIUM,False,respinge,sentenze
+B1D3CCE9A2,HIGH,True,respinge,"ordinanze, sentenze"
+B1D5B4A1B5,MEDIUM,False,respinge,sentenze
+B1D66C06EA,MEDIUM,False,dichiara improcedibile,sentenze
+B1D849EC96,MEDIUM,False,respinge,sentenze
+B1DD6C57EC,MEDIUM,False,respinge,ordinanze
+B1DDAB2547,MEDIUM,False,respinge,sentenze
+B1DDAB361A,MEDIUM,False,respinge,sentenze
+B1DDAB46ED,MEDIUM,False,respinge,sentenze
+B1DDAB57C0,MEDIUM,False,respinge,sentenze
+B1DDAB6893,MEDIUM,False,respinge,sentenze
+B1DDAB7966,MEDIUM,False,respinge,sentenze
+B1DDAB8A39,MEDIUM,False,respinge,sentenze
+B1DDAB9B0C,MEDIUM,False,respinge,sentenze
+B1DDABABDF,MEDIUM,False,respinge,sentenze
+B1DDABBCB2,MEDIUM,False,respinge,sentenze
+B1DE71D4AC,MEDIUM,False,respinge,sentenze
+B1DE743408,MEDIUM,False,respinge,sentenze
+B1E2BCA0FA,MEDIUM,False,dichiara inammissibile,sentenze
+B1E2BCB1CD,MEDIUM,False,dichiara inammissibile,sentenze
+B1E2BCC2A0,MEDIUM,False,dichiara inammissibile,sentenze
+B1E63783BF,MEDIUM,False,dichiara estinto,sentenze
+B1E68EE569,MEDIUM,False,dichiara inammissibile,sentenze
+B1EE3B78BD,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B1F2CEF4C8,MEDIUM,False,respinge,sentenze
+B1F59406F8,HIGH,True,dichiara improcedibile,sentenze
+B1F8023E16,HIGH,True,respinge,sentenze
+B1F86CDDEC,MEDIUM,False,respinge,sentenze
+B1F88378A9,MEDIUM,False,respinge,sentenze
+B20133B0D1,MEDIUM,False,respinge,sentenze
+B207BAB010,MEDIUM,False,respinge,ordinanze
+B207C8324F,HIGH,True,respinge,sentenze
+B207C84322,HIGH,True,respinge,sentenze
+B207C853F5,HIGH,True,respinge,sentenze
+B2096A0EEE,MEDIUM,False,respinge,sentenze
+B20AB6EA17,HIGH,True,respinge,"ordinanze, sentenze"
+B20C6D78B4,MEDIUM,False,respinge,sentenze
+B20D22C2B1,HIGH,True,respinge,"ordinanze, sentenze"
+B20E869CB1,MEDIUM,False,respinge,sentenze
+B20EB09740,MEDIUM,False,respinge,sentenze
+B20FEABAD5,MEDIUM,False,respinge,sentenze
+B21127B463,MEDIUM,False,dichiara estinto,sentenze
+B211BC2C4A,MEDIUM,False,respinge,ordinanze
+B212ED1693,HIGH,True,"dichiara inammissibile, respinge",sentenze
+B213A6006D,MEDIUM,False,respinge,sentenze
+B215498357,MEDIUM,False,dichiara inammissibile,sentenze
+B21614485E,MEDIUM,False,respinge,sentenze
+B216145931,HIGH,True,respinge,"ordinanze, sentenze"
+B2181278B0,MEDIUM,False,dichiara inammissibile,sentenze
+B2181A4FD5,HIGH,True,respinge,ordinanze
+B2181AA4CC,MEDIUM,False,respinge,sentenze
+B2181B4D0A,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+B218BC7D4C,MEDIUM,False,respinge,sentenze
+B218E0AB1B,MEDIUM,False,respinge,ordinanze
+B219B5535C,HIGH,True,respinge,ordinanze
+B219CC63DE,MEDIUM,False,"dichiara improcedibile, respinge",sentenze
+B221ECBF81,MEDIUM,False,"dichiara inammissibile, dichiara irricevibile",sentenze
+B221ECC059,MEDIUM,False,"dichiara inammissibile, dichiara irricevibile",sentenze
+B224E2C8AE,MEDIUM,False,respinge,sentenze
+B225841A96,MEDIUM,False,respinge,sentenze
+B22834BEEC,MEDIUM,False,respinge,sentenze
+B2288DE887,MEDIUM,False,respinge,sentenze
+B228CE7CFB,MEDIUM,False,respinge,sentenze
+B228CE8DCE,MEDIUM,False,respinge,sentenze
+B228CE9EA1,MEDIUM,False,respinge,sentenze
+B22C508EA7,MEDIUM,False,respinge,sentenze
+B22E9CF82A,MEDIUM,False,respinge,sentenze
+B231B74FF4,MEDIUM,False,respinge,sentenze
+B2324B421B,MEDIUM,False,respinge,sentenze
+B233D31771,MEDIUM,False,respinge,sentenze
+B236B47F73,MEDIUM,False,respinge,ordinanze
+B2397E947F,MEDIUM,False,respinge,ordinanze
+B23ACE33F6,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B23ACE44C9,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B23B4A3934,MEDIUM,False,respinge,ordinanze
+B23CA2DF7E,MEDIUM,False,respinge,sentenze
+B23DC91CA9,MEDIUM,False,respinge,sentenze
+B23DE51E5C,MEDIUM,False,respinge,sentenze
+B23EDF7839,MEDIUM,False,respinge,sentenze
+B23FFA1BE4,HIGH,True,respinge,sentenze
+B240944FB8,MEDIUM,False,respinge,sentenze
+B241D59239,MEDIUM,False,respinge,sentenze
+B2438F8D62,MEDIUM,False,respinge,sentenze
+B243F201F4,MEDIUM,False,respinge,sentenze
+B24432EA87,MEDIUM,False,respinge,sentenze
+B2449B8FF3,MEDIUM,False,respinge,sentenze
+B24576376D,MEDIUM,False,respinge,sentenze
+B245764840,MEDIUM,False,respinge,sentenze
+B2462A8435,MEDIUM,False,respinge,sentenze
+B249ADC58F,MEDIUM,False,dichiara improcedibile,sentenze
+B24AEFAF76,MEDIUM,False,respinge,sentenze
+B24BB6C4A5,HIGH,True,respinge,ordinanze
+B24BE93E97,MEDIUM,False,respinge,sentenze
+B24BE94F6A,MEDIUM,False,respinge,sentenze
+B24BE95042,MEDIUM,False,respinge,sentenze
+B24BE96115,MEDIUM,False,respinge,sentenze
+B24BE971E8,MEDIUM,False,respinge,sentenze
+B24BE982BB,MEDIUM,False,respinge,sentenze
+B24BE9938E,MEDIUM,False,respinge,sentenze
+B24BE9A461,MEDIUM,False,respinge,sentenze
+B24BE9B534,MEDIUM,False,respinge,sentenze
+B24BE9C607,MEDIUM,False,respinge,sentenze
+B24BE9D6DA,MEDIUM,False,respinge,sentenze
+B24BE9E7AD,MEDIUM,False,respinge,sentenze
+B24BE9F880,MEDIUM,False,respinge,sentenze
+B24BEA1A26,MEDIUM,False,respinge,sentenze
+B24BEA2AF9,MEDIUM,False,respinge,sentenze
+B24BEA3BCC,MEDIUM,False,respinge,sentenze
+B24CDF2DDB,MEDIUM,False,respinge,sentenze
+B24CF70919,MEDIUM,False,respinge,sentenze
+B24DBAF430,MEDIUM,False,respinge,sentenze
+B24E459A88,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B24F827270,MEDIUM,False,respinge,sentenze
+B24FADACA8,MEDIUM,False,dichiara improcedibile,sentenze
+B250163146,MEDIUM,False,dichiara estinto,sentenze
+B2520DEBC2,MEDIUM,False,respinge,sentenze
+B255ADE8B8,HIGH,True,respinge,ordinanze
+B257A79D9E,MEDIUM,False,respinge,sentenze
+B257F0A252,MEDIUM,False,dichiara improcedibile,sentenze
+B25CFA8954,HIGH,True,respinge,sentenze
+B25CFC0D21,MEDIUM,False,dichiara inammissibile,sentenze
+B25CFC1DF4,MEDIUM,False,respinge,"ordinanze, sentenze"
+B25CFC2EC7,MEDIUM,False,respinge,sentenze
+B25FCF7D1F,HIGH,True,respinge,sentenze
+B260D7051C,MEDIUM,False,respinge,sentenze
+B268FFD0FF,MEDIUM,False,respinge,sentenze
+B2696A927B,HIGH,True,respinge,sentenze
+B269DA9947,MEDIUM,False,respinge,sentenze
+B26A3E5E55,MEDIUM,False,respinge,sentenze
+B26A3E6F28,MEDIUM,False,respinge,sentenze
+B26C7D88E5,MEDIUM,False,respinge,sentenze
+B2707A81CC,MEDIUM,False,respinge,sentenze
+B272224CD1,MEDIUM,False,respinge,sentenze
+B273C111DB,MEDIUM,False,respinge,sentenze
+B275ACCDE5,HIGH,True,respinge,sentenze
+B27769C185,MEDIUM,False,respinge,sentenze
+B277CB2737,MEDIUM,False,respinge,sentenze
+B277F305B6,MEDIUM,False,respinge,sentenze
+B27A591190,HIGH,True,"dichiara inammissibile, respinge","ordinanze, sentenze"
+B27BB3A171,MEDIUM,False,respinge,sentenze
+B27EACB238,MEDIUM,False,dichiara estinto,sentenze
+B28162BD84,MEDIUM,False,respinge,sentenze
+B281E797F4,MEDIUM,False,respinge,sentenze
+B2837480F9,MEDIUM,False,dichiara improcedibile,sentenze
+B28385E661,HIGH,True,respinge,"ordinanze, sentenze"
+B28465A0B2,MEDIUM,False,dichiara inammissibile,sentenze
+B28496EAF6,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B286400827,MEDIUM,False,respinge,sentenze
+B287A21B0E,MEDIUM,False,respinge,sentenze
+B287A23CB4,MEDIUM,False,respinge,sentenze
+B28A732BB0,MEDIUM,False,respinge,sentenze
+B28AB5666F,HIGH,True,respinge,sentenze
+B28B6A9EC1,MEDIUM,False,respinge,sentenze
+B28BB83FAF,MEDIUM,False,respinge,sentenze
+B28BB84087,MEDIUM,False,respinge,sentenze
+B28CD2F505,MEDIUM,False,respinge,sentenze
+B28F992610,MEDIUM,False,"dichiara inammissibile, respinge","ordinanze, sentenze"
+B28FD334B3,MEDIUM,False,respinge,sentenze
+B2905DEBDE,MEDIUM,False,respinge,sentenze
+B29077B0B3,MEDIUM,False,respinge,sentenze
+B292674FE6,MEDIUM,False,dichiara inammissibile,sentenze
+B2938B4F5B,HIGH,True,respinge,sentenze
+B295150E48,HIGH,True,"dichiara improcedibile, respinge",sentenze
+B29526FB20,MEDIUM,False,respinge,sentenze
+B29537642B,MEDIUM,False,respinge,sentenze
+B299B75DE6,MEDIUM,False,respinge,ordinanze
+B29B08605C,MEDIUM,False,dichiara improcedibile,sentenze
+B29C940808,HIGH,True,respinge,sentenze
+B29D721C0E,MEDIUM,False,respinge,ordinanze
+B29E6F8E58,HIGH,True,"dichiara improcedibile, respinge sui motivi aggiunti",sentenze
+B29ECF4E97,MEDIUM,False,respinge,sentenze
+B29FC1F2F5,MEDIUM,False,respinge,sentenze
+B2A1E5A26A,MEDIUM,False,respinge,sentenze
+B2A2B7A72B,MEDIUM,False,respinge,sentenze
+B2A570779D,HIGH,True,respinge,"ordinanze, sentenze"
+B2A5709943,HIGH,True,respinge,"ordinanze, sentenze"
+B2A7768FE7,MEDIUM,False,respinge,sentenze
+B2A85288B5,MEDIUM,False,respinge,sentenze
+B2A8636785,MEDIUM,False,respinge,sentenze
+B2A8C1B4CA,MEDIUM,False,respinge,sentenze
+B2ABA06951,MEDIUM,False,dichiara improcedibile,sentenze
+B2AC934028,MEDIUM,False,respinge,sentenze
+B2ADBB76E5,HIGH,True,respinge,"ordinanze, sentenze"
+B2AE649FF2,MEDIUM,False,respinge,sentenze
+B2AEBBDFF6,MEDIUM,False,respinge,sentenze
+B2AF5B6AC5,MEDIUM,False,respinge,sentenze
+B2B02E3A42,MEDIUM,False,respinge,sentenze
+B2B0EE4230,MEDIUM,False,dichiara improcedibile,sentenze
+B2B1F44588,MEDIUM,False,dichiara estinto,sentenze
+B2B1F47801,MEDIUM,False,dichiara estinto,sentenze
+B2B1F531EA,HIGH,True,respinge,ordinanze
+B2B1F56463,HIGH,True,respinge,ordinanze
+B2B1F58609,HIGH,True,respinge,ordinanze
+B2B1F596DC,HIGH,True,respinge,ordinanze
+B2B1F5A7AF,HIGH,True,respinge,ordinanze
+B2B1F62E47,HIGH,True,respinge,ordinanze
+B2B23CD39F,MEDIUM,False,respinge,sentenze
+B2B23CE472,MEDIUM,False,respinge,sentenze
+B2B24456A5,MEDIUM,False,respinge,sentenze
+B2B2669ADD,MEDIUM,False,dichiara improcedibile,sentenze
+B2B266ABB0,MEDIUM,False,respinge,sentenze
+B2B266BC83,MEDIUM,False,respinge,sentenze
+B2B266CD56,MEDIUM,False,respinge,sentenze
+B2B2F9A0A2,MEDIUM,False,respinge,sentenze
+B2B3E5CE52,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E5DF25,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E5EFF8,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E5F0D0,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E601A3,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E61276,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E62349,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E6341C,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E644EF,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E655C2,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E66695,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E67768,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E6883B,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E6990E,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E6A9E1,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E6BAB4,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E6CB87,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E6DC5A,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E6ED2D,MEDIUM,False,dichiara inammissibile,sentenze
+B2B3E6FE00,MEDIUM,False,dichiara inammissibile,sentenze
+B2B4A79D59,MEDIUM,False,respinge,sentenze
+B2B4C94A26,MEDIUM,False,respinge,sentenze
+B2B530F335,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B2B5960997,MEDIUM,False,respinge,sentenze
+B2B5ED6B41,MEDIUM,False,respinge,sentenze
+B2B5ED7C14,MEDIUM,False,respinge,sentenze
+B2B5ED8CE7,MEDIUM,False,respinge,sentenze
+B2B713B93F,HIGH,True,respinge,ordinanze
+B2B7A1CCFB,MEDIUM,False,respinge,sentenze
+B2B9107697,MEDIUM,False,respinge,sentenze
+B2B9231C80,MEDIUM,False,respinge,sentenze
+B2B9C549F7,HIGH,True,respinge,sentenze
+B2BB5351D7,HIGH,True,respinge,"ordinanze, sentenze"
+B2BB8C7418,MEDIUM,False,dichiara inammissibile,sentenze
+B2BC563BEA,MEDIUM,False,respinge,ordinanze
+B2BCFAA717,MEDIUM,False,respinge,sentenze
+B2BDA5A8E8,MEDIUM,False,respinge,sentenze
+B2BEEC7405,HIGH,True,"respinge, respinge sui motivi aggiunti",sentenze
+B2BEEC84D8,HIGH,True,"respinge, respinge sui motivi aggiunti",sentenze
+B2BEEC95AB,HIGH,True,"respinge, respinge sui motivi aggiunti",sentenze
+B2BF24341F,MEDIUM,False,respinge,sentenze
+B2C031665E,MEDIUM,False,respinge,sentenze
+B2C4411601,MEDIUM,False,respinge,sentenze
+B2C4456EEF,MEDIUM,False,respinge,sentenze
+B2C45A31C0,MEDIUM,False,respinge,ordinanze
+B2C46BEB47,MEDIUM,False,respinge,sentenze
+B2C51CB9D8,MEDIUM,False,dichiara inammissibile,sentenze
+B2C5263748,MEDIUM,False,respinge,sentenze
+B2C52669C1,MEDIUM,False,respinge,sentenze
+B2C74CEE57,MEDIUM,False,respinge,sentenze
+B2C85A758D,MEDIUM,False,dichiara inammissibile,sentenze
+B2CC63F37E,HIGH,True,respinge,sentenze
+B2CD319E79,MEDIUM,False,respinge,sentenze
+B2CE0EB622,MEDIUM,False,respinge,sentenze
+B2CFA2DE09,MEDIUM,False,respinge,sentenze
+B2D06C95E0,MEDIUM,False,dichiara estinto,sentenze
+B2D11FC3CD,MEDIUM,False,respinge,sentenze
+B2D11FD4A0,MEDIUM,False,respinge,sentenze
+B2D21A936F,MEDIUM,False,respinge,sentenze
+B2D245363C,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B2D2823BA6,HIGH,True,respinge,ordinanze
+B2D2996DCE,MEDIUM,False,dichiara estinto,sentenze
+B2D2997EA1,MEDIUM,False,dichiara estinto,sentenze
+B2D2998F74,MEDIUM,False,dichiara estinto,sentenze
+B2D299904C,MEDIUM,False,dichiara estinto,sentenze
+B2D299A11F,MEDIUM,False,dichiara estinto,sentenze
+B2D29FF477,MEDIUM,False,respinge,sentenze
+B2D3D2E925,MEDIUM,False,respinge,sentenze
+B2D46A7A51,MEDIUM,False,respinge,sentenze
+B2D56DCA2E,MEDIUM,False,respinge,sentenze
+B2D588AD06,MEDIUM,False,dichiara improcedibile,sentenze
+B2D5A12087,MEDIUM,False,respinge,ordinanze
+B2D6153CF5,HIGH,True,respinge,"ordinanze, sentenze"
+B2DA6E6711,MEDIUM,False,respinge,sentenze
+B2DF110ACE,MEDIUM,False,dichiara inammissibile,sentenze
+B2DF11816B,MEDIUM,False,respinge,sentenze
+B2E1341205,MEDIUM,False,dichiara irricevibile,sentenze
+B2E4D63B06,MEDIUM,False,respinge,sentenze
+B2E5FD970C,MEDIUM,False,dichiara inammissibile,sentenze
+B2E5FDA7DF,MEDIUM,False,dichiara inammissibile,sentenze
+B2E77EE691,MEDIUM,False,dichiara improcedibile,sentenze
+B2EC7C6A2F,HIGH,True,respinge,ordinanze
+B2ED826D87,MEDIUM,False,respinge,sentenze
+B2EEF802BE,MEDIUM,False,respinge,sentenze
+B2EF0B1E6C,MEDIUM,False,dichiara inammissibile,sentenze
+B2EF819B0E,MEDIUM,False,respinge,sentenze
+B2EFBE907D,MEDIUM,False,respinge,sentenze
+B2F0661417,MEDIUM,False,dichiara estinto,sentenze
+B2F06635BD,MEDIUM,False,dichiara estinto,sentenze
+B2F7330EC0,HIGH,True,"dichiara irricevibile, respinge","ordinanze, sentenze"
+B2FC3B0D03,MEDIUM,False,dichiara estinto,sentenze
+B2FD774CA8,MEDIUM,False,respinge,sentenze
+B2FDB88A32,MEDIUM,False,respinge,sentenze
+B2FE73E43B,MEDIUM,False,respinge,sentenze
+B2FEF572ED,MEDIUM,False,respinge,"ordinanze, sentenze"
+B3022D510F,MEDIUM,False,respinge,sentenze
+B302A934A7,MEDIUM,False,respinge,sentenze
+B30389DA82,MEDIUM,False,respinge,sentenze
+B303F2C412,MEDIUM,False,respinge,ordinanze
+B304296551,MEDIUM,False,dichiara improcedibile,sentenze
+B30AEF5391,MEDIUM,False,respinge,sentenze
+B30B619813,MEDIUM,False,dichiara irricevibile,sentenze
+B30B929F0B,MEDIUM,False,respinge,sentenze
+B30EE398EC,MEDIUM,False,respinge,sentenze
+B30EE3A9BF,MEDIUM,False,respinge,sentenze
+B30EE3BA92,MEDIUM,False,respinge,sentenze
+B30FE33819,MEDIUM,False,respinge,sentenze
+B313A48CE5,MEDIUM,False,respinge,ordinanze
+B313C0A043,MEDIUM,False,dichiara inammissibile,sentenze
+B31485BA30,MEDIUM,False,respinge,sentenze
+B314A2C9EB,MEDIUM,False,respinge,sentenze
+B31896DCCD,HIGH,True,"dichiara improcedibile, respinge",sentenze
+B318B33377,MEDIUM,False,respinge,sentenze
+B318E3C4AA,MEDIUM,False,respinge,sentenze
+B31A83753E,MEDIUM,False,respinge,sentenze
+B31D58F079,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B31DAC3BA9,MEDIUM,False,dichiara improcedibile,sentenze
+B31EDC0717,MEDIUM,False,respinge,sentenze
+B31EDC17EA,MEDIUM,False,respinge,sentenze
+B31EDC28BD,MEDIUM,False,respinge,sentenze
+B32210BB21,MEDIUM,False,dichiara improcedibile,sentenze
+B323C900DC,MEDIUM,False,respinge,sentenze
+B323C93355,MEDIUM,False,respinge,sentenze
+B323D67248,HIGH,True,respinge,ordinanze
+B324C11C2B,MEDIUM,False,respinge,sentenze
+B325B61F0D,MEDIUM,False,respinge,ordinanze
+B32AE35927,MEDIUM,False,respinge,sentenze
+B32C167053,MEDIUM,False,respinge,sentenze
+B32EDC5D3A,MEDIUM,False,dichiara improcedibile,sentenze
+B331FF1471,MEDIUM,False,respinge,sentenze
+B334B5530E,MEDIUM,False,respinge,sentenze
+B33685732F,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B33E738759,MEDIUM,False,respinge,sentenze
+B33ED0B5C3,MEDIUM,False,respinge,ordinanze
+B33FEAE3A9,MEDIUM,False,respinge,sentenze
+B33FF6AECA,HIGH,True,respinge,sentenze
+B3417EB771,MEDIUM,False,dichiara irricevibile,sentenze
+B3434A8E9F,MEDIUM,False,respinge,sentenze
+B3434A9F72,MEDIUM,False,respinge,sentenze
+B3434AA04A,MEDIUM,False,respinge,sentenze
+B3436388B8,MEDIUM,False,respinge,sentenze
+B34380FD65,MEDIUM,False,respinge,sentenze
+B34A2E78FC,MEDIUM,False,respinge,sentenze
+B34C403B99,MEDIUM,False,respinge,sentenze
+B35255AF67,MEDIUM,False,dichiara inammissibile,sentenze
+B35279AABD,MEDIUM,False,dichiara irricevibile,sentenze
+B352E21DB0,HIGH,True,respinge,sentenze
+B352FD557F,MEDIUM,False,respinge,sentenze
+B353C6DA05,MEDIUM,False,respinge,sentenze
+B3554640CB,MEDIUM,False,respinge,sentenze
+B3566E1296,MEDIUM,False,respinge,sentenze
+B3566E2369,MEDIUM,False,respinge,sentenze
+B3566E343C,MEDIUM,False,respinge,sentenze
+B3569504B3,MEDIUM,False,respinge,sentenze
+B35AD16260,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B35F2D1D79,MEDIUM,False,respinge,sentenze
+B35FF74B15,MEDIUM,False,respinge,sentenze
+B363E942BF,MEDIUM,False,respinge,sentenze
+B3641EF79C,MEDIUM,False,dichiara estinto,sentenze
+B364B3B3A7,MEDIUM,False,respinge,sentenze
+B366CE9EBD,HIGH,True,respinge,sentenze
+B36A427519,MEDIUM,False,respinge,ordinanze
+B36A4285EC,MEDIUM,False,respinge,ordinanze
+B36A4296BF,MEDIUM,False,respinge,sentenze
+B36C98AF53,MEDIUM,False,dichiara inammissibile,sentenze
+B36F6906E4,MEDIUM,False,dichiara improcedibile,sentenze
+B37100DF7B,MEDIUM,False,respinge,sentenze
+B3723CBA2E,MEDIUM,False,respinge,sentenze
+B3723CCB01,MEDIUM,False,respinge,sentenze
+B3723CDBD4,MEDIUM,False,respinge,sentenze
+B3723CECA7,MEDIUM,False,respinge,sentenze
+B37266609E,MEDIUM,False,dichiara inammissibile,sentenze
+B372669317,MEDIUM,False,respinge,sentenze
+B3726827B7,MEDIUM,False,respinge,sentenze
+B3727CFA83,MEDIUM,False,dichiara irricevibile,sentenze
+B37309EF64,MEDIUM,False,respinge,sentenze
+B37386D109,MEDIUM,False,respinge,ordinanze
+B3744FBD4C,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+B374AF3A3F,HIGH,True,respinge,"ordinanze, sentenze"
+B3758D6FEB,HIGH,True,"respinge, respinge sui motivi aggiunti",sentenze
+B375A45EC7,MEDIUM,False,respinge,sentenze
+B384D7D4AB,MEDIUM,False,"dichiara improcedibile, respinge","ordinanze, sentenze"
+B3A417395A,MEDIUM,False,dichiara inammissibile,sentenze
+B3BA414F7F,HIGH,True,respinge,sentenze
+B3BA415057,HIGH,True,respinge,sentenze
+B3BA472D12,HIGH,True,respinge,sentenze
+B3E818C690,HIGH,True,respinge,sentenze
+B3E9E64409,MEDIUM,False,respinge,sentenze
+B3EE6B1E22,MEDIUM,False,respinge,sentenze
+B3EE6B2EF5,MEDIUM,False,respinge,sentenze
+B3F015AE4D,MEDIUM,False,respinge,sentenze
+B3F21A761B,MEDIUM,False,respinge,sentenze
+B3F58A57A3,MEDIUM,False,respinge,sentenze
+B3F58A6876,MEDIUM,False,respinge,sentenze
+B3F58A7949,MEDIUM,False,respinge,sentenze
+B3F6F420E1,MEDIUM,False,respinge,sentenze
+B3FC8B3015,MEDIUM,False,respinge,sentenze
+B3FCEEA104,MEDIUM,False,respinge,ordinanze
+B402831D8B,MEDIUM,False,dichiara estinto,sentenze
+B4035C9557,MEDIUM,False,respinge,sentenze
+B403743D44,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B404CA41BE,HIGH,True,respinge,"ordinanze, sentenze"
+B405B12A1E,MEDIUM,False,dichiara estinto,sentenze
+B40B3B81CF,MEDIUM,False,respinge,sentenze
+B40CF2213F,MEDIUM,False,respinge,sentenze
+B40FF438D9,MEDIUM,False,respinge,sentenze
+B412FFEF89,MEDIUM,False,respinge,sentenze
+B41F3487E6,MEDIUM,False,dichiara estinto,sentenze
+B41F3F135E,MEDIUM,False,dichiara estinto,sentenze
+B41F3F3504,MEDIUM,False,dichiara estinto,sentenze
+B428AA616B,HIGH,True,respinge,ordinanze
+B42B75E899,MEDIUM,False,respinge,sentenze
+B42D5A3348,MEDIUM,False,dichiara improcedibile,sentenze
+B42DF26CB2,MEDIUM,False,dichiara inammissibile,sentenze
+B435200401,MEDIUM,False,respinge,sentenze
+B437BF42EF,MEDIUM,False,dichiara improcedibile,sentenze
+B438194741,HIGH,True,"dichiara improcedibile, respinge","ordinanze, sentenze"
+B4384EDA78,MEDIUM,False,respinge,ordinanze
+B4387A8B4D,HIGH,True,respinge,ordinanze
+B43A7AD7AF,MEDIUM,False,dichiara irricevibile,sentenze
+B43E9EF52C,HIGH,True,"dichiara improcedibile, respinge",sentenze
+B43F9A081A,MEDIUM,False,respinge,sentenze
+B443384DF2,MEDIUM,False,respinge,sentenze
+B446DE17A8,MEDIUM,False,respinge,sentenze
+B44C76FEC8,MEDIUM,False,dichiara inammissibile,sentenze
+B44F625AD7,MEDIUM,False,dichiara inammissibile,sentenze
+B44FF90079,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B450DCCF94,MEDIUM,False,respinge,sentenze
+B4514B536B,MEDIUM,False,respinge,sentenze
+B4514C0C7C,MEDIUM,False,respinge,sentenze
+B4514C1D4F,MEDIUM,False,respinge,sentenze
+B45226A323,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B455049DC1,MEDIUM,False,respinge,sentenze
+B4559B9782,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B4559BB928,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B4559BDACE,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B4559BEBA1,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B4559BFC74,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B4559C0D47,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B4559C1E1A,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B4559C3FC0,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B4559C4098,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B4559C516B,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B4559C7311,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B4559C94B7,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B458C69BA3,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B45A18BC1C,MEDIUM,False,respinge,sentenze
+B45A18CCEF,MEDIUM,False,respinge,sentenze
+B45A18DDC2,MEDIUM,False,respinge,sentenze
+B45C7C57C7,MEDIUM,False,dichiara irricevibile,sentenze
+B45EE58CE1,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B46049DD7E,HIGH,True,respinge,"ordinanze, sentenze"
+B463CFE3FE,MEDIUM,False,respinge,sentenze
+B4643257B8,MEDIUM,False,dichiara inammissibile,sentenze
+B464B5E0D4,MEDIUM,False,"dichiara improcedibile, respinge","ordinanze, sentenze"
+B464BEC601,MEDIUM,False,dichiara inammissibile,sentenze
+B4658D3BB8,MEDIUM,False,dichiara estinto,sentenze
+B4658D4C8B,MEDIUM,False,dichiara estinto,sentenze
+B4658D5D5E,MEDIUM,False,dichiara estinto,sentenze
+B4658D6E31,MEDIUM,False,dichiara estinto,sentenze
+B465B94184,MEDIUM,False,dichiara irricevibile,sentenze
+B467D518FC,MEDIUM,False,dichiara inammissibile,sentenze
+B4698C4FD7,MEDIUM,False,dichiara improcedibile,sentenze
+B4698C50AF,MEDIUM,False,dichiara improcedibile,sentenze
+B4698C6182,MEDIUM,False,dichiara improcedibile,sentenze
+B46B58170A,MEDIUM,False,dichiara improcedibile,sentenze
+B46DCFFE11,MEDIUM,False,dichiara inammissibile,sentenze
+B46DE98F95,MEDIUM,False,dichiara inammissibile,sentenze
+B47032051C,MEDIUM,False,respinge,sentenze
+B470E9BE70,MEDIUM,False,dichiara improcedibile,sentenze
+B470E9CF43,MEDIUM,False,dichiara improcedibile,sentenze
+B47FA79341,MEDIUM,False,dichiara inammissibile,sentenze
+B4815B0899,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B486BD2CD4,MEDIUM,False,respinge,sentenze
+B48B8706D2,MEDIUM,False,respinge,sentenze
+B48B9EE210,HIGH,True,respinge,ordinanze
+B48D98DA42,MEDIUM,False,respinge,sentenze
+B492589E8D,MEDIUM,False,respinge,sentenze
+B496DB1A22,MEDIUM,False,dichiara improcedibile,sentenze
+B49CDD509C,MEDIUM,False,respinge,sentenze
+B49CE96FDC,MEDIUM,False,respinge,sentenze
+B49CE970B4,MEDIUM,False,respinge,sentenze
+B4A0769470,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B4A12FD269,MEDIUM,False,"dichiara estinto, respinge sui motivi aggiunti",sentenze
+B4A12FE33C,MEDIUM,False,"respinge, respinge sui motivi aggiunti",sentenze
+B4A12FF40F,MEDIUM,False,dichiara improcedibile,sentenze
+B4A6902EB3,MEDIUM,False,respinge,sentenze
+B4A8E31E07,MEDIUM,False,respinge,ordinanze
+B4A8E32EDA,MEDIUM,False,respinge,ordinanze
+B4A8E33FAD,MEDIUM,False,respinge,ordinanze
+B4A98CBDB1,MEDIUM,False,respinge,ordinanze
+B4AAAF2886,MEDIUM,False,respinge,sentenze
+B4AC2C1E45,MEDIUM,False,respinge,sentenze
+B4AD8951A6,MEDIUM,False,respinge,sentenze
+B4B43A6C42,MEDIUM,False,respinge,sentenze
+B4B6F1C9BA,MEDIUM,False,respinge,sentenze
+B4B6F1DA8D,MEDIUM,False,respinge,sentenze
+B4B6F33CB4,MEDIUM,False,respinge,sentenze
+B4B7899E32,MEDIUM,False,respinge,sentenze
+B4B8A2F161,HIGH,True,respinge,sentenze
+B4B9206999,HIGH,True,respinge,ordinanze
+B4BC198B33,MEDIUM,False,respinge,sentenze
+B4BE7AA5DC,MEDIUM,False,dichiara inammissibile,sentenze
+B4C59682CC,MEDIUM,False,respinge,sentenze
+B4CA761B20,MEDIUM,False,respinge,sentenze
+B4CEB07E63,HIGH,True,respinge,ordinanze
+B4CFF846B5,MEDIUM,False,dichiara improcedibile,sentenze
+B4D1DCA237,MEDIUM,False,dichiara improcedibile,sentenze
+B4D1E0D97F,MEDIUM,False,dichiara improcedibile,sentenze
+B4D1EA2476,MEDIUM,False,dichiara improcedibile,sentenze
+B4D1EA3549,MEDIUM,False,dichiara improcedibile,sentenze
+B4D1EA461C,MEDIUM,False,dichiara improcedibile,sentenze
+B4D1EA56EF,MEDIUM,False,dichiara improcedibile,sentenze
+B4D1EA67C2,MEDIUM,False,dichiara improcedibile,sentenze
+B4D1EA7895,MEDIUM,False,dichiara improcedibile,sentenze
+B4D1ED3CE3,MEDIUM,False,dichiara improcedibile,sentenze
+B4D1ED4DB6,MEDIUM,False,dichiara improcedibile,sentenze
+B4D22CE5CD,MEDIUM,False,respinge,sentenze
+B4D2435E0C,MEDIUM,False,respinge sui motivi aggiunti,sentenze
+B4D29272CC,MEDIUM,False,dichiara improcedibile,sentenze
+B4D7FF54F8,MEDIUM,False,respinge,sentenze
+B4DB24CFA5,MEDIUM,False,dichiara inammissibile,sentenze
+B4DB24D07D,MEDIUM,False,dichiara inammissibile,sentenze
+B4DB24E150,MEDIUM,False,dichiara inammissibile,sentenze
+B4DF5D6BCF,HIGH,True,"dichiara estinto, dichiara inammissibile, respinge",sentenze
+B4E06BEF62,HIGH,True,respinge,ordinanze
+B4E0F1D7DA,MEDIUM,False,respinge,sentenze
+B4E129EC13,MEDIUM,False,respinge,sentenze
+B4E1755023,MEDIUM,False,respinge,sentenze
+B4E446C5B7,MEDIUM,False,respinge,ordinanze
+B4E6677D8D,MEDIUM,False,respinge,sentenze
+B4E69FD5EA,MEDIUM,False,respinge,sentenze
+B4E74D47EA,MEDIUM,False,dichiara inammissibile,sentenze
+B4E74D58BD,MEDIUM,False,dichiara inammissibile,sentenze
+B4E74D6990,MEDIUM,False,dichiara inammissibile,sentenze
+B4E74D7A63,MEDIUM,False,dichiara inammissibile,sentenze
+B4E75DA022,MEDIUM,False,respinge,sentenze
+B4E75E4860,MEDIUM,False,respinge,sentenze
+B4EC4E7C38,MEDIUM,False,dichiara inammissibile,sentenze
+B4EF94C8FB,MEDIUM,False,respinge,sentenze
+B4F224157B,MEDIUM,False,respinge,sentenze
+B4F3D3B87D,MEDIUM,False,respinge,sentenze
+B4F568CCC6,MEDIUM,False,respinge,sentenze
+B4F57D8EBF,MEDIUM,False,respinge,sentenze
+B4F57D9F92,MEDIUM,False,respinge,sentenze
+B4F57DA06A,MEDIUM,False,respinge,sentenze
+B4F5A45F36,MEDIUM,False,respinge,sentenze
+B4F8776A42,MEDIUM,False,respinge,sentenze
+B4F9C46711,MEDIUM,False,respinge,sentenze
+B4FAB6B678,MEDIUM,False,respinge,sentenze
+B4FAE9A707,MEDIUM,False,respinge,sentenze
+B4FAEB5D4D,MEDIUM,False,respinge,sentenze
+B4FB355E5E,MEDIUM,False,dichiara inammissibile,sentenze
+B4FD0B5C12,MEDIUM,False,respinge,sentenze
+B4FE8CEEE3,MEDIUM,False,respinge,sentenze
+B4FE8CFFB6,MEDIUM,False,respinge,sentenze
+B50052FA29,MEDIUM,False,respinge,sentenze
+B500530AFC,MEDIUM,False,respinge,sentenze
+B500A2A654,MEDIUM,False,respinge,ordinanze
+B500AB268F,MEDIUM,False,respinge,sentenze
+B50151F118,MEDIUM,False,dichiara estinto,sentenze
+B5018870B1,HIGH,True,respinge,ordinanze
+B504FFD53F,MEDIUM,False,respinge,sentenze
+B5069E77CB,MEDIUM,False,respinge,sentenze
+B506A7B1EF,MEDIUM,False,respinge,ordinanze
+B506FD4BA8,HIGH,True,respinge,sentenze
+B50AEA5221,MEDIUM,False,respinge,sentenze
+B50E7165D1,HIGH,True,respinge,"ordinanze, sentenze"
+B50EDC59C6,MEDIUM,False,respinge,sentenze
+B513CCB01C,MEDIUM,False,respinge,sentenze
+B515037720,MEDIUM,False,"dichiara irricevibile, respinge",sentenze
+B5154D568B,MEDIUM,False,respinge,sentenze
+B519A67FCF,MEDIUM,False,respinge,sentenze
+B51B31C361,MEDIUM,False,respinge,sentenze
+B51B321780,MEDIUM,False,respinge,sentenze
+B51E79B597,MEDIUM,False,"dichiara improcedibile, respinge",sentenze
+B525731AFE,MEDIUM,False,respinge,sentenze
+B53A277B1E,MEDIUM,False,dichiara improcedibile,sentenze
+B5412EA6E8,HIGH,True,respinge,ordinanze
+B54B599719,MEDIUM,False,respinge,sentenze
+B5536304B8,MEDIUM,False,respinge,sentenze
+B55454FF28,MEDIUM,False,respinge,sentenze
+B5553837B0,MEDIUM,False,respinge,sentenze
+B55B383074,MEDIUM,False,respinge,sentenze
+B55DDFEEC5,MEDIUM,False,respinge,sentenze
+B55DEF9DE7,MEDIUM,False,respinge,sentenze
+B55E47113C,MEDIUM,False,respinge,sentenze
+B55EC62EE7,MEDIUM,False,respinge,sentenze
+B56580C7CB,MEDIUM,False,respinge,sentenze
+B566A877F0,HIGH,True,dichiara estinto,sentenze
+B56FC72244,MEDIUM,False,respinge sui motivi aggiunti,sentenze

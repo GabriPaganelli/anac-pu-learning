@@ -1,0 +1,22 @@
+cod_tipo_lavorazione;tipo_lavorazione
+1;ACQUISTO
+2;LEASING
+3;NOLEGGIO
+4;ACQUISTO A RISCATTO
+5;MISTO
+6;Costruzione
+6;COSTRUZIONE
+7;DEMOLIZIONE
+8;RECUPERO
+8;Recupero
+9;Ristrutturazione
+9;RISTRUTTURAZIONE
+10;RESTAURO
+10;Restauro
+11;MANUTENZIONE
+12;Manutenzione ordinaria
+12;MANUTENZIONE ORDINARIA
+13;MANUTENZIONE STRAORDINARIA
+13;Manutenzione straordinaria
+14;MANUTENZIONE ORDINARIA E STRAORDINARIA
+14;Manutenzione ordinaria e straordinaria
