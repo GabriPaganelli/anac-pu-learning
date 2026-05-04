@@ -14,10 +14,6 @@ venv/
 env/
 .env
 
-# ── External repos (terze parti, non tracciare) ───────────────
-prior_estimation/PULSNAR/
-prior_estimation/DEDPUL/
-
 # ── OS ────────────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
@@ -35,19 +31,3 @@ desktop.ini
 
 # ── Claude Code (sessioni locali) ─────────────────────────────
 .claude/
-
-# ── LaTeX build artifacts ─────────────────────────────────────
-report/monografia/*.aux
-report/monografia/*.log
-report/monografia/*.bbl
-report/monografia/*.blg
-report/monografia/*.out
-report/monografia/*.toc
-report/monografia/*.lof
-report/monografia/*.lot
-report/presentazione/*.aux
-report/presentazione/*.log
-report/presentazione/*.nav
-report/presentazione/*.snm
-report/presentazione/*.toc
-report/presentazione/*.out
