@@ -1,4 +1,4 @@
 [core]
-    remote = gdrive
-['remote "gdrive"']
-    url = gdrive://1idWWKsimktoQbJM_SmzsFLwxjMI2iFt3
+    remote = dagshub
+[remote "dagshub"]
+    url = https://dagshub.com/GabriPaganelli/anac-pu-learning.dvc
