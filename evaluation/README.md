@@ -1,4 +1,9 @@
 # evaluation — Pipeline ex-post per i 4 modelli finalisti PU
+# *evaluation — Ex-post pipeline for the 4 finalist PU models*
+
+---
+
+## Italiano
 
 Calibrazione Platt, conformal prediction (Mondrian) e analisi SHAP applicati ai
 4 modelli finalisti (`lgb_supervised`, `bagging_lgbm`, `re_lgbm`, `puet`) sui 3
@@ -18,8 +23,6 @@ evaluation/
 |-- run_all.py                   # Entry point: calibration -> conformal -> SHAP
 |-- run_all_gamma_comparison.py  # Sensitivity su griglia gamma per un modello x dataset
 |-- gamma_star.json              # gamma* canonici per ogni modello x dataset
-|-- report_expost.md             # Analisi narrativa dei risultati
-|-- _smoke_test.py               # Verifica rapida end-to-end (non tocca results/)
 `-- plots_exploration/
     `-- make_qq_ranks.py         # QQ plot del ranking tra modelli su contratti U
 ```
@@ -94,14 +97,6 @@ python evaluation/bootstrap_ci.py
 # Solo M3 con n_boot ridotto
 python evaluation/bootstrap_ci.py --datasets 3 --n-boot 50
 ```
-
-### Smoke test
-
-```bash
-python evaluation/_smoke_test.py
-```
-
-Non tocca `results/`. Redirige tutto su una cartella temporanea cancellata al termine.
 
 ---
 
@@ -181,14 +176,12 @@ pip install pandas numpy scipy scikit-learn lightgbm joblib pyarrow matplotlib s
 ```
 
 `shap` viene importato in modo lazy in `utils_expost.py` (solo nelle funzioni che
-lo usano effettivamente) per evitare il costo di startup (~3-4s) quando si importa
+lo usano effettivamente) per evitare il costo di startup quando si importa
 `utils_expost` da script che non usano SHAP.
 
 ---
 
-## English version below
-
-# evaluation — Ex-post pipeline for the 4 finalist PU models
+## English
 
 Platt scaling, conformal prediction (Mondrian), and SHAP analysis applied to the
 4 finalist models (`lgb_supervised`, `bagging_lgbm`, `re_lgbm`, `puet`) on the
@@ -208,8 +201,6 @@ evaluation/
 |-- run_all.py                   # Entry point: calibration -> conformal -> SHAP
 |-- run_all_gamma_comparison.py  # Sensitivity over gamma grid for one model x dataset
 |-- gamma_star.json              # Canonical gamma* for each model x dataset
-|-- report_expost.md             # Narrative analysis of results
-|-- _smoke_test.py               # Quick end-to-end check (does not touch results/)
 `-- plots_exploration/
     `-- make_qq_ranks.py         # QQ plot of cross-model ranking on U contracts
 ```
@@ -284,14 +275,6 @@ python evaluation/bootstrap_ci.py
 # Only M3 with reduced n_boot
 python evaluation/bootstrap_ci.py --datasets 3 --n-boot 50
 ```
-
-### Smoke test
-
-```bash
-python evaluation/_smoke_test.py
-```
-
-Does not touch `results/`. Redirects all output to a temporary folder deleted at the end.
 
 ---
 

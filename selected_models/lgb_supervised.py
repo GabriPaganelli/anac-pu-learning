@@ -21,7 +21,7 @@ Tuning globale (idem R):
   del per-fold tuning senza differenza misurabile (vedi §3.5 riepilogo).
 
 γ (PNU Mixing):
-  γ ∈ [0.1, 1.0]: sample_weight degli N certi nel training set.
+  γ ∈ [0.05, 1.0]: sample_weight degli N certi nel training set.
   P ha sempre weight=1. U non entra in training (modello supervisionato).
   γ=0 escluso: senza N certi il classificatore binario non ha negativi
   e la loss BCE collassa (tutti i label=1).
@@ -57,7 +57,6 @@ LGBM_FIXED = dict(
     seed             = 17,          # stesso seed del R originale
 )
 
-# Griglia tuning (idem R)
 LEAVES_GRID    = [15, 31, 63]
 MIN_DATA_GRID  = [10, 20, 50]
 LR_GRID        = [0.01, 0.05, 0.1]
@@ -159,10 +158,8 @@ def fit_predict(X_P_tr: np.ndarray, X_N_tr: np.ndarray,
     w_tr = np.concatenate([np.ones(len(X_P_tr)),
                            np.full(len(X_N_tr), gamma)])
 
-    # Early stopping: 15% holdout stratificato
     rng  = np.random.default_rng(RANDOM_SEED)
     n_es = max(10, int(ES_FRAC * len(X_tr)))
-    # Stratificato: mantieni proporzioni P/N nell'ES set
     idx_p = np.where(y_tr == 1)[0]; idx_n = np.where(y_tr == 0)[0]
     n_es_p = max(1, int(ES_FRAC * len(idx_p)))
     n_es_n = max(1, int(ES_FRAC * len(idx_n)))

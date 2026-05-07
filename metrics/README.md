@@ -1,4 +1,9 @@
 # metrics — Modulo condiviso di metriche e preprocessing
+# *metrics — Shared metrics and preprocessing module*
+
+---
+
+## Italiano
 
 Funzioni condivise tra tutti gli script di modellazione PU del progetto.  
 Importato da ogni script tramite `sys.path.insert(0, str(Path(__file__).resolve().parents[N]))`.
@@ -58,9 +63,7 @@ pip install numpy scikit-learn pandas
 
 ---
 
-## English version below
-
-# metrics — Shared metrics and preprocessing module
+## English
 
 Shared functions used across all PU modelling scripts in the project.
 Imported by each script via `sys.path.insert(0, str(Path(__file__).resolve().parents[N]))`.

@@ -1,4 +1,9 @@
 # em_like — Iterativo EM-like (R + LightGBM)
+# *em_like — Iterative EM-like (R + LightGBM)*
+
+---
+
+## Italiano
 
 Approccio iterativo ispirato all'algoritmo EM: ad ogni iterazione il modello LightGBM corrente riclassifica gli esempi Unlabeled e aggiorna il training set.
 
@@ -43,8 +48,6 @@ DATA_SOURCE   <- "preprocessed"  # "nativi" | "preprocessed"
 MAX_ITER_EM   <- 5
 ```
 
-I percorsi sono risolti dinamicamente tramite `dirname(normalizePath(...))` relativi alla posizione dello script.
-
 ---
 
 ## Utilizzo
@@ -77,9 +80,7 @@ install.packages(c("arrow", "lightgbm", "caret", "dplyr", "pROC", "PRROC", "ggpl
 
 ---
 
-## English version below
-
-# em_like — Iterative EM-like (R + LightGBM)
+## English
 
 An iterative approach inspired by the EM algorithm: at each iteration the current LightGBM model reclassifies unlabeled (Unlabeled) examples and updates the training set.
 

@@ -1,4 +1,9 @@
 # 01_sentenze — Pipeline etichette da sentenze TAR/CdS
+# *01_sentenze — Label pipeline from TAR/CdS court rulings*
+
+---
+
+## Italiano
 
 Scarica e processa le sentenze del Tribunale Amministrativo Regionale (TAR) e del Consiglio di Stato (CdS) dal portale [OpenGA](https://openga.giustizia-amministrativa.it), identifica i Codici Identificativi Gara (CIG) coinvolti in contenziosi e produce le etichette per il PU learning.
 
@@ -27,8 +32,6 @@ Un CIG riceve **label=0** (scagionato) se:
 ```bash
 pip install -r requirements.txt
 ```
-
-Assicurarsi di avere i permessi per accedere a `openga.giustizia-amministrativa.it` (il file `.claude/settings.local.json` configura i permessi per Claude Code).
 
 ### Esecuzione completa
 
@@ -114,11 +117,12 @@ I file prodotti in `labels/` sono quelli usati dalla `02_pipeline`:
 | File | Contenuto | Colonne |
 |------|-----------|---------|
 | `labels/cig_condannati.csv` | CIG label=1 | CIG, fonte, motivo |
-| `labels/cig_scagionati.csv` | CIG label=0 | CIG, confidence, cds_confirmed, esiti_found, sources |
+| `labels/cig_scagionati.csv` | CIG label=0 | CIG, fonte, motivo |
 
-La colonna `fonte` in `cig_condannati.csv` distingue l'origine dell'etichetta:
-- `sentenza_TAR`: vittoria al TAR non ribaltata dal CdS
-- `fine_contratto`: chiusura per reato o antimafia registrata in ANAC
+La colonna `fonte` distingue l'origine dell'etichetta:
+- `sentenza_TAR`: verdetto TAR (vittoria o sconfitta del ricorrente)
+- `fine_contratto`: chiusura per reato o antimafia registrata in ANAC (solo condannati)
+- `ordinanza_TAR`: ordinanza cautelare sfavorevole (solo scagionati)
 
 ---
 
@@ -132,9 +136,7 @@ La colonna `fonte` in `cig_condannati.csv` distingue l'origine dell'etichetta:
 
 ---
 
-## English version below
-
-# 01_sentenze — Label pipeline from TAR/CdS court rulings
+## English
 
 Downloads and processes rulings from the Regional Administrative Court (TAR) and Council of State (CdS) from the [OpenGA](https://openga.giustizia-amministrativa.it) portal, identifies the tender identifiers (CIG — Codice Identificativo Gara) involved in litigation, and produces labels for PU learning.
 
@@ -249,11 +251,12 @@ Files produced in `labels/` are those consumed by `02_pipeline`:
 | File | Content | Columns |
 |------|---------|---------|
 | `labels/cig_condannati.csv` | CIG label=1 | CIG, fonte, motivo |
-| `labels/cig_scagionati.csv` | CIG label=0 | CIG, confidence, cds_confirmed, esiti_found, sources |
+| `labels/cig_scagionati.csv` | CIG label=0 | CIG, fonte, motivo |
 
-The `fonte` column in `cig_condannati.csv` distinguishes the label origin:
-- `sentenza_TAR`: TAR win not overturned by CdS
-- `fine_contratto`: closure for crime or anti-mafia code recorded in ANAC
+The `fonte` column distinguishes the label origin:
+- `sentenza_TAR`: TAR ruling (claimant win or loss)
+- `fine_contratto`: closure for crime or anti-mafia code recorded in ANAC (condannati only)
+- `ordinanza_TAR`: unfavourable interim order (scagionati only)
 
 ---
 

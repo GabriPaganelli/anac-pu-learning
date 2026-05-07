@@ -1,4 +1,9 @@
 # 02_pipeline — Pipeline feature engineering ANAC
+# *02_pipeline — ANAC feature engineering pipeline*
+
+---
+
+## Italiano
 
 Pipeline di 17 step che trasforma i CSV grezzi ANAC in dataset pronti per il training di modelli di machine learning. Produce 6 parquet (M1/M2/M3 × nativi/preprocessed) con la colonna `fold` per la cross-validation a 4 fold.
 
@@ -125,9 +130,7 @@ python utils/create_data_dictionary.py
 
 ---
 
-## English version below
-
-# 02_pipeline — ANAC feature engineering pipeline
+## English
 
 17-step pipeline that transforms raw ANAC CSVs into datasets ready for machine learning model training. Produces 6 parquets (M1/M2/M3 × nativi/preprocessed) with a `fold` column for 4-fold cross-validation.
 

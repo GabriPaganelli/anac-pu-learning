@@ -1,4 +1,9 @@
 # bagging — PU Bagging
+# *bagging — PU Bagging*
+
+---
+
+## Italiano
 
 Implementazione del **PU Bagging** (Mordelet & Vert 2014) con due base learner: LightGBM ed ExtraTrees.
 
@@ -73,9 +78,7 @@ pip install lightgbm scikit-learn pandas numpy pyarrow
 
 ---
 
-## English version below
-
-# bagging — PU Bagging
+## English
 
 Implementation of **PU Bagging** (Mordelet & Vert 2014) with two base learners: LightGBM and ExtraTrees.
 

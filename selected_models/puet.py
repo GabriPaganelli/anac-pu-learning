@@ -70,7 +70,6 @@ def fit_predict(X_P_tr: np.ndarray, X_N_tr: np.ndarray,
                 np.ones(s_fold),
             ])
         else:
-            # γ=0 oppure nessun N: solo P + U campionato
             X_tr = np.vstack([X_P_tr, X_neg])
             y_tr = np.concatenate([np.ones(len(X_P_tr)), np.zeros(s_fold)])
             w_tr = None

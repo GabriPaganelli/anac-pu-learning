@@ -19,7 +19,6 @@ _ROOT             = Path(__file__).resolve().parents[1]
 NATIVI_PATH       = str(_ROOT / "anac" / "output" / "parquet" / "model" / "nativi")
 PREPROCESSED_PATH = str(_ROOT / "anac" / "output" / "parquet" / "model" / "preprocessed")
 
-# Aggiunge la root del progetto al path per importare metrics.*
 if str(_ROOT) not in sys.path:
     sys.path.insert(0, str(_ROOT))
 
@@ -53,7 +52,7 @@ def _convert_categoricals_nativi(df: pd.DataFrame) -> tuple[pd.DataFrame, list]:
                           .cat.codes
                           .replace(-1, np.nan)
                           .astype("float32"))
-    return df, cat_cols   # return FUORI dal loop
+    return df, cat_cols
 
 
 def load_nativi_raw(model_number: int) -> tuple[pd.DataFrame, list]:
@@ -115,7 +114,6 @@ def compute_fold_map(df_nativi: pd.DataFrame, seed: int = RESHUFFLE_SEED) -> pd.
 
     fold_map = pd.Series(new_fold, index=df_sorted[CIG_COL].values, name=FOLD_COL)
 
-    # Diagnostica: verifica che i conteggi P/N/U siano bilanciati tra fold
     _check_fold_balance(label, new_fold)
     return fold_map
 

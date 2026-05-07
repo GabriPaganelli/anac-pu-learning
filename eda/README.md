@@ -1,4 +1,9 @@
 # EDA — Analisi Esplorativa
+# *EDA — Exploratory Data Analysis*
+
+---
+
+## Italiano
 
 Analisi esplorativa dei dati per il progetto di *Positive-Unlabeled Learning* su appalti pubblici ANAC.
 
@@ -85,9 +90,7 @@ anac/output/parquet/
 
 ---
 
-## English version below
-
-# EDA — Exploratory Data Analysis
+## English
 
 Exploratory analysis for the Positive-Unlabeled Learning project on Italian public procurement (appalti pubblici) data from ANAC.
 

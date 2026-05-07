@@ -6,7 +6,7 @@ Esegue gli step in ordine, uno alla volta.
 Per un run parziale: commentare le righe che non servono.
 
 Prerequisiti:
-  - data/raw/           : file CSV ANAC (scaricati da 01_inventory.py)
+  - data/raw/           : file CSV ANAC (scaricati da utils/download_bdncp.py)
   - data/territorial/   : contesto_province.csv (da utils/download_contesto.py)
   - labels/             : cig_condannati.csv, cig_scagionati.csv
   - data/lookup/        : lavorazioni_tipo.csv, categorie_opera.csv (manuali)

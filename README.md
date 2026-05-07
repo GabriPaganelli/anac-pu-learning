@@ -1,15 +1,18 @@
 # APPalti — PU Learning per la rilevazione di frodi negli appalti pubblici italiani
+# *APPalti — PU Learning for fraud detection in Italian public procurement*
+
+---
+
+## Italiano
 
 Davide Bortoletto, Giorgia Caicchiolo, Gabriele Paganelli, Gianmarco Rosa  
 *Laboratorio di Statistica con le Aziende — Gruppo "L'Ipotesi Alternativa"*
-
-> Bortoletto D., Caicchiolo G., Paganelli G., Rosa G. (2025). *Rilevazione di frodi negli appalti pubblici italiani: un approccio di Positive-Unlabeled Learning.* Working paper, Laboratorio di Statistica con le Aziende.
 
 ---
 
 ## Il problema
 
-Solo una frazione esigua degli appalti pubblici italiani risulta associata a procedimenti giudiziari conclusi. La grande maggioranza è priva di etichetta: un appalto senza sentenza può essere genuinamente regolare oppure semplicemente impunito. Trattare i non etichettati come negativi certi introdurrebbe un bias sistematico — è il regime del **Positive-Unlabeled (PU) learning**.
+Solo una frazione esigua degli appalti pubblici italiani risulta associata a procedimenti giudiziari conclusi. La grande maggioranza è priva di etichetta: un appalto senza sentenza può essere genuinamente regolare oppure semplicemente impunito. Trattare i non etichettati come negativi certi introdurrebbe un bias sistematico: è il regime del **Positive-Unlabeled (PU) learning**.
 
 Questo repository implementa una pipeline completa che, partendo dai microdati ANAC (Banca Dati Nazionale dei Contratti Pubblici, 2008–2025), costruisce un sistema di scoring del rischio corruttivo su ~9,5 milioni di appalti.
 
@@ -62,7 +65,7 @@ anac/
 └── variables/       Selezione variabili (xlsx) · dizionario dati (xlsx)
 ```
 
-Ogni modello è disponibile in due versioni: **nativi** (per LightGBM/XGBoost) e **preprocessed** (per Logistica/SVM, con discretizzazione log-quantile e encoding categoriale). La colonna `fold` (0–3) permette cross-validation stratificata con propagazione gerarchica M3→M2→M1.
+Ogni dataset è disponibile in due versioni: **nativi** (per LightGBM/XGBoost) e **preprocessed** (per Logistica/SVM, con discretizzazione log-quantile e encoding categoriale). La colonna `fold` (0–3) permette cross-validation stratificata con propagazione gerarchica M3→M2→M1.
 
 Fonti dati: bandi e contratti da [ANAC BDNCP](https://dati.anticorruzione.it/), sentenze da [OpenGA](https://openga.giustizia-amministrativa.it/), dati territoriali da ISTAT SDMX e MEF.
 
@@ -80,7 +83,7 @@ Rscript eda/eda.R   # ~20–40 min; dipendenze R: arrow, ggplot2, uwot, cluster,
 
 ## `prior_estimation/` — Stima della prior π
 
-Quattro stimatori implementati: **Elkan-Noto**, **Blanchard Quantili**, **KM2** (DEDPUL/KMPE, vendored) e **PULSNAR** (richiede R via `rpy2`). Il valore operativo adottato è il massimo tra i metodi disponibili (approccio conservativo).
+Quattro stimatori implementati: **Elkan-Noto**, **Blanchard Quantili**, **KM2** (DEDPUL/KMPE, vendored) e **PULSNAR** (richiede R via `rpy2`). Il valore operativo adottato è quello di PULSNAR, l'unico che non risulta distorto. Si arrotonda il valore per eccesso (approccio conservativo).
 
 ```bash
 python prior_estimation/run_prior_estimation.py   # tempi: 1–7h secondo il metodo
@@ -100,10 +103,10 @@ Quattro famiglie, ciascuna disponibile per M1/M2/M3 e nelle varianti PU e PNPU (
 
 | Famiglia | Strategia | Base learner |
 |----------|-----------|--------------|
-| `risk_estimators/` | nnPU loss corretta per π | LightGBM, Logistica, MLP PyTorch |
+| `risk_estimators/` | nnPU loss corretta per π | LightGBM, Logistica, MLP |
 | `bagging/` | PU Bagging (Mordelet & Vert 2014) | LightGBM, ExtraTrees |
 | `biased/` | Unlabeled come negativi pesati | LightGBM, Logistica, RF, SVM |
-| `em_like/` | Iterativo EM-like | R + LightGBM (soft e hard) |
+| `em_like/` | Iterativo EM-like | LightGBM (soft e hard) |
 
 Ogni script ha una sezione `CONFIGURAZIONE` in testa con `MODEL_NUMBER`, `PNPU` e `TEST_MODE`.
 
@@ -126,7 +129,7 @@ python selected_models/plot_mixing.py              # grafici lift vs γ
 | RE LightGBM (nnPU) | 1.0 | 17.41 | 17.14 | 21.90 | 0.556 ± 0.063 |
 | PUET | 0.0 | 15.75 | 15.73 | 14.76 | 0.591 ± 0.021 |
 
-Il **RE LightGBM** è il modello di riferimento: fondazione teorica nnPU, stabilità del lift, ECE < 0.06 dopo Platt scaling, coerenza SHAP con i meccanismi noti della corruzione.
+Il **RE LightGBM** è il modello di riferimento: fondazione teorica nnPU, stabilità del lift, ECE < 0.06 dopo Platt scaling, coerenza SHAP con i meccanismi noti della corruzione. LightGBM P vs N ha prestazioni ottime su alcune metriche, ma su altre è molto distorto (come prevedibile).
 
 ---
 
@@ -229,9 +232,7 @@ Per `prior_estimation` e `eda`: **R** con `mclust`, `e1071`, `arrow`, `ggplot2`,
 
 ---
 
----
-
-# APPalti — PU Learning for fraud detection in Italian public procurement
+## English
 
 Davide Bortoletto, Giorgia Caicchiolo, Gabriele Paganelli, Gianmarco Rosa  
 *Laboratorio di Statistica con le Aziende — Gruppo "L'Ipotesi Alternativa"*
@@ -313,7 +314,7 @@ Rscript eda/eda.R   # ~20–40 min; R dependencies: arrow, ggplot2, uwot, cluste
 
 ## `prior_estimation/` — Prior π estimation
 
-Four estimators: **Elkan-Noto**, **Blanchard Quantile**, **KM2** (DEDPUL/KMPE, vendored), and **PULSNAR** (requires R via `rpy2`). The operational value is the maximum across available methods (conservative approach to reduce false negatives).
+Four estimators: **Elkan-Noto**, **Blanchard Quantile**, **KM2** (DEDPUL/KMPE, vendored), and **PULSNAR** (requires R via `rpy2`). The operational value adopted is that of PULSNAR, the only unbiased method. The value is rounded up (conservative approach).
 
 ```bash
 python prior_estimation/run_prior_estimation.py   # runtime: 1–7h depending on method
