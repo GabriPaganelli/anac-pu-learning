@@ -88,7 +88,6 @@ def _one_bag(X_P: np.ndarray, X_N: np.ndarray, X_pool: np.ndarray,
                                np.full(len(X_N), gamma),
                                np.ones(s)])
     else:
-        # γ=0 oppure nessun N disponibile: addestramento su solo P + U campionato
         X_tr = np.vstack([X_P, X_neg])
         y_tr = np.concatenate([np.ones(len(X_P)), np.zeros(s)])
         w_tr = None  # pesi uniformi
@@ -106,8 +105,6 @@ def fit_predict(X_P_tr: np.ndarray, X_N_tr: np.ndarray,
                 cat_idx: list = None) -> np.ndarray:
     """Bagging PU con γ-weighted N certi. Restituisce score aggregati su X_te."""
     params = dict(LGBM_FIXED, num_leaves=NUM_LEAVES)
-    # cat_idx va al Dataset, NON a params (LightGBM ignora categorical_feature in params)
-
     acc = np.zeros(len(X_te))
     for b in range(B):
         acc += _one_bag(X_P_tr, X_N_tr, X_U_tr, X_te,

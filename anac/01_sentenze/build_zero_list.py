@@ -27,7 +27,7 @@ Prerequisiti:
     - data/output/cig_condannati.csv     (da run_pipeline.py step 7)
 
 Output:
-    data/output/cig_scagionati.csv — colonne: CIG, confidence, cds_confirmed, esiti_found, sources
+    data/output/cig_scagionati.csv — colonne: CIG, fonte, motivo
 """
 
 import argparse
@@ -105,8 +105,6 @@ def _run(ricorsi: pd.DataFrame | None) -> None:
                 before - after)
 
     logger.info("Applicazione Regola 2: Verifica conferma CdS …")
-    # I CIG rimossi da esiti favorevoli CdS sono già coperti dalla Regola 1.
-    # Qui identifichiamo i CIG scagionati che hanno anche un rigetto CdS (alta confidenza).
     cds_rejected_cigs = set(
         zero_cig_rows.loc[zero_cig_rows["_IS_CDS"], "CODICE_CIG"].dropna().unique()
     )
@@ -115,7 +113,7 @@ def _run(ricorsi: pd.DataFrame | None) -> None:
                 len(cds_rejected_cigs))
 
     logger.info("Costruzione lista scagionati finale …")
-    result = _build_result(zero_cig_rows, cds_rejected_cigs)
+    result = _build_result(zero_cig_rows)
     stats["final_zero_cig_count"] = len(result)
 
     result.to_csv(config.OUTPUT_CIG_SCAGIONATI, index=False, encoding="utf-8")
@@ -259,40 +257,35 @@ def _join_with_ricorsi(
     return joined
 
 
-def _build_result(
-    zero_cig_rows: pd.DataFrame,
-    cds_confirmed: set[str],
-) -> pd.DataFrame:
+def _build_result(zero_cig_rows: pd.DataFrame) -> pd.DataFrame:
     """
     Produce il DataFrame finale con una riga per CIG.
 
     Colonne:
-      CIG           — identificativo gara
-      confidence    — HIGH (rigetto confermato da CdS) | MEDIUM (solo TAR)
-      cds_confirmed — True se il CdS ha anch'esso rigettato il ricorso
-      esiti_found   — lista separata da virgola degli esiti distinti visti per il CIG
-      sources       — dataset sorgente (ordinanze / sentenze)
+      CIG    — identificativo gara
+      fonte  — sentenza_TAR | ordinanza_TAR
+      motivo — esiti distinti visti per il CIG (separati da virgola)
     """
     agg = (
         zero_cig_rows
         .groupby("CODICE_CIG")
         .agg(
-            esiti_found=("ESITO_NORM", lambda s: ", ".join(sorted(s.dropna().unique()))),
-            sources=("_SOURCE",    lambda s: ", ".join(sorted(s.dropna().unique()))),
+            motivo=("ESITO_NORM", lambda s: ", ".join(sorted(s.dropna().unique()))),
+            _sources=("_SOURCE",  lambda s: ", ".join(sorted(s.dropna().unique()))),
         )
         .reset_index()
         .rename(columns={"CODICE_CIG": "CIG"})
     )
 
-    agg["cds_confirmed"] = agg["CIG"].isin(cds_confirmed)
-    agg["confidence"]    = agg["cds_confirmed"].map({True: "HIGH", False: "MEDIUM"})
+    agg["fonte"] = agg["_sources"].apply(
+        lambda s: "sentenza_TAR" if "sentenze" in s else "ordinanza_TAR"
+    )
 
-    return agg[["CIG", "confidence", "cds_confirmed",
-                "esiti_found", "sources"]].sort_values("CIG").reset_index(drop=True)
+    return agg[["CIG", "fonte", "motivo"]].sort_values("CIG").reset_index(drop=True)
 
 
 def _save_empty(stats: dict) -> None:
-    pd.DataFrame(columns=["CIG", "confidence", "cds_confirmed", "esiti_found", "sources"])\
+    pd.DataFrame(columns=["CIG", "fonte", "motivo"])\
         .to_csv(config.OUTPUT_CIG_SCAGIONATI, index=False, encoding="utf-8")
     logger.info("Lista scagionati vuota salvata in %s", config.OUTPUT_CIG_SCAGIONATI)
     _print_stats(stats)

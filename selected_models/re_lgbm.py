@@ -111,7 +111,6 @@ def make_pnpu_objective(pi: float, gamma: float,
 
         sig = 1.0 / (1.0 + np.exp(-preds))
 
-        # Non-negative correction
         r_P_neg  = np.mean(np.log1p(np.exp(preds[is_P]))) if is_P.any() else 0.0
         r_U_neg  = np.mean(np.log1p(np.exp(preds[is_U]))) if is_U.any() else 0.0
         neg_term = r_U_neg - _pi * r_P_neg
@@ -127,7 +126,6 @@ def make_pnpu_objective(pi: float, gamma: float,
             grads[is_U] = (1.0 / _n_U) * sig[is_U]
             hess[is_U]  = (1.0 / _n_U) * sig[is_U] * (1.0 - sig[is_U])
 
-        # Termine N certi scalato per γ: w_N = γ·(1−π)/n_UL
         if is_N.any() and _gamma > 0.0:
             w_N = _gamma * (1.0 - _pi) / _n_UL
             grads[is_N] = w_N * sig[is_N]
@@ -182,9 +180,8 @@ def fit_predict(X_P_tr: np.ndarray, X_N_tr: np.ndarray,
         rng = np.random.default_rng(RANDOM_SEED)
 
     n_P = len(X_P_tr); n_U = len(X_U_tr); n_N = len(X_N_tr)
-    n_unl_total = n_U   # denominatore termine N (= |U| nel fold di training)
+    n_unl_total = n_U
 
-    # Dataset PNPU: P (1) + U (0) + N (2)
     X_all_tr = np.vstack([X_P_tr, X_U_tr, X_N_tr])
     y_all_tr = np.concatenate([
         np.ones(n_P),
@@ -192,7 +189,6 @@ def fit_predict(X_P_tr: np.ndarray, X_N_tr: np.ndarray,
         np.full(n_N, 2.0),
     ])
 
-    # Early stopping: 15% holdout
     n_es   = max(10, int(ES_FRAC * len(X_all_tr)))
     es_idx = rng.choice(len(X_all_tr), size=n_es, replace=False)
     tr_idx = np.setdiff1d(np.arange(len(X_all_tr)), es_idx)

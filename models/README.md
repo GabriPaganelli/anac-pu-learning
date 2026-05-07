@@ -1,4 +1,9 @@
 # models — Stimatori PU Learning per la rilevazione di corruzione negli appalti
+# *models — PU Learning estimators for corruption detection in public procurement*
+
+---
+
+## Italiano
 
 Quattro famiglie di modelli che implementano strategie diverse per il problema Positive-Unlabeled (PU) su dati di appalti pubblici italiani (ANAC).
 
@@ -104,8 +109,6 @@ PNPU         = True   # True=PNPU, False=PU puro
 TEST_MODE    = False  # True = smoke test rapido (1 fold, dataset ridotto)
 ```
 
-I percorsi sono risolti dinamicamente tramite `Path(__file__).resolve().parents[N]` — nessun percorso assoluto hardcoded.
-
 ---
 
 ## Prerequisiti
@@ -130,9 +133,7 @@ I file seguono la convenzione `{modello}_M{n}_{variante}_fold_metrics.csv`.
 
 ---
 
-## English version below
-
-# models — PU Learning estimators for corruption detection in public procurement
+## English
 
 Four model families implementing different strategies for the Positive-Unlabeled (PU) problem on Italian public procurement (appalti pubblici) data (ANAC).
 

@@ -1,4 +1,9 @@
 # selected_models — PNU Mixing (Roadmap §5)
+# *selected_models — PNU Mixing (Roadmap §5)*
+
+---
+
+## Italiano
 
 Quattro modelli finalisti valutati su una griglia di γ ∈ [0, 1] che controlla il peso degli **N certi** nel training (PNU Mixing, Sakai et al. ICML 2017).
 
@@ -17,7 +22,6 @@ selected_models/
 ├── bagging_lgbm.py      # Bagging LightGBM (PNPU)
 ├── re_lgbm.py           # RE LightGBM (nnPU loss, PNPU)
 ├── puet.py              # PU Extra Trees (preprocessed, PNPU)
-├── _smoke_test.py       # Smoke test con dati sintetici (no I/O parquet)
 └── results/             # CSV fold_metrics e summary per modello × dataset × γ
 ```
 
@@ -34,9 +38,9 @@ selected_models/
 
 ---
 
-## Reshuffle fold
+## Rimescolamento dei fold
 
-I fold vengono reshuffati **una sola volta** prima del loop γ, con strategia **gerarchica M3→M2→M1**: M3 (dataset più piccolo e più vincolato) viene reshuffato per primo, poi i CIG aggiuntivi di M2, poi quelli di M1. Garantisce fold bilanciati localmente per P, N e U in ciascun dataset (seed=2025, indipendente dal benchmark originale).
+I fold vengono rimescolati **una sola volta** prima del loop γ, con strategia **gerarchica M3→M2→M1**: M3 (dataset più piccolo e più vincolato) viene rimescolato per primo, poi i CIG aggiuntivi di M2, poi quelli di M1. Garantisce fold bilanciati localmente per P, N e U in ciascun dataset (seed=2025, indipendente dal benchmark originale).
 
 ---
 
@@ -66,7 +70,7 @@ python selected_models/plot_mixing.py
 | Modelli | Griglia γ |
 |---------|-----------|
 | `bagging_lgbm`, `re_lgbm`, `puet` | 0, 0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0 |
-| `lgb_supervised` | 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0 |
+| `lgb_supervised` | 0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0 |
 
 ---
 
@@ -76,7 +80,6 @@ python selected_models/plot_mixing.py
 results/mixing_{modello}_M{n}_fold_metrics.csv   # lift/auc per fold × γ
 results/mixing_{modello}_M{n}_summary.csv        # media ± SD per γ
 results/mixing_lift_vs_gamma.{png,pdf}           # grafici (da plot_mixing.py)
-results/mixing_riepilogo.md                      # analisi γ_best per modello
 ```
 
 Metriche: **lift@1%**, lift@2%, lift@5%, PR-AUC, ROC-AUC.
@@ -91,8 +94,6 @@ Metriche: **lift@1%**, lift@2%, lift@5%, PR-AUC, ROC-AUC.
 | re_lgbm | 0.9 | 1.0 | 0.33 (lift) / 1.0 (PR AUC) |
 | bagging_lgbm | 0.66 | 0.80 | 0.33–0.66 |
 | puet | 0.0 | 0.0 | 0.0 (lift) / 0.05 (PR AUC) |
-
-Per l'analisi completa vedere [`results/mixing_riepilogo.md`](results/mixing_riepilogo.md).
 
 ---
 
@@ -110,9 +111,7 @@ pip install lightgbm scikit-learn pandas numpy pyarrow scipy matplotlib
 
 ---
 
-## English version below
-
-# selected_models — PNU Mixing (Roadmap §5)
+## English
 
 Four finalist models evaluated on a grid of γ ∈ [0, 1] that controls the weight of **certain negatives (N certi)** during training (PNU Mixing, Sakai et al. ICML 2017).
 
@@ -131,7 +130,6 @@ selected_models/
 ├── bagging_lgbm.py      # Bagging LightGBM (PNPU)
 ├── re_lgbm.py           # RE LightGBM (nnPU loss, PNPU)
 ├── puet.py              # PU Extra Trees (preprocessed, PNPU)
-├── _smoke_test.py       # Smoke test with synthetic data (no parquet I/O)
 └── results/             # fold_metrics and summary CSVs per model × dataset × γ
 ```
 
@@ -180,7 +178,7 @@ python selected_models/plot_mixing.py
 | Models | γ grid |
 |--------|--------|
 | `bagging_lgbm`, `re_lgbm`, `puet` | 0, 0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0 |
-| `lgb_supervised` | 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0 |
+| `lgb_supervised` | 0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0 |
 
 ---
 
@@ -190,7 +188,6 @@ python selected_models/plot_mixing.py
 results/mixing_{model}_M{n}_fold_metrics.csv   # lift/auc per fold × γ
 results/mixing_{model}_M{n}_summary.csv        # mean ± SD per γ
 results/mixing_lift_vs_gamma.{png,pdf}         # plots (from plot_mixing.py)
-results/mixing_riepilogo.md                    # γ_best analysis per model
 ```
 
 Metrics: **lift@1%**, lift@2%, lift@5%, PR-AUC, ROC-AUC.
@@ -205,8 +202,6 @@ Metrics: **lift@1%**, lift@2%, lift@5%, PR-AUC, ROC-AUC.
 | re_lgbm | 0.9 | 1.0 | 0.33 (lift) / 1.0 (PR AUC) |
 | bagging_lgbm | 0.66 | 0.80 | 0.33–0.66 |
 | puet | 0.0 | 0.0 | 0.0 (lift) / 0.05 (PR AUC) |
-
-For the full analysis see [`results/mixing_riepilogo.md`](results/mixing_riepilogo.md).
 
 ---
 

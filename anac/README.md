@@ -1,4 +1,9 @@
 # Appalti ANAC — Rilevamento corruzione con PU Learning
+# *Appalti ANAC — Corruption Detection with PU Learning*
+
+---
+
+## Italiano
 
 Pipeline per la costruzione di dataset e modelli di rilevamento della corruzione negli appalti pubblici italiani (BDNCP ANAC, 2008-2025).
 
@@ -26,12 +31,12 @@ anac/
 │           ├── nativi/                # M1/M2/M3 per XGBoost/LightGBM
 │           └── preprocessed/         # M1/M2/M3 per Logistica/SVM
 ├── utils/
+│   ├── download_bdncp.py              # Scarica CSV BDNCP da dati.anticorruzione.it (CKAN)
 │   ├── download_contesto.py           # Scarica dati territoriali ISTAT/MEF
 │   └── create_data_dictionary.py      # Genera variables/data_dictionary.xlsx
 ├── variables/
 │   ├── variable_selection.xlsx        # Selezione e configurazione variabili
 │   └── data_dictionary.xlsx           # Dizionario dati generato automaticamente
-└── doc/                  # Decisioni metodologiche e analisi
 ```
 
 ---
@@ -74,7 +79,13 @@ python run_pipeline.py
 
 Legge i CSV ANAC in `data/raw/` e costruisce progressivamente `output/parquet/bando_cig_all.parquet`, poi produce i 6 parquet model (`M1`, `M2`, `M3` × nativi/preprocessed) con la colonna `fold` per la cross-validation.
 
-I CSV ANAC devono essere scaricati manualmente da [BDNCP ANAC](https://dati.anticorruzione.it/) e posizionati in `data/raw/`.
+I CSV ANAC vengono scaricati automaticamente dalla CKAN API di dati.anticorruzione.it:
+
+```bash
+python utils/download_bdncp.py
+```
+
+Opzioni: `--no-cache` (forza re-download), `--dry-run` (stampa URL senza scaricare), `--since ANNO` (scarica i bandi-cig solo dall'anno indicato).
 
 Vedi `02_pipeline/README.md` per i dettagli.
 
@@ -100,20 +111,18 @@ La colonna `fold` (0–3) permette cross-validation stratificata: i fold sono as
 
 ## Fonti dati
 
-| Dato | Fonte | Aggiornamento |
-|------|-------|---------------|
-| Bandi CIG | ANAC BDNCP | Annuale (file per anno) |
-| Aggiudicazioni, varianti, SAL, ... | ANAC BDNCP | Singolo file |
-| Sentenze TAR/CdS | openga.giustizia-amministrativa.it | A richiesta |
-| Disoccupazione provinciale | ISTAT SDMX | Annuale |
-| Reddito IRPEF pro capite | MEF | Annuale |
-| Tasso omicidi per 100k | ISTAT BES | Con cadenza pluriennale |
+| Dato | Fonte |
+|------|-------|
+| Bandi CIG | ANAC BDNCP |
+| Aggiudicazioni, varianti, SAL, ... | ANAC BDNCP |
+| Sentenze TAR/CdS | openga.giustizia-amministrativa.it |
+| Disoccupazione provinciale | ISTAT SDMX |
+| Reddito IRPEF pro capite | MEF |
+| Tasso omicidi per 100k | ISTAT BES |
 
 ---
 
-## English version below
-
-# Appalti ANAC — Corruption Detection with PU Learning
+## English
 
 Pipeline for building datasets and models to detect corruption in Italian public procurement (BDNCP ANAC, 2008–2025).
 
@@ -141,12 +150,12 @@ anac/
 │           ├── nativi/                # M1/M2/M3 for XGBoost/LightGBM
 │           └── preprocessed/         # M1/M2/M3 for Logistic/SVM
 ├── utils/
+│   ├── download_bdncp.py              # Downloads BDNCP CSV files from dati.anticorruzione.it (CKAN)
 │   ├── download_contesto.py           # Downloads territorial data from ISTAT/MEF
 │   └── create_data_dictionary.py      # Generates variables/data_dictionary.xlsx
-├── variables/
-│   ├── variable_selection.xlsx        # Variable selection and configuration
-│   └── data_dictionary.xlsx           # Auto-generated data dictionary
-└── doc/                  # Methodological decisions and analyses
+└── variables/
+    ├── variable_selection.xlsx        # Variable selection and configuration
+    └── data_dictionary.xlsx           # Auto-generated data dictionary
 ```
 
 ---
@@ -189,7 +198,13 @@ python run_pipeline.py
 
 Reads ANAC CSV files from `data/raw/` and incrementally builds `output/parquet/bando_cig_all.parquet`, then produces the 6 model parquets (`M1`, `M2`, `M3` × native/preprocessed) with a `fold` column for cross-validation.
 
-ANAC CSV files must be downloaded manually from [BDNCP ANAC](https://dati.anticorruzione.it/) and placed in `data/raw/`.
+ANAC CSV files are downloaded automatically from the dati.anticorruzione.it CKAN API:
+
+```bash
+python utils/download_bdncp.py
+```
+
+Options: `--no-cache` (force re-download), `--dry-run` (print URLs without downloading), `--since YEAR` (download bandi-cig from that year onward).
 
 See `02_pipeline/README.md` for details.
 

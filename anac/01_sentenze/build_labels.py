@@ -12,7 +12,7 @@ Fonte degli scagionati (label=0):
 
 Output (in labels/):
   labels/cig_condannati.csv — CIG, fonte, motivo
-  labels/cig_scagionati.csv — CIG, confidence, cds_confirmed, esiti_found, sources
+  labels/cig_scagionati.csv — CIG, fonte, motivo
 """
 
 import logging

@@ -1,4 +1,9 @@
 # risk_estimators — Stimatori nnPU / PNPU
+# *risk_estimators — nnPU / PNPU risk estimators*
+
+---
+
+## Italiano
 
 Implementazione del risk estimator **nnPU** (Kiryo et al. 2017) con estensione **PNPU** per il progetto di rilevazione corruzione negli appalti ANAC.
 
@@ -60,8 +65,6 @@ RETRAIN_FINAL  = False  # True = riallena su tutto il dataset con parametri otti
 | `nnpu_logit.py` | `preprocessed/` | Gradient ascent richiede input numerici senza NA |
 | `nnpu_nn.py` | `preprocessed/` | PyTorch richiede tensori numerici |
 
-Path risolto dinamicamente: `Path(__file__).resolve().parents[3] / "anac" / "output" / "parquet" / "model" / ...`
-
 ---
 
 ## Schema CV
@@ -110,9 +113,7 @@ pip install torch pandas numpy scikit-learn pyarrow
 
 ---
 
-## English version below
-
-# risk_estimators — nnPU / PNPU risk estimators
+## English
 
 Implementation of the **nnPU risk estimator** (Kiryo et al. 2017) with the **PNPU** extension for the ANAC procurement corruption detection project.
 

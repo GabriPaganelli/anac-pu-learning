@@ -1,4 +1,9 @@
 # prior_estimation — Stima della prior di classe (α / π)
+# *prior_estimation — Class prior estimation (α / π)*
+
+---
+
+## Italiano
 
 Stima della proporzione di contratti corrotti (α) nel framework PU Learning su dati di appalti pubblici italiani (ANAC).
 
@@ -12,7 +17,6 @@ Quattro metodi implementati: **Elkan-Noto**, **Blanchard Quantili**, **KM2** (DE
 prior_estimation/
 ├── run_prior_estimation.py   # Script unico: esegue tutti e 4 i metodi
 ├── KMPE.py                   # Vendored da dimonenka/DEDPUL (MIT License)
-├── prior_analysis.md         # Analisi metodologica e confronto stime
 └── results/
     ├── prior_estimates_M1.txt
     ├── prior_estimates_M2.txt
@@ -83,9 +87,9 @@ MAX_UNL_PULSNAR      = 50_000
 
 | Metodo | Tempo per modello |
 |--------|-------------------|
-| Elkan-Noto + Blanchard | 30-60 min (LightGBM 5-fold CV) |
-| KM2 (10 run) | 30-60 min |
-| PULSNAR (30 run) | 2.5-5 ore |
+| Elkan-Noto + Blanchard | 30–60 min (LightGBM 5-fold CV) |
+| KM2 (10 run) | 30–60 min |
+| PULSNAR (30 run) | 2.5–5 ore |
 
 L'output viene salvato in `results/prior_estimates_M{n}.txt`.
 
@@ -105,20 +109,16 @@ Tre modelli temporali annidati (feature set cumulativo):
 
 ## Note metodologiche
 
-Per l'interpretazione delle stime e il confronto tra metodi vedere `prior_analysis.md`.
-
 In breve:
 - **Elkan-Noto** stima `c = P(S=1|Y=1)` (label frequency) — tende a sovrastimare α sotto SAR.
-- **Blanchard Quantili** è un lower bound teorico di π — più robusto a violazioni di SCAR.
+- **Blanchard Quantili** è un upper bound teorico di π — più robusto a violazioni di SCAR.
 - **KM2** e **PULSNAR** stimano direttamente `P(Y=1)` nel set non etichettato — più instabili con pochi positivi (<500).
 
-Il valore operativo riportato è il **massimo** tra i metodi disponibili (approccio conservativo per ridurre i falsi negativi).
+Il valore operativo riportato è quello di PULSNAR, unico metodo robusto sotto SAR, arrotondato per eccesso (approccio conservativo per ridurre i falsi negativi).
 
 ---
 
-## English version below
-
-# prior_estimation — Class prior estimation (α / π)
+## English
 
 Estimation of the proportion of corrupt contracts (α) in the PU Learning framework on Italian public procurement (appalti pubblici) data from ANAC.
 
@@ -132,7 +132,6 @@ Four methods implemented: **Elkan-Noto**, **Blanchard Quantile**, **KM2** (DEDPU
 prior_estimation/
 ├── run_prior_estimation.py   # Single script: runs all 4 methods
 ├── KMPE.py                   # Vendored from dimonenka/DEDPUL (MIT License)
-├── prior_analysis.md         # Methodological analysis and comparison of estimates
 └── results/
     ├── prior_estimates_M1.txt
     ├── prior_estimates_M2.txt
@@ -223,11 +222,9 @@ Output is saved to `results/prior_estimates_M{n}.txt`.
 
 ## Methodological notes
 
-For interpretation of estimates and comparison across methods see `prior_analysis.md`.
-
 In brief:
 - **Elkan-Noto** estimates `c = P(S=1|Y=1)` (label frequency) — tends to overestimate α under SAR (Selected At Random) assumption violations.
 - **Blanchard Quantile** is a theoretical lower bound on π — more robust to SCAR violations.
 - **KM2** and **PULSNAR** directly estimate `P(Y=1)` in the unlabeled set — less stable with few positives (<500).
 
-The reported operational value is the **maximum** across available methods (conservative approach to reduce false negatives / falsi negativi).
+The reported operational value is that of PULSNAR, the only method robust under SAR, rounded up (conservative approach to reduce false negatives).

@@ -1,4 +1,9 @@
 # app — APPalti: Risk Scoring degli Appalti Pubblici
+# *app — APPalti: Risk Scoring for Public Procurement*
+
+---
+
+## Italiano
 
 Applicazione Streamlit per il calcolo del **rischio corruttivo** su singoli appalti o batch CSV. Usa RE LightGBM (nnPU loss, γ=1) addestrato on-the-fly sulla distribuzione storica ANAC (2008–oggi).
 
@@ -29,6 +34,8 @@ app/
 
 ## Setup (una tantum)
 
+I file `data/` sono già presenti nel repository — rieseguire setup solo se i parquet sorgente cambiano.
+
 Eseguire **prima** di avviare l'app, dalla root del progetto:
 
 ```bash
@@ -38,8 +45,6 @@ python app/setup.py
 Legge i parquet nativi da `anac/output/parquet/model/nativi/` e produce:
 - `data/M{1,2,3}_ready.parquet` — feature matrix float32 + label (tutte le righe, no filtro fold)
 - `data/encodings.json` — mapping categoriali per l'encoding del nuovo contratto
-
-I file `data/` sono già presenti nel repository — rieseguire setup solo se i parquet sorgente cambiano.
 
 ---
 
@@ -95,9 +100,7 @@ pip install streamlit pandas numpy lightgbm scipy pyarrow plotly
 
 ---
 
-## English version below
-
-# app — APPalti: Risk Scoring for Public Procurement
+## English
 
 Streamlit application for computing **corruption risk** on individual contracts or batch CSV files. Uses RE LightGBM (nnPU loss, γ=1) trained on-the-fly on the historical ANAC distribution (2008–present).
 

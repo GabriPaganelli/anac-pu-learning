@@ -21,7 +21,7 @@ Reshuffle fold (gerarchico M3→M2→M1):
 
 Griglia γ:
   Default:     [0, 0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0]
-  LGB supervisionato: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+  LGB supervisionato: [0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0]
   (γ=0 escluso: senza N certi il classificatore binario non ha negativi)
 
 Modelli:
@@ -64,7 +64,7 @@ OUT_DIR = Path(__file__).resolve().parent / "results"
 OUT_DIR.mkdir(exist_ok=True)
 
 GAMMA_DEFAULT    = [0.0, 0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0]
-GAMMA_SUPERVISED = [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+GAMMA_SUPERVISED = [0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0]
 DATASETS         = [1, 2, 3]
 ALL_MODELS       = ["lgb_supervised", "bagging_lgbm", "re_lgbm", "puet"]
 
@@ -209,7 +209,7 @@ def run_puet(df_preprocessed: pd.DataFrame, _model_number: int,
 
     for i, gamma in enumerate(gamma_grid):
         t_g = datetime.now()
-        print(f"\n  [{_ts()}] puet M{model_number} gamma={gamma:.2f}  "
+        print(f"\n  [{_ts()}] puet M{_model_number} gamma={gamma:.2f}  "
               f"({i+1}/{len(gamma_grid)})  {_eta_str(t_loop, i, len(gamma_grid))}")
         _, fold_metrics = puet_mod.run_oof(df_preprocessed, gamma, features)
         fold_rows = list(fold_metrics.values())
@@ -238,13 +238,7 @@ def main(models: list, datasets: list, gamma_override: list = None) -> None:
     print(f"  Dataset: M{datasets}")
     print(f"  Reshuffle seed: {RESHUFFLE_SEED}")
 
-    # Strategia gerarchica M3→M2→M1: P, N, U di M3 (dataset più piccolo e più
-    # vincolato) vengono assegnati per primi, poi i CIG addizionali di M2, poi
-    # quelli di M1. Nota: P e N NON sono identici tra i dataset (es. contratti
-    # senza dati post-aggiudicazione non compaiono in M3) → la gerarchia è
-    # necessaria anche per bilanciare P/N, non solo U.
-    # Slim load (3 colonne) su tutti e tre i dataset, ~8s totali.
-    print(f"\n  [{_ts()}] Calcolo fold_map gerarchico M3→M2→M1 (seed={RESHUFFLE_SEED})...")
+    print(f"\n  [{_ts()}] Calcolo fold_map gerarchico M3->M2->M1 (seed={RESHUFFLE_SEED})...")
     fold_map = compute_fold_map_hierarchical(seed=RESHUFFLE_SEED)
 
     for model_number in datasets:
@@ -254,15 +248,12 @@ def main(models: list, datasets: list, gamma_override: list = None) -> None:
         df_nativi, cat_names = load_nativi_raw(model_number)
         df_nativi = apply_fold_map(df_nativi, fold_map)
 
-        # Carica preprocessed se necessario per PUET
         df_preprocessed = None
         if any(MODEL_RUNNERS[m][1] == "preprocessed" for m in models):
             print(f"  [{_ts()}] Caricamento preprocessed M{model_number}...")
             df_preprocessed = apply_fold_map(
                 load_preprocessed_raw(model_number), fold_map)
 
-        # Nota: df_nativi e df_preprocessed sono caricati UNA sola volta per
-        # dataset e condivisi in memoria tra tutti i modelli — nessun I/O extra.
         for model_name in models:
             runner_fn, data_type, default_grid = MODEL_RUNNERS[model_name]
             gamma_grid = gamma_override if gamma_override else default_grid
@@ -273,14 +264,12 @@ def main(models: list, datasets: list, gamma_override: list = None) -> None:
             df = df_nativi if data_type == "nativi" else df_preprocessed
 
             t0 = datetime.now()
-            # cat_names passati solo ai modelli che usano nativi (LGB-based)
             extra = {"cat_names": cat_names} if data_type == "nativi" else {}
             fold_rows, summary_rows = runner_fn(df, model_number, gamma_grid, **extra)
             elapsed = (datetime.now() - t0).total_seconds()
 
             _save_results(model_name, model_number, fold_rows, summary_rows)
 
-            # Stampa tabella γ vs lift@1% per quick scan
             print(f"\n  [{_ts()}] {model_name} M{model_number} — riepilogo "
                   f"({elapsed/60:.1f} min)")
             print(f"  {'gamma':>6}  {'lift@1% mean':>12}  {'SD':>6}  {'PR AUC mean':>11}")

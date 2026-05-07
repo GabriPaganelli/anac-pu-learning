@@ -28,7 +28,6 @@ TITLES  = {
 COLORS  = {"M1": "#2196F3", "M2": "#FF9800", "M3": "#4CAF50"}
 MARKERS = {"M1": "o", "M2": "s", "M3": "^"}
 
-# Carica gamma* da gamma_star.json (se esiste)
 gamma_star = {}
 if GAMMA_JSON.exists():
     with open(GAMMA_JSON) as f:
@@ -54,13 +53,10 @@ for ax, model in zip(axes, MODELS):
             linewidth=1.8, markersize=5,
             capsize=3, elinewidth=0.8, alpha=0.9,
         )
-        # Tratteggio colorato = argmax automatico (riferimento veloce)
         best_idx = df["lift@1%_mean"].idxmax()
         ax.axvline(df.loc[best_idx, "gamma"], color=COLORS[label],
                    linestyle="--", linewidth=0.8, alpha=0.4)
 
-    # Linea rossa = gamma* scelto manualmente da gamma_star.json
-    # (unica per modello: se M1=M2=M3 una sola linea; altrimenti tre)
     plotted_gs = set()
     for mn in [1, 2, 3]:
         gs_key = f"M{mn}"

@@ -1,4 +1,9 @@
 # biased — Biased Learning (baseline)
+# *biased — Biased Learning (baseline)*
+
+---
+
+## Italiano
 
 Baseline PU in cui gli esempi **Unlabeled** vengono trattati come negativi con peso ridotto `W_UNLABELED`.
 
@@ -83,9 +88,7 @@ pip install lightgbm scikit-learn pandas numpy pyarrow
 
 ---
 
-## English version below
-
-# biased — Biased Learning (baseline)
+## English
 
 Baseline PU approach in which **Unlabeled** examples are treated as negatives with reduced weight `W_UNLABELED`.
 
