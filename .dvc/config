@@ -1,4 +1,6 @@
 [core]
     remote = dagshub
-[remote "dagshub"]
+[cache]
+    type = hardlink
+['remote "dagshub"']
     url = https://dagshub.com/GabriPaganelli/anac-pu-learning.dvc
