@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+type: software
+title: "APPalti — PU Learning for Fraud Detection in Italian Public Procurement"
+abstract: >
+  Machine learning pipeline implementing Positive-Unlabeled (PU) learning to detect
+  fraud in Italian public procurement contracts. Uses ANAC microdata (2008-2025)
+  covering approximately 9.5 million contracts. Implements multiple PU model families
+  (risk estimators, bagging, biased, EM-like), prior estimation, calibration, and
+  conformal prediction.
+authors:
+  - family-names: Bortoletto
+    given-names: Davide
+    affiliation: "University of Padova"
+  - family-names: Caicchiolo
+    given-names: Giorgia
+    affiliation: "University of Padova"
+  - family-names: Paganelli
+    given-names: Gabriele
+    affiliation: "University of Padova"
+    email: gabrielepaganelli13@gmail.com
+  - family-names: Rosa
+    given-names: Gianmarco
+    affiliation: "University of Padova"
+keywords:
+  - PU learning
+  - fraud detection
+  - public procurement
+  - ANAC
+  - LightGBM
+  - conformal prediction
+  - SHAP
+license: GPL-3.0
+repository-code: "https://github.com/GabriPaganelli/anac-pu-learning"
+date-released: "2026-06-08"
