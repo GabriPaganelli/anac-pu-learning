@@ -1,7 +1,7 @@
 {
   "_note": "γ* canonici per run_all.py. Chiavi dataset: 1=M1, 2=M2, 3=M3.",
   "_reproducibility": {
-    "re_lgbm_M3_comparison": "Entrambe le varianti γ=0.33 e γ=1.0 sono salvate in results/re_lgbm_M3_g033/ e results/re_lgbm_M3_g100/. Per rigenerare: python run_all_gamma_comparison.py --gammas 0.33 1.0 --force-retrain"
+    "re_lgbm_M3_comparison": "La run canonica γ=1.0 è in results/re_lgbm_M3/; la sensitivity γ=0.33 in results/re_lgbm_M3_g033/. Per rigenerare la sensitivity: python run_all_gamma_comparison.py --gammas 0.33 1.0 --force-retrain"
   },
   "_rationale": {
     "lgb_supervised": "Nessun trend stabile, alta SD → γ=1 (PNPU full, massima info)",

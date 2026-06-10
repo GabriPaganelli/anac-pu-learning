@@ -129,10 +129,7 @@ def sample_u_outside_training(mn: int, cat_map: dict, features: list,
 
 def score_model(model_name: str, mn: int, X: np.ndarray) -> np.ndarray:
     """Carica modello finale e produce raw scores."""
-    if model_name == "re_lgbm" and mn == 3:
-        folder = RESULTS / "re_lgbm_M3_g100"
-    else:
-        folder = RESULTS / f"{model_name}_M{mn}"
+    folder = RESULTS / f"{model_name}_M{mn}"
 
     model = load_model(folder, "final_model", model_name)
 
@@ -147,10 +144,7 @@ def score_model(model_name: str, mn: int, X: np.ndarray) -> np.ndarray:
 
 def apply_platt(model_name: str, mn: int, raw: np.ndarray) -> np.ndarray:
     """Applica Platt scaling globale dai parametri salvati."""
-    if model_name == "re_lgbm" and mn == 3:
-        folder = RESULTS / "re_lgbm_M3_g100"
-    else:
-        folder = RESULTS / f"{model_name}_M{mn}"
+    folder = RESULTS / f"{model_name}_M{mn}"
 
     platt_path = folder / "calibration" / "platt_params.csv"
     if not platt_path.exists():
