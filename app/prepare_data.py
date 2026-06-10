@@ -1,7 +1,7 @@
 """
-app/setup.py — Script one-time: pre-encoding dei parquet nativi.
+app/prepare_data.py — Script one-time: pre-encoding dei parquet nativi.
 Esegui UNA VOLTA prima di avviare l'app:
-    python app/setup.py
+    python app/prepare_data.py
 
 Produce:
     app/data/M{1,2,3}_ready.parquet  — feature matrix (float32) + label
