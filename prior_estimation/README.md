@@ -91,7 +91,9 @@ MAX_UNL_PULSNAR      = 50_000
 | KM2 (10 run) | 30–60 min |
 | PULSNAR (30 run) | 2.5–5 ore |
 
-L'output viene salvato in `results/prior_estimates_M{n}.txt`.
+L'output viene salvato in `results/prior_estimates_M{n}.txt`. I file diagnostici
+prodotti da PULSNAR (`alpha_estimates.tsv`, `predictions.tsv`, `bic_vs_cluster_count.png`)
+vengono scritti dalla libreria nella directory corrente e spostati automaticamente in `results/`.
 
 ---
 
@@ -206,7 +208,9 @@ MAX_UNL_PULSNAR      = 50_000
 | KM2 (10 runs) | 30–60 min |
 | PULSNAR (30 runs) | 2.5–5 hours |
 
-Output is saved to `results/prior_estimates_M{n}.txt`.
+Output is saved to `results/prior_estimates_M{n}.txt`. The diagnostic files produced
+by PULSNAR (`alpha_estimates.tsv`, `predictions.tsv`, `bic_vs_cluster_count.png`) are
+written by the library into the current working directory and automatically moved to `results/`.
 
 ---
 

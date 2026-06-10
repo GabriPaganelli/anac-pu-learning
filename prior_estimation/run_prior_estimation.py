@@ -478,6 +478,13 @@ def main():
             print(f"  Stima non riuscita.  ({_elapsed(t0)})")
         results['PULSNAR'] = {
             'alpha': pn_med, 'ci_lower': pn_lo, 'ci_upper': pn_hi}
+        # PULSNAR scrive i suoi file diagnostici nella cwd: consolidali in results/
+        import shutil
+        RESULTS_DIR.mkdir(exist_ok=True)
+        for _f in ("alpha_estimates.tsv", "predictions.tsv",
+                   "bic_vs_cluster_count.png", "model_imp_features.pkl"):
+            if _pathlib.Path(_f).is_file():
+                shutil.move(_f, RESULTS_DIR / _f)
     else:
         results['PULSNAR'] = {
             'alpha': np.nan, 'ci_lower': np.nan, 'ci_upper': np.nan, 'skipped': True}
