@@ -39,7 +39,7 @@ pip install pandas numpy scikit-learn lightgbm scipy pyarrow
 **PULSNAR** richiede installazione separata:
 
 ```bash
-pip install git+https://github.com/unmtransinfo/PULSNAR.git
+pip install git+https://github.com/unmtransinfo/PULSNAR.git   # per riproducibilità: aggiungere @<commit>
 ```
 
 PULSNAR usa internamente R via `rpy2`. Installare R (https://www.r-project.org/) e `rpy2`:
@@ -156,7 +156,7 @@ pip install pandas numpy scikit-learn lightgbm scipy pyarrow
 **PULSNAR** requires a separate installation:
 
 ```bash
-pip install git+https://github.com/unmtransinfo/PULSNAR.git
+pip install git+https://github.com/unmtransinfo/PULSNAR.git   # for reproducibility: append @<commit>
 ```
 
 PULSNAR uses R internally via `rpy2`. Install R (https://www.r-project.org/) and `rpy2`:

@@ -1,32 +1,37 @@
+# Python >= 3.10 richiesto (union types X | Y nel codice).
+# Ambiente di riferimento dei risultati: Python 3.13 + le versioni "tested with" indicate.
+
 # Core data / ML
-numpy>=1.26
-pandas>=2.0
-pyarrow>=14.0
-scipy>=1.11
-scikit-learn>=1.4
-lightgbm>=4.0
-joblib>=1.3
-tqdm>=4.66
+numpy>=1.26          # tested with 2.2.5
+pandas>=2.0          # tested with 2.2.3
+pyarrow>=14.0        # tested with 23.0.1
+scipy>=1.11          # tested with 1.17.1
+scikit-learn>=1.4    # tested with 1.8.0
+lightgbm>=4.0        # tested with 4.6.0
+joblib>=1.3          # tested with 1.5.3
+tqdm>=4.66           # tested with 4.67.1
 
 # Visualisation
-matplotlib>=3.8
-plotly>=5.18
-shap>=0.44
+matplotlib>=3.8      # tested with 3.10.8
+plotly>=5.18         # tested with 6.7.0
+shap>=0.44           # tested with 0.51.0
 
 # Web app (app/)
-streamlit>=1.31
+streamlit>=1.31      # tested with 1.56.0
 
-# Neural-net risk estimator (models/risk_estimators/nnpu_nn.py)
-torch>=2.1
+# Neural-net risk estimator (models/risk_estimators/nn/nnpu_nn.py)
+torch>=2.1           # tested with 2.11.0
 
 # Data pipeline — spreadsheet I/O and HTTP
-openpyxl>=3.1
-requests>=2.31
+openpyxl>=3.1        # tested with 3.1.5
+requests>=2.31       # tested with 2.32.3
 
 # KMPE prior estimator (prior_estimation/KMPE.py, vendored MIT licence)
-cvxopt>=1.3
+cvxopt>=1.3          # tested with 1.3.3
 
-# PULSNAR prior estimator (also requires R — see README for R setup)
-xgboost>=2.0
-catboost>=1.2
-rpy2>=3.5
+# PULSNAR prior estimator (also requires R — see README for R setup).
+# PULSNAR itself is installed separately; pin it to a commit for reproducibility:
+#   pip install git+https://github.com/unmtransinfo/PULSNAR.git@<commit>
+xgboost>=2.0         # tested with 3.2.0
+catboost>=1.2        # tested with 1.2.10
+rpy2>=3.5            # tested with 3.6.7

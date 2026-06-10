@@ -91,7 +91,7 @@ python prior_estimation/run_prior_estimation.py   # tempi: 1–7h secondo il met
 
 PULSNAR richiede R con i pacchetti `mclust` e `e1071` e l'installazione separata del pacchetto Python:
 ```bash
-pip install git+https://github.com/unmtransinfo/PULSNAR.git
+pip install git+https://github.com/unmtransinfo/PULSNAR.git   # per riproducibilità: aggiungere @<commit>
 pip install rpy2 xgboost catboost
 ```
 
@@ -207,11 +207,13 @@ python app/prepare_data.py && streamlit run app/app.py
 
 ## Dipendenze
 
+Richiede **Python ≥ 3.10** (ambiente di riferimento dei risultati: Python 3.13).
+
 ```bash
 pip install -r requirements.txt
 ```
 
-Per `prior_estimation` e `eda`: **R** con `mclust`, `e1071`, `arrow`, `ggplot2`, `uwot`, `cluster` e altri (vedere i rispettivi README).
+Per `prior_estimation`, `eda` e `models/em_like`: **R** (testato con R 4.5) con `mclust`, `e1071`, `arrow`, `ggplot2`, `uwot`, `cluster` e altri (vedere i rispettivi README).
 
 ---
 
@@ -322,7 +324,7 @@ python prior_estimation/run_prior_estimation.py   # runtime: 1–7h depending on
 
 PULSNAR additionally requires R with `mclust` and `e1071`, plus:
 ```bash
-pip install git+https://github.com/unmtransinfo/PULSNAR.git
+pip install git+https://github.com/unmtransinfo/PULSNAR.git   # for reproducibility: append @<commit>
 pip install rpy2 xgboost catboost
 ```
 
@@ -438,11 +440,13 @@ python app/prepare_data.py && streamlit run app/app.py
 
 ## Dependencies
 
+Requires **Python ≥ 3.10** (reference environment for the results: Python 3.13).
+
 ```bash
 pip install -r requirements.txt
 ```
 
-For `prior_estimation` and `eda`: **R** with `mclust`, `e1071`, `arrow`, `ggplot2`, `uwot`, `cluster`, and others (see individual READMEs).
+For `prior_estimation`, `eda` and `models/em_like`: **R** (tested with R 4.5) with `mclust`, `e1071`, `arrow`, `ggplot2`, `uwot`, `cluster`, and others (see individual READMEs).
 
 ---
 
