@@ -54,9 +54,10 @@ def _ts() -> str:
 def _result_folder(model_number: int, gamma: float) -> Path:
     """Restituisce la cartella risultati corretta per re_lgbm.
 
-    M1/M2 usano il nome standard (re_lgbm_M1, re_lgbm_M2).
-    M3 ha cartelle con suffix gamma (re_lgbm_M3_g033, re_lgbm_M3_g100).
-    Se esiste la cartella suffissata la usa; altrimenti fallback a nome standard.
+    Il nome standard (re_lgbm_M{n}) contiene la run con il γ* canonico.
+    Le run di sensitivity hanno il suffisso gamma (es. re_lgbm_M3_g033,
+    prodotte da run_all_gamma_comparison.py). Se esiste la cartella
+    suffissata la usa; altrimenti fallback a nome standard.
     """
     gamma_str = f"{gamma:.2f}".replace(".", "")
     suffixed  = OUT_ROOT / f"re_lgbm_M{model_number}_g{gamma_str}"
