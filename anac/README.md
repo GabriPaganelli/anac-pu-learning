@@ -18,7 +18,7 @@ anac/
 ├── 01_sentenze/          # Pipeline di estrazione etichette da sentenze TAR/CdS (OpenGA)
 ├── 02_pipeline/          # Pipeline di feature engineering da CSV ANAC (17 step)
 ├── data/
-│   ├── raw/              # CSV ANAC originali (non versionati)
+│   ├── raw/              # CSV ANAC originali (via DVC: `dvc pull`)
 │   ├── territorial/      # Contesto provinciale ISTAT/MEF (contesto_province.csv)
 │   └── lookup/           # Tabelle di lookup manuali e generate
 ├── labels/
@@ -30,13 +30,16 @@ anac/
 │       └── model/
 │           ├── nativi/                # M1/M2/M3 per XGBoost/LightGBM
 │           └── preprocessed/         # M1/M2/M3 per Logistica/SVM
+├── plots/                             # Distribuzioni univariate delle feature (snapshot statico
+│                                      #   prodotto durante la selezione variabili + _stats.json)
 ├── utils/
 │   ├── download_bdncp.py              # Scarica CSV BDNCP da dati.anticorruzione.it (CKAN)
 │   ├── download_contesto.py           # Scarica dati territoriali ISTAT/MEF
-│   └── create_data_dictionary.py      # Genera variables/data_dictionary.xlsx
+│   └── create_data_dictionary.py      # Genera variables/data_dictionary.{xlsx,csv}
 ├── variables/
 │   ├── variable_selection.xlsx        # Selezione e configurazione variabili
-│   └── data_dictionary.xlsx           # Dizionario dati generato automaticamente
+│   ├── data_dictionary.xlsx           # Dizionario dati generato automaticamente
+│   └── data_dictionary.csv            # Stesso contenuto in CSV (diffabile su GitHub)
 ```
 
 ---
@@ -137,7 +140,7 @@ anac/
 ├── 01_sentenze/          # Label extraction pipeline from TAR/CdS court rulings (OpenGA)
 ├── 02_pipeline/          # Feature engineering pipeline from ANAC CSVs (17 steps)
 ├── data/
-│   ├── raw/              # Raw ANAC CSV files (not versioned)
+│   ├── raw/              # Raw ANAC CSV files (via DVC: `dvc pull`)
 │   ├── territorial/      # Provincial context ISTAT/MEF (contesto_province.csv)
 │   └── lookup/           # Manual and generated lookup tables
 ├── labels/
@@ -149,13 +152,16 @@ anac/
 │       └── model/
 │           ├── nativi/                # M1/M2/M3 for XGBoost/LightGBM
 │           └── preprocessed/         # M1/M2/M3 for Logistic/SVM
+├── plots/                             # Univariate feature distributions (static snapshot
+│                                      #   produced during variable selection + _stats.json)
 ├── utils/
 │   ├── download_bdncp.py              # Downloads BDNCP CSV files from dati.anticorruzione.it (CKAN)
 │   ├── download_contesto.py           # Downloads territorial data from ISTAT/MEF
-│   └── create_data_dictionary.py      # Generates variables/data_dictionary.xlsx
+│   └── create_data_dictionary.py      # Generates variables/data_dictionary.{xlsx,csv}
 └── variables/
     ├── variable_selection.xlsx        # Variable selection and configuration
-    └── data_dictionary.xlsx           # Auto-generated data dictionary
+    ├── data_dictionary.xlsx           # Auto-generated data dictionary
+    └── data_dictionary.csv            # Same content as CSV (diffable on GitHub)
 ```
 
 ---

@@ -154,6 +154,11 @@ Chiavi che iniziano con `_` (es. `_note`, `_rationale`) sono ignorate dal codice
 Per cambiare `gamma*` basta modificare i valori numerici: non e necessario
 toccare nessun altro file.
 
+Il file documenta anche la metodologia: `_rationale` motiva la scelta di gamma*
+per ciascun modello (trend del lift sulla griglia, varianza tra fold) e
+`_reproducibility` indica dove trovare la sensitivity analysis su re_lgbm M3
+(`results/re_lgbm_M3_g033/`) e come rigenerarla.
+
 ---
 
 ## exploratory_plots/
@@ -330,6 +335,11 @@ Numeric keys `"1"`, `"2"`, `"3"` correspond to M1, M2, M3.
 
 Keys starting with `_` (e.g. `_note`, `_rationale`) are ignored by the code.
 To change `gamma*`, just edit the numeric values — no other file needs to be touched.
+
+The file also documents the methodology: `_rationale` motivates the gamma*
+choice for each model (lift trend over the grid, fold variance) and
+`_reproducibility` points to the re_lgbm M3 sensitivity analysis
+(`results/re_lgbm_M3_g033/`) and how to regenerate it.
 
 ---
 
