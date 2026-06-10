@@ -96,10 +96,10 @@ python build_labels.py
 ├── utils/
 │   ├── log_setup.py       # Configurazione logging
 │   └── csv_loader.py      # Caricamento e concatenazione CSV
-├── data/                  # Non versionato (gitignore)
-│   ├── raw/               # CSV scaricati da OpenGA
-│   ├── interim/           # Parquet intermedi (ricorsi_clean, joined_tar, ...)
-│   └── output/            # Output della pipeline
+├── data/
+│   ├── raw/               # CSV scaricati da OpenGA (via DVC: `dvc pull`)
+│   ├── interim/           # Parquet intermedi (via DVC: `dvc pull`)
+│   └── output/            # Output della pipeline (versionato in git)
 │       ├── cig_condannati.csv      # CIG con sentenza favorevole (TAR)
 │       ├── cig_scagionati.csv      # CIG con ricorso rigettato
 │       └── diagnostic_report.json  # Statistiche della pipeline
@@ -230,10 +230,10 @@ python build_labels.py
 ├── utils/
 │   ├── log_setup.py       # Logging configuration
 │   └── csv_loader.py      # CSV loading and concatenation
-├── data/                  # Not versioned (gitignore)
-│   ├── raw/               # CSVs downloaded from OpenGA
-│   ├── interim/           # Intermediate parquets (ricorsi_clean, joined_tar, ...)
-│   └── output/            # Pipeline output
+├── data/
+│   ├── raw/               # CSVs downloaded from OpenGA (via DVC: `dvc pull`)
+│   ├── interim/           # Intermediate parquets (via DVC: `dvc pull`)
+│   └── output/            # Pipeline output (versioned in git)
 │       ├── cig_condannati.csv      # CIGs with favourable TAR ruling
 │       ├── cig_scagionati.csv      # CIGs with rejected appeal
 │       └── diagnostic_report.json  # Pipeline statistics

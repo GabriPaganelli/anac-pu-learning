@@ -1,0 +1,5 @@
+outs:
+- md5: 8d3ef4c3086e751aa675723c40d81192
+  size: 2050550
+  hash: md5
+  path: em_soft_M1_nativi_results.rds

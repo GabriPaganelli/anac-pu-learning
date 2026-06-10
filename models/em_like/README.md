@@ -70,6 +70,8 @@ Modificare `MODEL_NUMBER` e `DATA_SOURCE` in CONFIG prima dell'esecuzione.
 | `results/hard/em_hard_M{n}_{source}_fold_metrics.csv` | Metriche per fold (Hard) |
 | `results/hard/em_hard_M{n}_{source}_results.rds` | Oggetto R completo (Hard) |
 
+I file `.rds` (binari) sono versionati con DVC: `dvc pull` per scaricarli.
+
 ---
 
 ## Prerequisiti
@@ -148,6 +150,8 @@ Modify `MODEL_NUMBER` and `DATA_SOURCE` in CONFIG before running.
 | `results/soft/em_soft_M{n}_{source}_results.rds` | Full R object (Soft) |
 | `results/hard/em_hard_M{n}_{source}_fold_metrics.csv` | Per-fold metrics (Hard) |
 | `results/hard/em_hard_M{n}_{source}_results.rds` | Full R object (Hard) |
+
+The binary `.rds` files are versioned with DVC: run `dvc pull` to download them.
 
 ---
 
