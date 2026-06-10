@@ -110,7 +110,7 @@ Per `run_all_gamma_comparison.py` le cartelle hanno il suffisso gamma:
 results/
 `-- {model}_{Mn}/
     |-- models/
-    |   `-- final_model.{txt|pkl}      # Modello addestrato su tutti i dati
+    |   `-- final_model.{txt|pkl}      # Modello addestrato su tutti i dati (.pkl via DVC: `dvc pull`)
     |-- scores/
     |   |-- scores_oof.csv             # cig, fold, label, score_raw, score_calib_pf, score_calib_gl
     |   `-- scores_final.csv           # cig, label, score_raw_final, score_calib_final
@@ -288,7 +288,7 @@ For `run_all_gamma_comparison.py` folders include a gamma suffix:
 results/
 `-- {model}_{Mn}/
     |-- models/
-    |   `-- final_model.{txt|pkl}      # Model trained on all data
+    |   `-- final_model.{txt|pkl}      # Model trained on all data (.pkl via DVC: `dvc pull`)
     |-- scores/
     |   |-- scores_oof.csv             # cig, fold, label, score_raw, score_calib_pf, score_calib_gl
     |   `-- scores_final.csv           # cig, label, score_raw_final, score_calib_final
