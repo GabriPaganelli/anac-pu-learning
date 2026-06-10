@@ -15,8 +15,8 @@ Due varianti implementate in R: **Soft** (pesi frazionari) e **Hard** (Reliable 
 
 ```
 em_like/
-├── lgbSoft.R      # EM Soft: pesi frazionari da score del modello corrente
-├── lgbHard.R      # EM Hard: Reliable Negatives con soglia adattiva
+├── lgbm_soft.R      # EM Soft: pesi frazionari da score del modello corrente
+├── lgbm_hard.R      # EM Hard: Reliable Negatives con soglia adattiva
 └── results/
     ├── soft/
     └── hard/
@@ -26,11 +26,11 @@ em_like/
 
 ## Varianti
 
-### lgbSoft.R — Soft EM
+### lgbm_soft.R — Soft EM
 
 Ogni U riceve come peso il raw score del modello corrente (interpretato come P(corrotto | X)). Il modello successivo allena su P ∪ U con pesi frazionari. Iterazione fino a convergenza o `MAX_ITER_EM`.
 
-### lgbHard.R — Hard EM (Reliable Negatives)
+### lgbm_hard.R — Hard EM (Reliable Negatives)
 
 Soglia adattiva `h_k`: gli U con score < `h_k` diventano **Reliable Negatives** (RN) e vengono aggiunti come negativi certi al training del ciclo successivo.
 
@@ -53,8 +53,8 @@ MAX_ITER_EM   <- 5
 ## Utilizzo
 
 ```bash
-Rscript lgbSoft.R
-Rscript lgbHard.R
+Rscript lgbm_soft.R
+Rscript lgbm_hard.R
 ```
 
 Modificare `MODEL_NUMBER` e `DATA_SOURCE` in CONFIG prima dell'esecuzione.
@@ -94,8 +94,8 @@ Two variants implemented in R: **Soft** (fractional weights / pesi frazionari) a
 
 ```
 em_like/
-├── lgbSoft.R      # Soft EM: fractional weights from current model score
-├── lgbHard.R      # Hard EM: Reliable Negatives with adaptive threshold
+├── lgbm_soft.R      # Soft EM: fractional weights from current model score
+├── lgbm_hard.R      # Hard EM: Reliable Negatives with adaptive threshold
 └── results/
     ├── soft/
     └── hard/
@@ -105,11 +105,11 @@ em_like/
 
 ## Variants
 
-### lgbSoft.R — Soft EM
+### lgbm_soft.R — Soft EM
 
 Each unlabeled example receives the raw score of the current model as its weight (interpreted as P(corrupt | X)). The next model trains on P ∪ U with fractional weights (pesi frazionari). Iteration continues until convergence or `MAX_ITER_EM`.
 
-### lgbHard.R — Hard EM (Reliable Negatives)
+### lgbm_hard.R — Hard EM (Reliable Negatives)
 
 Adaptive threshold `h_k`: unlabeled examples with score < `h_k` become **Reliable Negatives** (RN) and are added as confirmed negatives in the next training cycle.
 
@@ -134,8 +134,8 @@ Paths are resolved dynamically via `dirname(normalizePath(...))` relative to the
 ## Usage
 
 ```bash
-Rscript lgbSoft.R
-Rscript lgbHard.R
+Rscript lgbm_soft.R
+Rscript lgbm_hard.R
 ```
 
 Modify `MODEL_NUMBER` and `DATA_SOURCE` in CONFIG before running.

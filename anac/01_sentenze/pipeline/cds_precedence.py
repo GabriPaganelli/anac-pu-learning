@@ -1,5 +1,5 @@
 """
-pipeline/cds_dominator.py — Step 6: Consiglio di Stato dominance.
+pipeline/cds_precedence.py — Step 6: Consiglio di Stato dominance.
 
 Logic:
   - CDS and TAR have different case numbers; linkage is via CODICE_CIG.
@@ -38,7 +38,7 @@ def apply_cds_dominance(
         cds_summary:    DataFrame with one row per CIG showing the CDS outcome applied.
     """
     if cds_joined.empty:
-        logger.info("cds_dominator: no CDS outcomes — TAR results unchanged.")
+        logger.info("cds_precedence: no CDS outcomes — TAR results unchanged.")
         return tar_cig_set.copy(), pd.DataFrame()
 
     summary_rows: list[dict] = []
@@ -77,7 +77,7 @@ def apply_cds_dominance(
                 "reason": f"CDS outcome '{esito_raw}' overrides TAR win",
                 "confidence": "HIGH",
                 "uid": "",
-                "source_file": "cds_dominator",
+                "source_file": "cds_precedence",
                 "extra": cig,
             })
         elif esito_norm in config.CDS_AMBIGUOUS_OUTCOMES:
@@ -88,7 +88,7 @@ def apply_cds_dominance(
                 "reason": f"CDS outcome '{esito_raw}' is ambiguous — CIG kept but flagged",
                 "confidence": "LOW",
                 "uid": "",
-                "source_file": "cds_dominator",
+                "source_file": "cds_precedence",
                 "extra": cig,
             })
         else:
@@ -104,11 +104,11 @@ def apply_cds_dominance(
         })
 
     logger.info(
-        "cds_dominator: %d CIGs examined → %d removed, %d uncertain (kept), %d confirmed",
+        "cds_precedence: %d CIGs examined → %d removed, %d uncertain (kept), %d confirmed",
         len(cds_by_cig), removed_count, uncertain_count, confirmed_count,
     )
     logger.info(
-        "cds_dominator: TAR blacklist %d → %d after CDS overrides",
+        "cds_precedence: TAR blacklist %d → %d after CDS overrides",
         len(tar_cig_set), len(final_cigs),
     )
 

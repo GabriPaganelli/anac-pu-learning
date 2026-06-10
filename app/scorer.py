@@ -153,7 +153,7 @@ def run_scoring(
     if missing_in_df:
         raise ValueError(
             f"Feature richieste non presenti nel parquet M{stage}: {missing_in_df}. "
-            "Eseguire setup.py per rigenerare i dati."
+            "Eseguire prepare_data.py per rigenerare i dati."
         )
 
     _cb(f"Training M{stage}: {n_P} P, {n_N} N, {u_size} U  (pi={pi}, gamma={GAMMA})")
@@ -226,7 +226,7 @@ def run_scoring_batch(
     if missing_in_df:
         raise ValueError(
             f"Feature richieste non presenti nel parquet M{stage}: {missing_in_df}. "
-            "Eseguire setup.py per rigenerare i dati."
+            "Eseguire prepare_data.py per rigenerare i dati."
         )
 
     X_P, X_N, X_U = _build_training_arrays(df, active_features, u_size, rng)

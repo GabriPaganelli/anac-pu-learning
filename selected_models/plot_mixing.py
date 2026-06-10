@@ -18,9 +18,9 @@ _HERE      = Path(__file__).resolve().parent
 RESULTS    = _HERE / "results"
 GAMMA_JSON = _HERE.parents[0] / "evaluation" / "gamma_star.json"
 
-MODELS  = ["lgb_supervised", "bagging_lgbm", "re_lgbm", "puet"]
+MODELS  = ["lgbm_supervised", "bagging_lgbm", "re_lgbm", "puet"]
 TITLES  = {
-    "lgb_supervised": "LGB P vs N certi (EM-Hard)",
+    "lgbm_supervised": "LGB P vs N certi (EM-Hard)",
     "bagging_lgbm":   "Bagging LightGBM",
     "re_lgbm":        "RE LightGBM (nnPU)",
     "puet":           "PUET (Extra Trees)",

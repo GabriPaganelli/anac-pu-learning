@@ -12,7 +12,7 @@ shap_analysis.py usa il modello finale salvato da calibration.py.
 
 Uso:
   python run_all.py                              # tutto
-  python run_all.py --models lgb_supervised      # solo un modello
+  python run_all.py --models lgbm_supervised      # solo un modello
   python run_all.py --datasets 3                 # solo M3
   python run_all.py --steps calibration shap     # salta conformal
   python run_all.py --n-shap-sample 100          # più boosters per SHAP

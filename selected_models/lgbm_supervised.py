@@ -1,6 +1,6 @@
 """
 LightGBM supervisionato P vs N certi — finalista PNU Mixing.
-Riscrittura Python di em_like/lgbHard.v4.R (iterazione 0).
+Riscrittura Python di em_like/lgbm_hard.R (iterazione 0).
 
 In EM-Hard, best_iter=0 in quasi tutti i fold su tutti i dataset:
 il modello coincide con un LightGBM standard addestrato su P vs N certi.
@@ -82,7 +82,7 @@ def global_tune(X_P_all: np.ndarray, X_N_all: np.ndarray,
     Ritorna dict con iperparametri ottimali usati per tutti i γ e tutti i fold.
 
     Nota: usa tutti i P+N inclusi quelli che saranno fold di test nell'OOF esterno.
-    Il leakage è documentato e giustificato (vedi §3.5 riepilogo e lgbHard.v4.R).
+    Il leakage è documentato e giustificato (vedi §3.5 riepilogo e em_like/lgbm_hard.R).
 
     cat_idx: lista di indici 0-based delle colonne categoriali nella feature matrix.
     """

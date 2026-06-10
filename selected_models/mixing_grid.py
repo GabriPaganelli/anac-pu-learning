@@ -25,7 +25,7 @@ Griglia γ:
   (γ=0 escluso: senza N certi il classificatore binario non ha negativi)
 
 Modelli:
-  lgb_supervised  — LGB P vs N certi (EM-Hard iter=0, Python rewrite)
+  lgbm_supervised  — LGB P vs N certi (EM-Hard iter=0, Python rewrite)
   bagging_lgbm    — Bagging LightGBM PNPU
   re_lgbm         — RE LightGBM (nnPU loss, PNPU)
   puet            — PU Extra Trees (usa preprocessed; PNPU)
@@ -55,7 +55,7 @@ from selected_models.utils import (
     get_features, cat_names_to_idx,
     KS, RESHUFFLE_SEED,
 )
-import selected_models.lgb_supervised as lgb_sup
+import selected_models.lgbm_supervised as lgb_sup
 import selected_models.bagging_lgbm   as bag_lgb
 import selected_models.re_lgbm        as re_lgb
 import selected_models.puet           as puet_mod
@@ -66,7 +66,7 @@ OUT_DIR.mkdir(exist_ok=True)
 GAMMA_DEFAULT    = [0.0, 0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0]
 GAMMA_SUPERVISED = [0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0]
 DATASETS         = [1, 2, 3]
-ALL_MODELS       = ["lgb_supervised", "bagging_lgbm", "re_lgbm", "puet"]
+ALL_MODELS       = ["lgbm_supervised", "bagging_lgbm", "re_lgbm", "puet"]
 
 
 
@@ -110,7 +110,7 @@ def _save_results(model_name: str, model_number: int,
 
 
 
-def run_lgb_supervised(df_nativi: pd.DataFrame, model_number: int,
+def run_lgbm_supervised(df_nativi: pd.DataFrame, model_number: int,
                        gamma_grid: list, cat_names: list) -> tuple[list, list]:
     """LGB supervisionato P vs N certi.
     Tuning globale UNA volta, poi sweep γ.
@@ -131,7 +131,7 @@ def run_lgb_supervised(df_nativi: pd.DataFrame, model_number: int,
 
     for i, gamma in enumerate(gamma_grid):
         t_g = datetime.now()
-        print(f"\n  [{_ts()}] lgb_supervised M{model_number} gamma={gamma:.2f}  "
+        print(f"\n  [{_ts()}] lgbm_supervised M{model_number} gamma={gamma:.2f}  "
               f"({i+1}/{len(gamma_grid)})  {_eta_str(t_loop, i, len(gamma_grid))}")
         _, fold_metrics = lgb_sup.run_oof(
             df_nativi, gamma, best_params, features, cat_idx)
@@ -225,7 +225,7 @@ def run_puet(df_preprocessed: pd.DataFrame, _model_number: int,
 
 
 MODEL_RUNNERS = {
-    "lgb_supervised": (run_lgb_supervised, "nativi",       GAMMA_SUPERVISED),
+    "lgbm_supervised": (run_lgbm_supervised, "nativi",       GAMMA_SUPERVISED),
     "bagging_lgbm":   (run_bagging_lgbm,   "nativi",       GAMMA_DEFAULT),
     "re_lgbm":        (run_re_lgbm,        "nativi",       GAMMA_DEFAULT),
     "puet":           (run_puet,           "preprocessed", GAMMA_DEFAULT),

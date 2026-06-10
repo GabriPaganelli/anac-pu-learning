@@ -16,7 +16,7 @@ Quattro classificatori implementati: GBM, regressione logistica, random forest e
 
 ```
 biased/
-├── gbm.py       # LightGBM (BCE pesata)
+├── lgbm.py       # LightGBM (BCE pesata)
 ├── logit.py     # Logistica Elastic Net (sklearn)
 ├── rf.py        # Random Forest (sklearn)
 ├── svm.py       # SVM lineare (sklearn)
@@ -53,7 +53,7 @@ W_UNLABELED  = 0.025   # peso degli U (e dei N in PU puro)
 
 Script singolo:
 ```bash
-python gbm.py      # oppure logit.py, rf.py, svm.py
+python lgbm.py      # oppure logit.py, rf.py, svm.py
 ```
 
 Tutti i job in parallelo:
@@ -69,7 +69,7 @@ python run_all.py
 
 | Script | Dataset | Motivo |
 |--------|---------|--------|
-| `gbm.py` | `nativi/` | LightGBM gestisce NA nativamente |
+| `lgbm.py` | `nativi/` | LightGBM gestisce NA nativamente |
 | `logit.py`, `rf.py`, `svm.py` | `preprocessed/` | sklearn richiede input numerici senza NA |
 
 ---
@@ -101,7 +101,7 @@ Four classifiers implemented: GBM, logistic regression, random forest, and SVM.
 
 ```
 biased/
-├── gbm.py       # LightGBM (weighted BCE)
+├── lgbm.py       # LightGBM (weighted BCE)
 ├── logit.py     # Elastic Net logistic regression (sklearn)
 ├── rf.py        # Random Forest (sklearn)
 ├── svm.py       # Linear SVM (sklearn)
@@ -138,7 +138,7 @@ W_UNLABELED  = 0.025   # weight for unlabeled (and confirmed negatives in pure P
 
 Single script:
 ```bash
-python gbm.py      # or logit.py, rf.py, svm.py
+python lgbm.py      # or logit.py, rf.py, svm.py
 ```
 
 All jobs in parallel:
@@ -154,7 +154,7 @@ python run_all.py
 
 | Script | Dataset | Reason |
 |--------|---------|--------|
-| `gbm.py` | `nativi/` | LightGBM handles NA natively |
+| `lgbm.py` | `nativi/` | LightGBM handles NA natively |
 | `logit.py`, `rf.py`, `svm.py` | `preprocessed/` | sklearn requires numeric input without NA |
 
 ---

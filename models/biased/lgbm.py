@@ -1,5 +1,5 @@
 """
-Biased Learning -- LightGBM                                           [biased/gbm.py]
+Biased Learning -- LightGBM                                           [biased/lgbm.py]
 U trattato come classe negativa con peso ridotto W_UNLABELED.
 
 Pesi (biased learning):
@@ -336,7 +336,7 @@ def main():
     print(f"\n  Lift@1% medio: {results['lift_1pct'].mean():.3f} "
           f"+/- {results['lift_1pct'].std():.3f}")
 
-    out_csv = Path(OUT_DIR) / f"gbm_M{MODEL_NUMBER}_{variant}_fold_metrics.csv"
+    out_csv = Path(OUT_DIR) / f"lgbm_M{MODEL_NUMBER}_{variant}_fold_metrics.csv"
     results.to_csv(out_csv, index=False)
     print(f"\n  [SAVED] {out_csv}")
 

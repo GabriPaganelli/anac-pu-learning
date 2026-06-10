@@ -1,6 +1,6 @@
 """
 Runner parallelo per tutti gli script biased learning.              [biased/run_all.py]
-Lancia i 4 script (logit, rf, svm, gbm) per tutte le combinazioni
+Lancia i 4 script (logit, rf, svm, lgbm) per tutte le combinazioni
 di MODEL_NUMBER (1, 2, 3) e variante (pu, pnpu).
 
 I job girano in parallelo (MAX_PARALLEL alla volta) come sottoprocessi.
@@ -18,12 +18,12 @@ from datetime import datetime
 from pathlib import Path
 from itertools import product
 
-SCRIPTS  = ["logit", "svm", "gbm", "rf"]   # script da eseguire (senza .py)
+SCRIPTS  = ["logit", "svm", "lgbm", "rf"]   # script da eseguire (senza .py)
 MODELS   = [1, 2, 3]                        # MODEL_NUMBER
 VARIANTS = ["pnpu", "pu"]                   # varianti
 
 # Quanti job in parallelo al massimo.
-# rf e gbm usano tutti i core; con MAX_PARALLEL=2 si limita l'uso di memoria.
+# rf e lgbm usano tutti i core; con MAX_PARALLEL=2 si limita l'uso di memoria.
 # Aumentare a 3-4 su macchine con RAM abbondante.
 MAX_PARALLEL = 2
 
@@ -114,7 +114,7 @@ def main(scripts=None, models=None, variants=None):
     models   = models   or MODELS
     variants = variants or VARIANTS
     # Crea lista job; ordine: logit prima (leggero), rf per ultimo (pesante)
-    order = {"logit": 0, "svm": 1, "gbm": 2, "rf": 3}
+    order = {"logit": 0, "svm": 1, "lgbm": 2, "rf": 3}
     jobs  = sorted(
         product(scripts, models, variants),
         key=lambda j: (order.get(j[0], 9), j[1], j[2]),
@@ -166,7 +166,7 @@ if __name__ == "__main__":
     import argparse
     ap = argparse.ArgumentParser()
     ap.add_argument("--scripts", nargs="+", default=SCRIPTS,
-                    choices=["logit", "svm", "gbm", "rf"])
+                    choices=["logit", "svm", "lgbm", "rf"])
     ap.add_argument("--models",  nargs="+", type=int, default=MODELS, choices=[1,2,3])
     ap.add_argument("--variants",nargs="+", default=VARIANTS, choices=["pnpu","pu"])
     args = ap.parse_args()

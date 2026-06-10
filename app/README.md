@@ -19,8 +19,8 @@ app/
 ├── scorer.py               # Training e scoring wrapper (run_scoring, run_bootstrap, run_shap)
 ├── re_lgbm.py              # RE LightGBM production — fork di selected_models/re_lgbm.py
 │                           #   (run_oof rimosso, num_threads aggiunto per parallelismo bootstrap)
-├── setup.py                # Script one-time: pre-encoding parquet nativi → data/
-├── _smoke_test.py          # Smoke test (dati reali, nessuna scrittura su data/)
+├── prepare_data.py                # Script one-time: pre-encoding parquet nativi → data/
+├── smoke_test.py          # Smoke test (dati reali, nessuna scrittura su data/)
 └── data/
     ├── M1_ready.parquet    # Feature matrix M1 (9.5M contratti, float32 + label)
     ├── M2_ready.parquet    # Feature matrix M2
@@ -34,12 +34,12 @@ app/
 
 ## Setup (una tantum)
 
-I file `data/` sono già presenti nel repository — rieseguire setup solo se i parquet sorgente cambiano.
+I file `data/` sono già presenti nel repository — rieseguire `prepare_data.py` solo se i parquet sorgente cambiano.
 
 Eseguire **prima** di avviare l'app, dalla root del progetto:
 
 ```bash
-python app/setup.py
+python app/prepare_data.py
 ```
 
 Legge i parquet nativi da `anac/output/parquet/model/nativi/` e produce:
@@ -116,8 +116,8 @@ app/
 ├── scorer.py               # Training and scoring wrapper (run_scoring, run_bootstrap, run_shap)
 ├── re_lgbm.py              # RE LightGBM production — fork of selected_models/re_lgbm.py
 │                           #   (run_oof removed, num_threads added for bootstrap parallelism)
-├── setup.py                # One-time script: pre-encode native parquets → data/
-├── _smoke_test.py          # Smoke test (real data, no writes to data/)
+├── prepare_data.py                # One-time script: pre-encode native parquets → data/
+├── smoke_test.py          # Smoke test (real data, no writes to data/)
 └── data/
     ├── M1_ready.parquet    # Feature matrix M1 (9.5M contracts, float32 + label)
     ├── M2_ready.parquet    # Feature matrix M2
@@ -134,14 +134,14 @@ app/
 Run **before** starting the app, from the project root:
 
 ```bash
-python app/setup.py
+python app/prepare_data.py
 ```
 
 Reads native parquets from `anac/output/parquet/model/nativi/` and produces:
 - `data/M{1,2,3}_ready.parquet` — float32 feature matrix + label (all rows, no fold filter)
 - `data/encodings.json` — categorical mappings for encoding new contracts
 
-The `data/` files are already present in the repository — re-run setup only if the source parquets change.
+The `data/` files are already present in the repository — re-run `prepare_data.py` only if the source parquets change.
 
 ---
 
