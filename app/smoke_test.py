@@ -77,7 +77,7 @@ try:
         "regione": ["Lombardia", "Lazio", "Sicilia"],
     })
     enc_test = {}
-    app_prepare_data._extract_encodings(df_syn, enc_test)
+    app_setup._extract_encodings(df_syn, enc_test)
     assert "cat_col" in enc_test
 
     df_conv, cat_out = app_setup._convert_categoricals_nativi(df_syn.copy())
@@ -91,7 +91,7 @@ try:
         _orig_out = app_setup.OUT_DIR
         app_setup.OUT_DIR = tmp_dir
         enc_tmp = {}
-        app_prepare_data.process_stage(1, enc_tmp)
+        app_setup.process_stage(1, enc_tmp)
         out_file = tmp_dir / "M1_ready.parquet"
         assert out_file.exists(), "M1_ready.parquet non trovato in tmp"
         mb = out_file.stat().st_size / 1e6
