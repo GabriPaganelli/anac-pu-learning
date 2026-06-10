@@ -571,4 +571,13 @@ ls.column_dimensions["B"].width = 70
 
 wb.save(OUT)
 print(f"Salvato: {OUT}")
+
+# Export CSV affiancato (leggibile e diffabile su GitHub)
+import csv
+OUT_CSV = OUT.replace(".xlsx", ".csv")
+with open(OUT_CSV, "w", newline="", encoding="utf-8") as f:
+    writer = csv.writer(f)
+    for row in ws.iter_rows(values_only=True):
+        writer.writerow(row)
+print(f"Salvato: {OUT_CSV}")
 print(f"Righe dati: {len(COLS)}")
