@@ -43,8 +43,8 @@ selected_models/         4 finalisti con PNU Mixing (griglia γ)
 evaluation/              Calibrazione, conformal prediction, SHAP, bootstrap CI
 app/                     Applicazione Streamlit (APPalti)
 metrics/                 Metriche condivise (lift@k%, PR AUC)
+docs/                    Working paper, poster, demo dell'app
 requirements.txt         Dipendenze Python
-report.pdf               Working paper
 ```
 
 ---
@@ -274,8 +274,8 @@ selected_models/         4 finalists with PNU Mixing (γ grid)
 evaluation/              Calibration, conformal prediction, SHAP, bootstrap CI
 app/                     Streamlit application (APPalti)
 metrics/                 Shared metrics (lift@k%, PR AUC)
+docs/                    Working paper, poster, app demo
 requirements.txt         Python dependencies
-report.pdf               Working paper
 ```
 
 ---

@@ -28,3 +28,11 @@ desktop.ini
 # ── Jupyter ───────────────────────────────────────────────────
 .ipynb_checkpoints/
 *.ipynb_checkpoints
+
+# ── R ─────────────────────────────────────────────────────────
+.RData
+.Rhistory
+.Rproj.user/
+
+# ── Cache EDA (rigenerata da eda/eda.R) ───────────────────────
+eda/cache/
