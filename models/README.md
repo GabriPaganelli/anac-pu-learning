@@ -23,14 +23,14 @@ models/
 │   ├── pu_bagging_lightgbm.py
 │   └── pu_extratrees.py
 ├── biased/                  # Biased learning (U come negativi pesati)
-│   ├── gbm.py
+│   ├── lgbm.py
 │   ├── logit.py
 │   ├── rf.py
 │   ├── svm.py
 │   └── run_all.py           #   Runner parallelo per tutti i modelli biased
 └── em_like/                 # Iterativo EM-like (R + LightGBM)
-    ├── lgbSoft.R            #   Soft: pesi frazionari da score LightGBM
-    └── lgbHard.R            #   Hard: Reliable Negatives adattivi
+    ├── lgbm_soft.R            #   Soft: pesi frazionari da score LightGBM
+    └── lgbm_hard.R            #   Hard: Reliable Negatives adattivi
 ```
 
 ---
@@ -75,7 +75,7 @@ Implementano il **risk estimator nnPU** (Kiryo et al. 2017) con estensione **PNP
 
 | Script | Modello | Dataset |
 |--------|---------|---------|
-| `gbm.py` | LightGBM (BCE pesata) | nativi |
+| `lgbm.py` | LightGBM (BCE pesata) | nativi |
 | `logit.py` | Logistica Elastic Net | preprocessed |
 | `rf.py` | Random Forest | preprocessed |
 | `svm.py` | SVM lineare | preprocessed |
@@ -84,8 +84,8 @@ Implementano il **risk estimator nnPU** (Kiryo et al. 2017) con estensione **PNP
 
 **Iterativo EM-like** in R + LightGBM: ad ogni iterazione il modello riclassifica gli U e aggiorna il training set.
 
-- `lgbSoft.R`: pesi frazionari (raw score del modello corrente come peso dell'esempio U).
-- `lgbHard.R`: soglia adattiva — U con score < h_k diventano Reliable Negatives (RN).
+- `lgbm_soft.R`: pesi frazionari (raw score del modello corrente come peso dell'esempio U).
+- `lgbm_hard.R`: soglia adattiva — U con score < h_k diventano Reliable Negatives (RN).
 
 ---
 
@@ -153,14 +153,14 @@ models/
 │   ├── pu_bagging_lightgbm.py
 │   └── pu_extratrees.py
 ├── biased/                  # Biased learning (unlabeled as down-weighted negatives)
-│   ├── gbm.py
+│   ├── lgbm.py
 │   ├── logit.py
 │   ├── rf.py
 │   ├── svm.py
 │   └── run_all.py           #   Parallel runner for all biased models
 └── em_like/                 # Iterative EM-like (R + LightGBM)
-    ├── lgbSoft.R            #   Soft: fractional weights from LightGBM scores
-    └── lgbHard.R            #   Hard: adaptive Reliable Negatives
+    ├── lgbm_soft.R            #   Soft: fractional weights from LightGBM scores
+    └── lgbm_hard.R            #   Hard: adaptive Reliable Negatives
 ```
 
 ---
@@ -205,7 +205,7 @@ Implement the **nnPU risk estimator** (Kiryo et al. 2017) with the **PNPU** exte
 
 | Script | Model | Dataset |
 |--------|-------|---------|
-| `gbm.py` | LightGBM (weighted BCE) | native |
+| `lgbm.py` | LightGBM (weighted BCE) | native |
 | `logit.py` | Elastic Net logistic regression | preprocessed |
 | `rf.py` | Random Forest | preprocessed |
 | `svm.py` | Linear SVM | preprocessed |
@@ -214,8 +214,8 @@ Implement the **nnPU risk estimator** (Kiryo et al. 2017) with the **PNPU** exte
 
 **Iterative EM-like** in R + LightGBM: at each iteration the current model reclassifies unlabeled examples and updates the training set.
 
-- `lgbSoft.R`: fractional weights (pesi frazionari) — raw model score used as unlabeled weight.
-- `lgbHard.R`: adaptive threshold (soglia adattiva) — unlabeled examples below h_k become Reliable Negatives (RN).
+- `lgbm_soft.R`: fractional weights (pesi frazionari) — raw model score used as unlabeled weight.
+- `lgbm_hard.R`: adaptive threshold (soglia adattiva) — unlabeled examples below h_k become Reliable Negatives (RN).
 
 ---
 

@@ -594,7 +594,7 @@ def main() -> None:
     )
 
     if not ENCODINGS_PATH.exists() or not (DATA_DIR / "M1_ready.parquet").exists():
-        st.error("**Dati non trovati.** Esegui prima: `python app/setup.py`")
+        st.error("**Dati non trovati.** Esegui prima: `python app/prepare_data.py`")
         st.stop()
 
     registry  = _load_registry()

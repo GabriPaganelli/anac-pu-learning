@@ -147,7 +147,7 @@ def main() -> None:
     save_intermediate(tar_joined, config.INTERIM_JOINED, "tar_joined")
 
     logger.info("STEP 6 — Dominanza Consiglio di Stato")
-    from pipeline.cds_dominator import apply_cds_dominance
+    from pipeline.cds_precedence import apply_cds_dominance
 
     tar_cig_set = set(tar_joined["CODICE_CIG"].dropna().unique())
     logger.info("CIG condannati prima del filtro CdS: %d", len(tar_cig_set))

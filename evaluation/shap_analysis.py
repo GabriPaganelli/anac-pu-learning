@@ -64,7 +64,7 @@ def compute_shap_values(model, X: np.ndarray, model_name: str,
     """Calcola valori SHAP e base_value per il modello dato.
 
     Strategia per tipo di modello:
-      lgb_supervised / re_lgbm : TreeSHAP sul Booster (esatto, veloce)
+      lgbm_supervised / re_lgbm : TreeSHAP sul Booster (esatto, veloce)
       bagging_lgbm              : media TreeSHAP su n_shap_sample boosters
       puet                      : media TreeSHAP su n_shap_sample bags ET
 
@@ -73,7 +73,7 @@ def compute_shap_values(model, X: np.ndarray, model_name: str,
     """
     print(f"  [SHAP] Calcolo per {model_name} su {X.shape[0]} osservazioni...")
 
-    if model_name in ("lgb_supervised", "re_lgbm"):
+    if model_name in ("lgbm_supervised", "re_lgbm"):
         ex   = shap.TreeExplainer(model)
         sv   = ex.shap_values(X)
         bv   = float(ex.expected_value)

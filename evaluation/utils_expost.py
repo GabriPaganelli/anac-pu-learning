@@ -35,7 +35,7 @@ from selected_models.utils import (
     get_features, cat_names_to_idx,
     LABEL_COL, FOLD_COL, COLS_TO_DROP, CIG_COL,
 )
-import selected_models.lgb_supervised as lgb_sup
+import selected_models.lgbm_supervised as lgb_sup
 import selected_models.bagging_lgbm   as bag_lgb
 import selected_models.re_lgbm        as re_lgb
 import selected_models.puet           as puet_mod
@@ -44,13 +44,13 @@ CALIB_SEED = 2026   # fold map per Platt calibration
 CONF_SEED  = 2027   # fold map per conformal inference
 
 DATA_TYPES = {
-    "lgb_supervised": "nativi",
+    "lgbm_supervised": "nativi",
     "bagging_lgbm":   "nativi",
     "re_lgbm":        "nativi",
     "puet":           "preprocessed",
 }
 
-ALL_MODELS   = ["lgb_supervised", "bagging_lgbm", "re_lgbm", "puet"]
+ALL_MODELS   = ["lgbm_supervised", "bagging_lgbm", "re_lgbm", "puet"]
 ALL_DATASETS = [1, 2, 3]
 
 OUT_ROOT = _HERE / "results"
@@ -70,20 +70,20 @@ def setup_out_dir(model_name: str, model_number: int) -> Path:
 
 
 def save_model(model, out_dir: Path, name: str, model_name: str) -> None:
-    if model_name in ("lgb_supervised", "re_lgbm"):
+    if model_name in ("lgbm_supervised", "re_lgbm"):
         model.save_model(str(out_dir / "models" / f"{name}.txt"))
     else:
         joblib.dump(model, out_dir / "models" / f"{name}.pkl", compress=3)
 
 
 def load_model(out_dir: Path, name: str, model_name: str):
-    if model_name in ("lgb_supervised", "re_lgbm"):
+    if model_name in ("lgbm_supervised", "re_lgbm"):
         return lgb.Booster(model_file=str(out_dir / "models" / f"{name}.txt"))
     return joblib.load(out_dir / "models" / f"{name}.pkl")
 
 
 def model_exists(out_dir: Path, name: str, model_name: str) -> bool:
-    if model_name in ("lgb_supervised", "re_lgbm"):
+    if model_name in ("lgbm_supervised", "re_lgbm"):
         return (out_dir / "models" / f"{name}.txt").exists()
     return (out_dir / "models" / f"{name}.pkl").exists()
 
@@ -150,7 +150,7 @@ def model_predict(model, X: np.ndarray, model_name: str) -> np.ndarray:
         return sigmoid(model.predict(X, raw_score=True))
     if isinstance(model, (BaggingLGBWrapper, PUETWrapper)):
         return model.predict(X)
-    # lgb.Booster binario o lgb_supervised
+    # lgb.Booster binario o lgbm_supervised
     return model.predict(X)
 
 
@@ -284,7 +284,7 @@ class PUETWrapper:
 #
 # prepare(df, features, cat_idx, gamma, model_number) -> state dict
 #   Chiamato UNA volta prima del loop OOF.
-#   Esegue global_tune (lgb_supervised) o inizializza RNG.
+#   Esegue global_tune (lgbm_supervised) o inizializza RNG.
 #
 # oof_fit_score(split, gamma, model_number, features, cat_idx, state) -> scores_te
 #   Chiamato PER FOLD. Restituisce scores su TUTTI i record del fold test (P+N+U).
@@ -296,7 +296,7 @@ class PUETWrapper:
 def _lgb_sup_prepare(df, features, cat_idx, gamma, model_number):
     label = df[LABEL_COL].values.astype(float)
     X     = df[features].to_numpy(dtype=np.float32)
-    print("  [lgb_supervised] Global tune...")
+    print("  [lgbm_supervised] Global tune...")
     best_params = lgb_sup.global_tune(X[label == 1], X[label == 0], cat_idx=cat_idx)
     return {"best_params": best_params}
 
@@ -420,21 +420,21 @@ def _puet_final_fit(df, features, cat_idx, gamma, model_number, state):
 
 
 PREPARE_FNS = {
-    "lgb_supervised": _lgb_sup_prepare,
+    "lgbm_supervised": _lgb_sup_prepare,
     "bagging_lgbm":   _bag_lgb_prepare,
     "re_lgbm":        _re_lgb_prepare,
     "puet":           _puet_prepare,
 }
 
 OOF_FNS = {
-    "lgb_supervised": _lgb_sup_oof_fit_score,
+    "lgbm_supervised": _lgb_sup_oof_fit_score,
     "bagging_lgbm":   _bag_lgb_oof_fit_score,
     "re_lgbm":        _re_lgb_oof_fit_score,
     "puet":           _puet_oof_fit_score,
 }
 
 FINAL_FIT_FNS = {
-    "lgb_supervised": _lgb_sup_final_fit,
+    "lgbm_supervised": _lgb_sup_final_fit,
     "bagging_lgbm":   _bag_lgb_final_fit,
     "re_lgbm":        _re_lgb_final_fit,
     "puet":           _puet_final_fit,

@@ -14,7 +14,7 @@ import pandas as pd
 print("1. Import moduli...")
 import re_lgbm
 import scorer
-import setup as app_setup
+import prepare_data as app_setup
 print("   OK")
 
 # Monkeypatch costanti pesanti (ripristinate nel finally)
@@ -65,7 +65,7 @@ try:
     assert 0.0 <= lo <= hi <= 100.0, f"CI non valido: [{lo}, {hi}]"
     print(f"   OK — CI=[{lo:.1f}%, {hi:.1f}%]")
 
-    print("6. setup._extract_encodings + _convert_categoricals_nativi (sintetico)...")
+    print("6. prepare_data._extract_encodings + _convert_categoricals_nativi (sintetico)...")
     df_syn = pd.DataFrame({
         "label":   [1.0, 0.0, None],
         "fold":    [0.0, 1.0, None],
@@ -77,7 +77,7 @@ try:
         "regione": ["Lombardia", "Lazio", "Sicilia"],
     })
     enc_test = {}
-    app_setup._extract_encodings(df_syn, enc_test)
+    app_prepare_data._extract_encodings(df_syn, enc_test)
     assert "cat_col" in enc_test
 
     df_conv, cat_out = app_setup._convert_categoricals_nativi(df_syn.copy())
@@ -85,13 +85,13 @@ try:
     assert df_conv["cat_col"].dtype == np.float32
     print("   OK")
 
-    print("7. setup.process_stage(1) su dir temporanea (non tocca data/)...")
+    print("7. prepare_data.process_stage(1) su dir temporanea (non tocca data/)...")
     tmp_dir = Path(tempfile.mkdtemp(prefix="appalti_smoke_"))
     try:
         _orig_out = app_setup.OUT_DIR
         app_setup.OUT_DIR = tmp_dir
         enc_tmp = {}
-        app_setup.process_stage(1, enc_tmp)
+        app_prepare_data.process_stage(1, enc_tmp)
         out_file = tmp_dir / "M1_ready.parquet"
         assert out_file.exists(), "M1_ready.parquet non trovato in tmp"
         mb = out_file.stat().st_size / 1e6

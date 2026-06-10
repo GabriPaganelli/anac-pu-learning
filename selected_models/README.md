@@ -18,7 +18,7 @@ selected_models/
 ├── mixing_grid.py       # Entry point — sweep γ su tutti i modelli e dataset
 ├── plot_mixing.py       # Grafico lift@1% vs γ (legge results/, salva PNG/PDF)
 ├── utils.py             # Caricamento dati, reshuffle fold, metriche condivise
-├── lgb_supervised.py    # LGB P vs N certi (EM-Hard iter=0)
+├── lgbm_supervised.py    # LGB P vs N certi (EM-Hard iter=0)
 ├── bagging_lgbm.py      # Bagging LightGBM (PNPU)
 ├── re_lgbm.py           # RE LightGBM (nnPU loss, PNPU)
 ├── puet.py              # PU Extra Trees (preprocessed, PNPU)
@@ -31,7 +31,7 @@ selected_models/
 
 | File | Base learner | Dataset | γ applicato a |
 |------|-------------|---------|---------------|
-| `lgb_supervised.py` | LightGBM BCE | nativi | sample_weight N certi (γ=0 escluso: no negativi) |
+| `lgbm_supervised.py` | LightGBM BCE | nativi | sample_weight N certi (γ=0 escluso: no negativi) |
 | `bagging_lgbm.py` | LightGBM BCE (bagging) | nativi | sample_weight N certi per bag |
 | `re_lgbm.py` | LightGBM nnPU (custom fobj) | nativi | coefficiente termine gradiente N certi |
 | `puet.py` | ExtraTreesClassifier (bagging) | preprocessed | sample_weight N certi per bag |
@@ -70,7 +70,7 @@ python selected_models/plot_mixing.py
 | Modelli | Griglia γ |
 |---------|-----------|
 | `bagging_lgbm`, `re_lgbm`, `puet` | 0, 0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0 |
-| `lgb_supervised` | 0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0 |
+| `lgbm_supervised` | 0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0 |
 
 ---
 
@@ -90,7 +90,7 @@ Metriche: **lift@1%**, lift@2%, lift@5%, PR-AUC, ROC-AUC.
 
 | Modello | M1 γ_best | M2 γ_best | M3 γ_best |
 |---------|-----------|-----------|-----------|
-| lgb_supervised | — (alta varianza) | — (alta varianza) | — (alta varianza) |
+| lgbm_supervised | — (alta varianza) | — (alta varianza) | — (alta varianza) |
 | re_lgbm | 0.9 | 1.0 | 0.33 (lift) / 1.0 (PR AUC) |
 | bagging_lgbm | 0.66 | 0.80 | 0.33–0.66 |
 | puet | 0.0 | 0.0 | 0.0 (lift) / 0.05 (PR AUC) |
@@ -126,7 +126,7 @@ selected_models/
 ├── mixing_grid.py       # Entry point — γ sweep over all models and datasets
 ├── plot_mixing.py       # Lift@1% vs γ plot (reads results/, saves PNG/PDF)
 ├── utils.py             # Data loading, fold reshuffle, shared metrics
-├── lgb_supervised.py    # LGB P vs certain N (EM-Hard iter=0)
+├── lgbm_supervised.py    # LGB P vs certain N (EM-Hard iter=0)
 ├── bagging_lgbm.py      # Bagging LightGBM (PNPU)
 ├── re_lgbm.py           # RE LightGBM (nnPU loss, PNPU)
 ├── puet.py              # PU Extra Trees (preprocessed, PNPU)
@@ -139,7 +139,7 @@ selected_models/
 
 | File | Base learner | Dataset | γ applied to |
 |------|-------------|---------|--------------|
-| `lgb_supervised.py` | LightGBM BCE | nativi | sample_weight of certain N (γ=0 excluded: no negatives) |
+| `lgbm_supervised.py` | LightGBM BCE | nativi | sample_weight of certain N (γ=0 excluded: no negatives) |
 | `bagging_lgbm.py` | LightGBM BCE (bagging) | nativi | sample_weight of certain N per bag |
 | `re_lgbm.py` | LightGBM nnPU (custom fobj) | nativi | coefficient of certain N gradient term |
 | `puet.py` | ExtraTreesClassifier (bagging) | preprocessed | sample_weight of certain N per bag |
@@ -178,7 +178,7 @@ python selected_models/plot_mixing.py
 | Models | γ grid |
 |--------|--------|
 | `bagging_lgbm`, `re_lgbm`, `puet` | 0, 0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0 |
-| `lgb_supervised` | 0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0 |
+| `lgbm_supervised` | 0.05, 0.1, 0.2, 0.33, 0.5, 0.66, 0.8, 0.9, 1.0 |
 
 ---
 
@@ -198,7 +198,7 @@ Metrics: **lift@1%**, lift@2%, lift@5%, PR-AUC, ROC-AUC.
 
 | Model | M1 γ_best | M2 γ_best | M3 γ_best |
 |-------|-----------|-----------|-----------|
-| lgb_supervised | — (high variance) | — (high variance) | — (high variance) |
+| lgbm_supervised | — (high variance) | — (high variance) | — (high variance) |
 | re_lgbm | 0.9 | 1.0 | 0.33 (lift) / 1.0 (PR AUC) |
 | bagging_lgbm | 0.66 | 0.80 | 0.33–0.66 |
 | puet | 0.0 | 0.0 | 0.0 (lift) / 0.05 (PR AUC) |

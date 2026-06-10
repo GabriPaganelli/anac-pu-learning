@@ -30,7 +30,7 @@ Un CIG riceve **label=0** (scagionato) se:
 ### Prerequisiti
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt   # dalla root del repository
 ```
 
 ### Esecuzione completa
@@ -84,14 +84,13 @@ python build_labels.py
 ├── build_zero_list.py     # Produce cig_scagionati.csv da esiti sfavorevoli
 ├── build_labels.py        # Combina TAR + fine-contratto → labels/
 ├── config.py              # Configurazione centralizzata (URL, path, filtri esito)
-├── requirements.txt       # Dipendenze Python
 ├── pipeline/              # Moduli della pipeline
 │   ├── extractor.py       # Download CSV da CKAN OpenGA
 │   ├── cleaner.py         # Normalizzazione, validazione CIG, costruzione UID
 │   ├── deduplicator.py    # Risoluzione duplicati per UID
 │   ├── consolidator.py    # Unione Ordinanze + Sentenze
 │   ├── joiner.py          # Join esiti con Ricorsi
-│   ├── cds_dominator.py   # Applicazione dominanza CdS
+│   ├── cds_precedence.py  # Precedenza esiti CdS su TAR
 │   └── reporter.py        # Salvataggio output e report diagnostico
 ├── utils/
 │   ├── log_setup.py       # Configurazione logging
@@ -163,7 +162,7 @@ A CIG receives **label=0** (cleared) if:
 ### Prerequisites
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt   # from the repository root
 ```
 
 Access to `openga.giustizia-amministrativa.it` is required.
@@ -225,7 +224,7 @@ python build_labels.py
 │   ├── deduplicator.py    # Duplicate resolution by UID
 │   ├── consolidator.py    # Merge Ordinances + Rulings
 │   ├── joiner.py          # Join outcomes with Appeals
-│   ├── cds_dominator.py   # CdS dominance application
+│   ├── cds_precedence.py  # CdS precedence over TAR outcomes
 │   └── reporter.py        # Output saving and diagnostic report
 ├── utils/
 │   ├── log_setup.py       # Logging configuration

@@ -124,7 +124,7 @@ python selected_models/plot_mixing.py              # grafici lift vs γ
 
 | Modello | γ* | Lift@1% M1 | Lift@1% M2 | Lift@1% M3 | PR AUC M3 |
 |---------|---:|----------:|----------:|----------:|----------:|
-| LightGBM P vs N (`lgb_supervised`) | 1.0 | 20.95 | 13.49 | 17.86 | 0.885 ± 0.027 |
+| LightGBM P vs N (`lgbm_supervised`) | 1.0 | 20.95 | 13.49 | 17.86 | 0.885 ± 0.027 |
 | Bagging LightGBM | 0.66 | 17.80 | 18.15 | 21.43 | 0.591 ± 0.078 |
 | RE LightGBM (nnPU) | 1.0 | 17.41 | 17.14 | 21.90 | 0.556 ± 0.063 |
 | PUET | 0.0 | 15.75 | 15.73 | 14.76 | 0.591 ± 0.021 |
@@ -153,7 +153,7 @@ I risultati vengono salvati in `evaluation/results/{modello}_{Mn}/` (calibrazion
 Applicazione web per lo scoring del rischio corruttivo su singoli appalti o batch CSV. Addestra RE LightGBM on-the-fly sulla distribuzione storica e restituisce il rango percentile del contratto rispetto ai ~9,5 milioni di appalti ANAC.
 
 ```bash
-python app/setup.py        # una tantum: pre-encoding dei parquet nativi → app/data/
+python app/prepare_data.py        # una tantum: pre-encoding dei parquet nativi → app/data/
 streamlit run app/app.py
 ```
 
@@ -200,7 +200,7 @@ python evaluation/run_all.py
 python evaluation/bootstrap_ci.py
 
 # 8. App
-python app/setup.py && streamlit run app/app.py
+python app/prepare_data.py && streamlit run app/app.py
 ```
 
 ---
@@ -355,7 +355,7 @@ python selected_models/plot_mixing.py              # lift vs γ plots
 
 | Model | γ* | Lift@1% M1 | Lift@1% M2 | Lift@1% M3 | PR AUC M3 |
 |-------|---:|----------:|----------:|----------:|----------:|
-| LightGBM P vs N (`lgb_supervised`) | 1.0 | 20.95 | 13.49 | 17.86 | 0.885 ± 0.027 |
+| LightGBM P vs N (`lgbm_supervised`) | 1.0 | 20.95 | 13.49 | 17.86 | 0.885 ± 0.027 |
 | Bagging LightGBM | 0.66 | 17.80 | 18.15 | 21.43 | 0.591 ± 0.078 |
 | RE LightGBM (nnPU) | 1.0 | 17.41 | 17.14 | 21.90 | 0.556 ± 0.063 |
 | PUET | 0.0 | 15.75 | 15.73 | 14.76 | 0.591 ± 0.021 |
@@ -384,7 +384,7 @@ Results are saved under `evaluation/results/{model}_{Mn}/` (calibration, conform
 Web application for corruption risk scoring on individual contracts or batch CSV files. Trains RE LightGBM on-the-fly on the historical distribution and returns the percentile rank of the contract relative to the ~9.5 million ANAC contracts.
 
 ```bash
-python app/setup.py        # one-time: pre-encode native parquets → app/data/
+python app/prepare_data.py        # one-time: pre-encode native parquets → app/data/
 streamlit run app/app.py
 ```
 
@@ -431,7 +431,7 @@ python evaluation/run_all.py
 python evaluation/bootstrap_ci.py
 
 # 8. App
-python app/setup.py && streamlit run app/app.py
+python app/prepare_data.py && streamlit run app/app.py
 ```
 
 ---

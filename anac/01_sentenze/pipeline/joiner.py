@@ -5,7 +5,7 @@ Strategy:
   - Inner join on UID (strict matching).
   - Il join è solo su match esatto; gli esiti non matchati vengono scartati.
   - Logs join rate.
-  - Separates CDS rows (to be processed by cds_dominator.py).
+  - Separates CDS rows (to be processed by cds_precedence.py).
 """
 
 import logging

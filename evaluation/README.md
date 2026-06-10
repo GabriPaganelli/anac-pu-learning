@@ -6,7 +6,7 @@
 ## Italiano
 
 Calibrazione Platt, conformal prediction (Mondrian) e analisi SHAP applicati ai
-4 modelli finalisti (`lgb_supervised`, `bagging_lgbm`, `re_lgbm`, `puet`) sui 3
+4 modelli finalisti (`lgbm_supervised`, `bagging_lgbm`, `re_lgbm`, `puet`) sui 3
 dataset temporali M1/M2/M3. Dipende da `selected_models/` e `metrics/` nella root.
 
 ---
@@ -23,7 +23,7 @@ evaluation/
 |-- run_all.py                   # Entry point: calibration -> conformal -> SHAP
 |-- run_all_gamma_comparison.py  # Sensitivity su griglia gamma per un modello x dataset
 |-- gamma_star.json              # gamma* canonici per ogni modello x dataset
-`-- plots_exploration/
+`-- exploratory_plots/
     `-- make_qq_ranks.py         # QQ plot del ranking tra modelli su contratti U
 ```
 
@@ -143,7 +143,7 @@ Le chiavi numeriche `"1"`, `"2"`, `"3"` corrispondono a M1, M2, M3.
 
 ```json
 {
-  "lgb_supervised": {"1": 1.0, "2": 1.0, "3": 1.0},
+  "lgbm_supervised": {"1": 1.0, "2": 1.0, "3": 1.0},
   "bagging_lgbm":   {"1": 0.66, "2": 0.66, "3": 0.66},
   "re_lgbm":        {"1": 1.0, "2": 1.0, "3": 1.0},
   "puet":           {"1": 0.0, "2": 0.0, "3": 0.0}
@@ -156,15 +156,15 @@ toccare nessun altro file.
 
 ---
 
-## plots_exploration/
+## exploratory_plots/
 
 `make_qq_ranks.py` confronta il ranking degli score tra modelli (re_lgbm vs
-lgb_supervised, re_lgbm vs bagging_lgbm) su contratti U fuori dal training.
+lgbm_supervised, re_lgbm vs bagging_lgbm) su contratti U fuori dal training.
 Richiede che i modelli finali siano gia stati addestrati e salvati da `calibration.py`.
-Output: `plots_exploration/qq_rank_comparison_M{n}.{png,pdf}` per M1, M2, M3.
+Output: `exploratory_plots/qq_rank_comparison_M{n}.{png,pdf}` per M1, M2, M3.
 
 ```bash
-python evaluation/plots_exploration/make_qq_ranks.py
+python evaluation/exploratory_plots/make_qq_ranks.py
 ```
 
 ---
@@ -184,7 +184,7 @@ lo usano effettivamente) per evitare il costo di startup quando si importa
 ## English
 
 Platt scaling, conformal prediction (Mondrian), and SHAP analysis applied to the
-4 finalist models (`lgb_supervised`, `bagging_lgbm`, `re_lgbm`, `puet`) on the
+4 finalist models (`lgbm_supervised`, `bagging_lgbm`, `re_lgbm`, `puet`) on the
 3 temporal datasets M1/M2/M3. Depends on `selected_models/` and `metrics/` at the root.
 
 ---
@@ -201,7 +201,7 @@ evaluation/
 |-- run_all.py                   # Entry point: calibration -> conformal -> SHAP
 |-- run_all_gamma_comparison.py  # Sensitivity over gamma grid for one model x dataset
 |-- gamma_star.json              # Canonical gamma* for each model x dataset
-`-- plots_exploration/
+`-- exploratory_plots/
     `-- make_qq_ranks.py         # QQ plot of cross-model ranking on U contracts
 ```
 
@@ -321,7 +321,7 @@ Numeric keys `"1"`, `"2"`, `"3"` correspond to M1, M2, M3.
 
 ```json
 {
-  "lgb_supervised": {"1": 1.0, "2": 1.0, "3": 1.0},
+  "lgbm_supervised": {"1": 1.0, "2": 1.0, "3": 1.0},
   "bagging_lgbm":   {"1": 0.66, "2": 0.66, "3": 0.66},
   "re_lgbm":        {"1": 1.0, "2": 1.0, "3": 1.0},
   "puet":           {"1": 0.0, "2": 0.0, "3": 0.0}
@@ -333,15 +333,15 @@ To change `gamma*`, just edit the numeric values — no other file needs to be t
 
 ---
 
-## plots_exploration/
+## exploratory_plots/
 
 `make_qq_ranks.py` compares the score rankings across models (re_lgbm vs
-lgb_supervised, re_lgbm vs bagging_lgbm) on U contracts outside the training set.
+lgbm_supervised, re_lgbm vs bagging_lgbm) on U contracts outside the training set.
 Requires that final models have already been trained and saved by `calibration.py`.
-Output: `plots_exploration/qq_rank_comparison_M{n}.{png,pdf}` for M1, M2, M3.
+Output: `exploratory_plots/qq_rank_comparison_M{n}.{png,pdf}` for M1, M2, M3.
 
 ```bash
-python evaluation/plots_exploration/make_qq_ranks.py
+python evaluation/exploratory_plots/make_qq_ranks.py
 ```
 
 ---

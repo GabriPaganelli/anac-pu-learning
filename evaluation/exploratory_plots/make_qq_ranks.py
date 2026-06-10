@@ -1,7 +1,7 @@
 """
 make_qq_ranks.py — QQ plot del ranking degli score tra modelli finalisti.
 
-Confronta rank_pct (re_lgbm vs lgb_supervised) e (re_lgbm vs bagging_lgbm)
+Confronta rank_pct (re_lgbm vs lgbm_supervised) e (re_lgbm vs bagging_lgbm)
 su contratti U *fuori dal training* per dataset M1, M2, M3.
 
 Strategia campionamento (uniforme per tutti i dataset):
@@ -40,7 +40,7 @@ from utils_expost import BaggingLGBWrapper, load_model
 SAMPLE_N   = 4_000
 RNG_SEED   = 42
 
-MODELS_QQ = ["re_lgbm", "lgb_supervised", "bagging_lgbm"]
+MODELS_QQ = ["re_lgbm", "lgbm_supervised", "bagging_lgbm"]
 
 
 # Preprocessing
@@ -135,7 +135,7 @@ def score_model(model_name: str, mn: int, X: np.ndarray) -> np.ndarray:
 
     if model_name == "re_lgbm":
         raw = sigmoid(model.predict(X, raw_score=True))
-    elif model_name == "lgb_supervised":
+    elif model_name == "lgbm_supervised":
         raw = model.predict(X)
     else:  # bagging_lgbm
         raw = model.predict(X)
@@ -219,8 +219,8 @@ def make_figure(mn: int,
     norm1, cmap1 = qq_panel(
         axes[0], x_re, y_lgb,
         xlabel="re_lgbm  rank_pct",
-        ylabel="lgb_supervised  rank_pct",
-        title="re_lgbm  vs  lgb_supervised",
+        ylabel="lgbm_supervised  rank_pct",
+        title="re_lgbm  vs  lgbm_supervised",
     )
     norm2, cmap2 = qq_panel(
         axes[1], x_re, y_bag,
@@ -277,14 +277,14 @@ def run_mn(mn: int):
     # 3. Scoratura con i 3 modelli
     print(f"  Scoratura re_lgbm M{mn}...")
     raw_re  = score_model("re_lgbm",       mn, X_sample)
-    print(f"  Scoratura lgb_supervised M{mn}...")
-    raw_lgb = score_model("lgb_supervised", mn, X_sample)
+    print(f"  Scoratura lgbm_supervised M{mn}...")
+    raw_lgb = score_model("lgbm_supervised", mn, X_sample)
     print(f"  Scoratura bagging_lgbm M{mn}...")
     raw_bag = score_model("bagging_lgbm",  mn, X_sample)
 
     # 4. Platt calibration
     cal_re  = apply_platt("re_lgbm",       mn, raw_re)
-    cal_lgb = apply_platt("lgb_supervised", mn, raw_lgb)
+    cal_lgb = apply_platt("lgbm_supervised", mn, raw_lgb)
     cal_bag = apply_platt("bagging_lgbm",  mn, raw_bag)
 
     # 5. Rank percentile nel campione (0-100)
