@@ -1,12 +1,18 @@
 # APPalti — PU Learning per la rilevazione di frodi negli appalti pubblici italiani
 # *APPalti — PU Learning for fraud detection in Italian public procurement*
 
+**[Italiano](#italiano) · [English](#english)** · [Working paper (PDF)](docs/report.pdf) · [Poster (PDF)](docs/poster.pdf) · [Web](https://gabripaganelli.github.io/projects/anac-pu-learning.html)
+
 ---
 
 ## Italiano
 
 Davide Bortoletto, Giorgia Caicchiolo, Gabriele Paganelli, Gianmarco Rosa  
 *Laboratorio di Statistica con le Aziende — Gruppo "L'Ipotesi Alternativa"*
+
+**1° premio**, Università di Padova
+
+> Bortoletto D., Caicchiolo G., Paganelli G., Rosa G. (2026). *Rilevazione di frodi negli appalti pubblici italiani: un approccio di Positive-Unlabeled Learning.* Working paper, Laboratorio di Statistica con le Aziende.
 
 ---
 
@@ -15,6 +21,8 @@ Davide Bortoletto, Giorgia Caicchiolo, Gabriele Paganelli, Gianmarco Rosa
 Solo una frazione esigua degli appalti pubblici italiani risulta associata a procedimenti giudiziari conclusi. La grande maggioranza è priva di etichetta: un appalto senza sentenza può essere genuinamente regolare oppure semplicemente impunito. Trattare i non etichettati come negativi certi introdurrebbe un bias sistematico: è il regime del **Positive-Unlabeled (PU) learning**.
 
 Questo repository implementa una pipeline completa che, partendo dai microdati ANAC (Banca Dati Nazionale dei Contratti Pubblici, 2008–2025), costruisce un sistema di scoring del rischio corruttivo su ~9,5 milioni di appalti.
+
+**Risultato principale:** sul dataset M3 (ex post) il modello di riferimento, RE LightGBM (nnPU), ottiene un Lift@1% di 21.9 (± 3.8 tra i 4 fold): nel top 1% dei punteggi cadono circa 22 volte più appalti positivi che in un ordinamento casuale.
 
 ---
 
@@ -239,7 +247,9 @@ Per `prior_estimation`, `eda` e `models/em_like`: **R** (testato con R 4.5) con 
 Davide Bortoletto, Giorgia Caicchiolo, Gabriele Paganelli, Gianmarco Rosa  
 *Laboratorio di Statistica con le Aziende — Gruppo "L'Ipotesi Alternativa"*
 
-> Bortoletto D., Caicchiolo G., Paganelli G., Rosa G. (2025). *Fraud detection in Italian public procurement: a Positive-Unlabeled Learning approach.* Working paper, Laboratorio di Statistica con le Aziende.
+**1st Prize**, University of Padova
+
+> Bortoletto D., Caicchiolo G., Paganelli G., Rosa G. (2026). *Fraud detection in Italian public procurement: a Positive-Unlabeled Learning approach.* Working paper, Laboratorio di Statistica con le Aziende.
 
 ---
 
@@ -248,6 +258,8 @@ Davide Bortoletto, Giorgia Caicchiolo, Gabriele Paganelli, Gianmarco Rosa
 Only a small fraction of Italian public contracts is linked to concluded judicial proceedings. The vast majority is unlabelled: a contract without a ruling may be genuinely compliant or simply unpunished. Treating unlabelled examples as certain negatives introduces a systematic bias — this is the **Positive-Unlabeled (PU) learning** regime.
 
 This repository implements a complete pipeline that, starting from ANAC microdata (National Public Contracts Database, 2008–2025), builds a corruption risk scoring system over ~9.5 million contracts.
+
+**Main result:** on the M3 dataset (ex post) the reference model, RE LightGBM (nnPU), reaches a Lift@1% of 21.9 (± 3.8 across the 4 folds): the top 1% of scores contains about 22 times more positive contracts than a random ordering.
 
 ---
 
