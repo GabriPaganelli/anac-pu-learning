@@ -227,7 +227,9 @@ Per `prior_estimation`, `eda` e `models/em_like`: **R** (testato con R 4.5) con 
 
 ## Licenza
 
-[PolyForm Noncommercial 1.0.0](LICENSE)
+[PolyForm Noncommercial 1.0.0](LICENSE): uso libero per ricerca, studio e altri fini non commerciali; l'uso commerciale non è consentito.
+
+Eccezione: `prior_estimation/KMPE.py` è codice di terzi con licenza MIT, vedi [`prior_estimation/LICENSE-KMPE`](prior_estimation/LICENSE-KMPE).
 
 ---
 
@@ -464,7 +466,9 @@ For `prior_estimation`, `eda` and `models/em_like`: **R** (tested with R 4.5) wi
 
 ## License
 
-[PolyForm Noncommercial 1.0.0](LICENSE)
+[PolyForm Noncommercial 1.0.0](LICENSE): free to use for research, study and other noncommercial purposes; commercial use is not permitted.
+
+Exception: `prior_estimation/KMPE.py` is third-party code under the MIT License, see [`prior_estimation/LICENSE-KMPE`](prior_estimation/LICENSE-KMPE).
 
 ---
 
