@@ -1,5 +1,16 @@
-The following license applies to prior_estimation/KMPE.py, vendored from
-https://github.com/dimonenka/DEDPUL
+prior_estimation/KMPE.py is third-party code and is not covered by this
+repository's LICENSE.
+
+Original code: Kernel_MPE_grad_threshold.py by H. Ramaswamy, C. Scott and
+A. Tewari, implementing "Mixture Proportion Estimation via Kernel Embedding
+of Distributions" (arXiv:1603.02501).
+Source: http://web.eecs.umich.edu/~cscott/code.html#kmpe
+The original is distributed without a license: all rights remain with its
+authors.
+
+This copy was taken from https://github.com/dimonenka/DEDPUL, which ported it
+to Python 3 and added options to the wrapper function. DEDPUL's modifications
+are under the following license:
 
 MIT License
 
