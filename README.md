@@ -3,6 +3,9 @@
 
 **[Italiano](#italiano) · [English](#english)** · [Working paper (PDF)](docs/report.pdf) · [Poster (PDF)](docs/poster.pdf) · [Web](https://gabripaganelli.github.io/projects/anac-pu-learning.html)
 
+![APPalti](docs/thumbnail.png)
+*APPalti: anteprima dell'app Streamlit di scoring del rischio · APPalti: preview of the Streamlit risk-scoring app*
+
 ---
 
 ## Italiano
